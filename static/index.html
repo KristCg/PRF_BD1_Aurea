@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#302218">
+  <title>Áurea · Gestión de inventario</title>
+  <meta name="description" content="Control de insumos, lotes y movimientos de inventario de la cafetería Áurea.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+<svg class="icon-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z M3 8v9l9 5 9-5V8 M12 13v9 M7.5 5.5l9 5"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 7h15m-4-4 4 4-4 4 M20 17H5m4-4-4 4 4 4"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="m10.3 4-8 14a2 2 0 0 0 1.7 3h16a2 2 0 0 0 1.7-3l-8-14a2 2 0 0 0-3.4 0Z M12 9v4 M12 17h.01"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14 M5 12h14"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5 M4 16v5h16v-5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24"><path d="m16 3 5 5-12 12-6 1 1-6L16 3Z M13 6l5 5"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18 M9 6V3h6v3 M5 6l1 15h12l1-15 M10 10v7 M14 10v7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 10v11h16V10 M3 3h18v7c-2 2-4 2-6 0-2 2-4 2-6 0-2 2-4 2-6 0V3Z M9 21v-7h6v7"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 64 64"><path d="M12 54C24 36 37 20 55 9 M24 38C9 38 8 22 10 16c13 2 20 8 14 22Z M34 27C28 10 44 5 55 9c0 11-8 22-21 18Z M19 46c9-9 21-5 28 2-9 6-22 7-28-2Z"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12 M18 6 6 18"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6 M12 7h.01"/></symbol>
+</svg>
+<a class="skip" href="#main">Saltar al contenido</a>
+<aside class="sidebar">
+  <a class="brand" href="/" aria-label="Áurea, inventario"><svg class="brand-leaf"><use href="#i-leaf"/></svg><span>ÁUREA</span><small>Un lugar para quedarse</small></a>
+  <div class="nav-caption">ESPACIO DE TRABAJO</div>
+  <div class="nav-parent"><svg class="icon"><use href="#i-box"/></svg>Inventario<span class="tiny-dot"></span></div>
+  <nav aria-label="Gestión de inventario">
+    <button class="nav-item active" data-view="insumos" aria-current="page"><svg class="icon"><use href="#i-grid"/></svg>Insumos</button>
+    <button class="nav-item" data-view="lotes"><svg class="icon"><use href="#i-clock"/></svg>Lotes y caducidad</button>
+    <button class="nav-item" data-view="movimientos"><svg class="icon"><use href="#i-swap"/></svg>Movimientos</button>
+    <button class="nav-item" data-view="alertas"><svg class="icon"><use href="#i-alert"/></svg>Alertas<span id="nav-alerts" class="nav-count">—</span></button>
+  </nav>
+  <div class="sidebar-bottom"><svg class="footer-leaf"><use href="#i-leaf"/></svg><p>Buen café,<br>mejores momentos.</p><span>EL CUIDADO EMPIEZA AQUÍ</span></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><div class="breadcrumb">Operaciones <span>/</span> <strong>Inventario</strong></div><div class="top-right"><span class="connection" id="connection"><span></span>Conectando</span><label class="branch-label" for="branch"><svg class="icon"><use href="#i-store"/></svg><select id="branch" aria-label="Sucursal"><option>Cargando sucursales…</option></select></label></div></header>
+  <main id="main">
+    <div class="page-heading"><div><div class="eyebrow">ÁUREA · CONTROL DE INSUMOS</div><h1>Gestión de inventario</h1><p>Todo lo que tu cocina necesita, en su punto.</p></div><div class="heading-actions"><button class="button secondary" id="export"><svg class="icon"><use href="#i-down"/></svg>Exportar CSV</button><button class="button primary" id="new-item"><svg class="icon"><use href="#i-plus"/></svg>Nuevo insumo</button></div></div>
+    <div id="load-error" class="error-banner" role="alert" hidden><span>No se pudo cargar el inventario.</span><button class="text-button" id="retry">Reintentar</button></div>
+    <section class="welcome"><div><span class="eyebrow">CUIDADO EN CADA DETALLE</span><h2>Una buena taza empieza<br>con buenos ingredientes.</h2><p>Supervisa tus existencias y cuida la frescura de cada preparación.</p></div><div class="welcome-art" aria-hidden="true"><div class="art-circle"></div><svg><use href="#i-leaf"/></svg><span>Á</span></div><div class="welcome-date"><span>INVENTARIO AL DÍA</span><strong id="today">—</strong><small>Existencias por sucursal</small></div></section>
+    <section class="stats" aria-label="Resumen de inventario">
+      <button class="stat" data-stat="all"><span class="stat-icon"><svg class="icon"><use href="#i-box"/></svg></span><span class="stat-label">Insumos registrados</span><strong id="stat-total">—</strong><small>En el catálogo de Áurea</small></button>
+      <button class="stat" data-stat="low"><span class="stat-icon amber"><svg class="icon"><use href="#i-alert"/></svg></span><span class="stat-label">Existencias bajas</span><strong id="stat-low">—</strong><small>Requieren reposición</small></button>
+      <button class="stat" data-stat="soon"><span class="stat-icon rose"><svg class="icon"><use href="#i-clock"/></svg></span><span class="stat-label">Lotes por vencer</span><strong id="stat-soon">—</strong><small>En los próximos 7 días</small></button>
+      <button class="stat" data-stat="healthy"><span class="stat-icon green"><svg class="icon"><use href="#i-check"/></svg></span><span class="stat-label">Insumos al día</span><strong id="stat-healthy">—</strong><small>Sin alertas pendientes</small></button>
+    </section>
+    <button class="attention" id="attention"><span class="attention-icon"><svg class="icon"><use href="#i-alert"/></svg></span><span><strong id="attention-title">Revisando tus insumos…</strong><small id="attention-sub">Consultando existencias y fechas de caducidad.</small></span><span class="attention-link">Revisar alertas <svg class="icon"><use href="#i-arrow"/></svg></span></button>
+    <section class="inventory-panel" aria-labelledby="panel-title">
+      <div class="panel-heading"><div><h2 id="panel-title">Tus insumos <span id="panel-count" class="count-pill">0</span></h2><p id="panel-subtitle">Consulta y administra los ingredientes de tu cafetería.</p></div><button class="button secondary compact" id="panel-action"><svg class="icon"><use href="#i-swap"/></svg>Registrar movimiento</button></div>
+      <div class="tabs" role="tablist" aria-label="Vistas de inventario"><button class="tab active" role="tab" aria-selected="true" data-view="insumos">Insumos</button><button class="tab" role="tab" aria-selected="false" data-view="lotes">Lotes</button><button class="tab" role="tab" aria-selected="false" data-view="movimientos">Movimientos</button><button class="tab" role="tab" aria-selected="false" data-view="alertas">Alertas</button></div>
+      <div class="filters"><label class="search"><svg class="icon"><use href="#i-search"/></svg><input id="search" type="search" placeholder="Buscar un insumo…" aria-label="Buscar en el inventario"></label><select id="category" aria-label="Filtrar por categoría"><option value="">Todas las categorías</option><option>Café y té</option><option>Lácteos</option><option>Panadería</option><option>Despensa</option><option>Frutas y frescos</option></select><select id="status" aria-label="Filtrar por estado"><option value="">Todos los estados</option><option value="low">Existencias bajas</option><option value="soon">Por vencer</option><option value="expired">Vencidos</option><option value="healthy">Al día</option></select><button class="text-button" id="clear-filters" hidden>Limpiar</button></div>
+      <div id="content" aria-live="polite"><div class="empty"><span class="loader"></span><h3>Preparando tu inventario</h3><p>Conectando con la base de datos de Áurea.</p></div></div>
+      <div class="table-footer"><span id="results">Cargando…</span><div class="pagination"><button id="prev" aria-label="Página anterior">‹</button><span id="page-label">1 / 1</span><button id="next" aria-label="Página siguiente">›</button></div></div>
+    </section>
+    <footer class="main-footer"><span><svg class="icon"><use href="#i-leaf"/></svg> Cada ingrediente cuenta.</span><span>Áurea · Gestión de inventario</span></footer>
+  </main>
+</div>
+<dialog id="modal" aria-labelledby="modal-title"><div class="modal-heading"><div><div class="eyebrow">ÁUREA · INVENTARIO</div><h2 id="modal-title"></h2></div><button class="icon-button" id="close-modal" aria-label="Cerrar"><svg class="icon"><use href="#i-close"/></svg></button></div><div id="modal-body"></div></dialog>
+<div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

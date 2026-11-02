@@ -1,0 +1,37 @@
+name: aurea-inventario
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: aurea
+      POSTGRES_USER: aurea
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-aurea_local_2026}
+      TZ: America/Guatemala
+      PGTZ: America/Guatemala
+    volumes:
+      - inventario_data:/var/lib/postgresql/data
+      - ./db:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aurea -d aurea"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+  web:
+    build: .
+    ports:
+      - "127.0.0.1:${APP_PORT:-8080}:8000"
+    environment:
+      DATABASE_URL: postgresql://aurea:${DB_PASSWORD:-aurea_local_2026}@db:5432/aurea
+      TZ: America/Guatemala
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+volumes:
+  inventario_data:
