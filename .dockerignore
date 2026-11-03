@@ -1,7 +1,0 @@
-.git
-.env
-tmp
-__pycache__
-*.pyc
-Diseño_BD_tablas_graficos
-Base_datos_Aurea_Inicio.sql
