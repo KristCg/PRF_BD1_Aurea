@@ -1,11 +1,11 @@
 """Carga reproducible de datos ficticios: python server.py --seed."""
 import datetime as dt
 import os
-from server import connection, password_hash, require
+from server import actor, connection, password_hash, require, save_user
 
 def seed_data():
  password=os.getenv('AUREA_ADMIN_PASSWORD','')
- require(len(password)>=10,'Define AUREA_ADMIN_PASSWORD con al menos 10 caracteres.')
+ require(len(password)>=4,'Define AUREA_ADMIN_PASSWORD con al menos 4 caracteres.')
  today=dt.date.today()
  with connection() as conn:
   for table in ['cliente','usuario','sucursal','rol','ingrediente','platillo']:
@@ -18,7 +18,10 @@ def seed_data():
   employees=[]
   for name,last,role,branch in [('Maya','Salazar','Gerente',branches[0]),('Daniel','Pérez','Mesero',branches[0]),('Ana','Luna','Encargado de Inventario',branches[1])]:
    employees.append(conn.execute('INSERT INTO empleado(nombre_empleado,apellido,rol_id,sucursal_id) VALUES (%s,%s,%s,%s) RETURNING empleado_id',(name,last,roles[role],branch)).fetchone()['empleado_id'])
-  conn.execute('INSERT INTO usuario(nombre,correo,password_hash,rol,empleado_id) VALUES (%s,%s,%s,%s,%s)',('Maya Salazar',os.getenv('AUREA_ADMIN_EMAIL','admin@aurea.gt').lower(),password_hash(password),'Administrador',employees[0]))
+  admin=conn.execute('INSERT INTO usuario(nombre,correo,password_hash,rol,empleado_id) VALUES (%s,%s,%s,%s,%s) RETURNING usuario_id,correo,rol',('Maya Salazar',os.getenv('AUREA_ADMIN_EMAIL','admin@aurea.gt').lower(),password_hash(password),'Administrador',employees[0])).fetchone()
+  actor(conn,admin)
+  for name,email,role,employee in [('Maya Salazar','gerente@aurea.gt','Gerente',employees[0]),('Daniel Pérez','mesero@aurea.gt','Mesero',employees[1])]:
+   save_user(conn,{'nombre':name,'correo':email,'rol':role,'empleado_id':employee,'password':'1234'},admin)
   for b in branches:
    for i in range(1,13 if b==branches[0] else 9): conn.execute('INSERT INTO mesa VALUES (%s,%s,%s,%s)',(i,b,6 if i%3==1 else 4,'Ocupada' if i%4==1 else 'Disponible'))
   clients=[]

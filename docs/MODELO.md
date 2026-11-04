@@ -12,6 +12,8 @@ Se conserva el esquema del respaldo `Base_datos_Aurea_Inicio.sql`. Aunque tiene 
 
 La migración agrega duración y observaciones a reservas. Cambia el teléfono de cliente de smallint a varchar(15), y permite decimales en cantidades de inventario y movimientos.
 
+Las cuentas de usuario se crean y se administran desde la sección Usuarios, exclusiva del administrador. La API no permite registro público ni devuelve hashes de contraseña al listar cuentas. Los permisos se obtienen de la base de datos en cada solicitud autenticada.
+
 Las claves compuestas originales conservan la pertenencia de mesa y reserva a sucursal. Las claves foráneas impiden borrar datos utilizados; las reservas se cancelan para conservar su historial.
 
 Las vistas `v_ventas` y `v_alertas_inventario` centralizan cálculos. Los índices cubren fecha/sucursal y cliente de reservas, sucursal/vencimiento de lotes, cliente/fecha de visitas y fecha de bitácora. Los triggers registran cambios dentro de su misma transacción.

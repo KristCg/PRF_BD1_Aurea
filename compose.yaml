@@ -1,0 +1,50 @@
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-PRF_Aurea}
+      POSTGRES_USER: ${POSTGRES_USER:-aurea}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Define POSTGRES_PASSWORD en .env}
+      TZ: America/Guatemala
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U \"$$POSTGRES_USER\" -d \"$$POSTGRES_DB\""]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
+
+  app:
+    build: .
+    init: true
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      HOST: 0.0.0.0
+      PORT: "8000"
+      PGHOST: db
+      PGPORT: "5432"
+      PGDATABASE: ${POSTGRES_DB:-PRF_Aurea}
+      PGUSER: ${POSTGRES_USER:-aurea}
+      PGPASSWORD: ${POSTGRES_PASSWORD:?Define POSTGRES_PASSWORD en .env}
+      AUREA_SEED: ${AUREA_SEED:-true}
+      AUREA_ADMIN_EMAIL: ${AUREA_ADMIN_EMAIL:-admin@aurea.gt}
+      AUREA_ADMIN_PASSWORD: ${AUREA_ADMIN_PASSWORD:?Define AUREA_ADMIN_PASSWORD en .env}
+      TZ: America/Guatemala
+    ports:
+      - "127.0.0.1:${APP_PORT:-8000}:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=8).close()"]
+      interval: 10s
+      timeout: 10s
+      retries: 6
+      start_period: 30s
+
+volumes:
+  postgres_data:

@@ -6,8 +6,8 @@ const nodes=new Map();
 const node=s=>{if(!nodes.has(s))nodes.set(s,{innerHTML:'',textContent:'',value:'1',classList:{add(){},remove(){},toggle(){}},addEventListener(){},showModal(){},close(){},focus(){},setSelectionRange(){}});return nodes.get(s)};
 const context=vm.createContext({document:{querySelector:node,querySelectorAll:()=>[],addEventListener(){}},window:{scrollTo(){}},fetch:async()=>({ok:true,json:async()=>({mode:'demo',user:null})}),Intl,Date,console,setTimeout:()=>0,clearTimeout(){},localStorage:{setItem(){},getItem(){return null}},URL,Blob,TextEncoder});
 vm.runInContext(fs.readFileSync('static/app.js','utf8'),context);
-vm.runInContext("state.user={nombre:'Maya Salazar',correo:'demo@aurea.gt',rol:'Administrador'};state.mode='demo';state.data=demoData();state.branch=1",context);
-for(const page of ['inicio','reservas','mesas','clientes','platillos','inventario','personal','sucursales','bitacora','reportes','buscar']){
+vm.runInContext("state.user={usuario_id:1,nombre:'Maya Salazar',correo:'admin@aurea.gt',rol:'Administrador'};state.mode='demo';state.data=demoData();state.branch=1",context);
+for(const page of ['inicio','reservas','mesas','clientes','platillos','inventario','personal','usuarios','sucursales','bitacora','reportes','buscar']){
  vm.runInContext(`state.page='${page}';state.report=demoReports();render()`,context);
  const html=node('#app').innerHTML;
  assert(html.length>1000,page+' debe generar contenido');
@@ -26,10 +26,12 @@ vm.runInContext(`
  let seats=false;try{validateDemoReservation({...p,fecha_reserva:offsetDate(10),personas:99})}catch(e){seats=e.message.includes('capacidad')}
  if(!seats)throw Error('La demo debe validar capacidad');
  state.user.rol='Mesero';
- if(allowed('reportes')||allowed('inventario')||canEdit('platillos'))throw Error('Permisos de mesero incorrectos');
+ if(allowed('usuarios')||canEdit('usuarios')||allowed('reportes')||allowed('inventario')||canEdit('platillos'))throw Error('Permisos de mesero incorrectos');
  state.user.rol='Gerente';
- if(allowed('reportes')||!allowed('inventario')||!canEdit('platillos'))throw Error('Permisos de gerente incorrectos');
+ if(allowed('usuarios')||canEdit('usuarios')||allowed('reportes')||!allowed('inventario')||!canEdit('platillos'))throw Error('Permisos de gerente incorrectos');
  state.user=null;renderLogin();
 `,context);
 assert(node('#app').innerHTML.includes('login-form'));
-console.log('OK: 11 pantallas, acceso, reportes, alertas, capacidad, cruces y permisos.');
+assert(!node('#app').innerHTML.includes('Crea tu cuenta'));
+assert(!node('#app').innerHTML.includes('toggle-register'));
+console.log('OK: 12 pantallas, acceso sin registro público, reportes, alertas, capacidad, cruces y permisos.');

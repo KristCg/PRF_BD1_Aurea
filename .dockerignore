@@ -1,0 +1,15 @@
+.git
+.agents
+.codex
+.aws
+.env*
+.venv
+**/__pycache__
+*.pyc
+*.log
+tmp
+node_modules
+tests
+docs
+Diseño_BD_tablas_graficos
+Base_datos_Aurea_Inicio.sql

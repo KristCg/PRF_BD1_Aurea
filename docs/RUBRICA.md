@@ -2,7 +2,7 @@
 
 | Requisito | Implementación |
 | --- | --- |
-| Registro y login por roles | Acceso, registro de meseros, sesiones HTTPOnly y contraseñas PBKDF2 con sal; permisos también en la API |
+| Registro y login por roles | Alta de cuentas y asignación de roles desde Usuarios, exclusiva del administrador; login, sesiones HTTPOnly y contraseñas PBKDF2 con sal; permisos también en la API |
 | Reservas y disponibilidad | Búsqueda, alta, edición, cancelación y finalización; varias mesas; capacidad, horario y sucursal validados transaccionalmente |
 | Inventario por ingredientes | Existencias, lotes, vencimientos, entradas, salidas, mermas y ajustes; sin saldos negativos |
 | Alertas del 15% | Inicio, campana e inventario; porcentaje de ingredientes por sucursal afectados |
@@ -22,7 +22,7 @@ Se interpreta el umbral de 15% como la proporción de ingredientes/sucursal afec
 
 Las ventas provienen de consumos registrados en visitas y conservan el precio de ese momento. No se implementa facturación fiscal. El menú es común a todas las sucursales. El estado de mesa representa disponibilidad operativa; las reservas futuras se verifican por intervalos.
 
-El registro público crea cuentas de mesero. La asignación de otro rol se realiza administrativamente en PostgreSQL. La interfaz muestra los últimos 300 cambios de bitácora y 200 movimientos; los históricos completos se conservan en la base.
+El administrador crea las cuentas y asigna sus roles desde Usuarios. No existe registro público. Los cambios de rol se comprueban en cada solicitud y el administrador no puede quitarse su propio rol. La interfaz muestra los últimos 300 cambios de bitácora y 200 movimientos; los históricos completos se conservan en la base.
 
 ## Entrega académica
 

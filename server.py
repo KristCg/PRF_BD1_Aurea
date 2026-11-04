@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parent
 SESSIONS = {}
 LOGIN_ATTEMPTS = {}
 LOCK = threading.Lock()
+USER_FIELDS = 'usuario_id,nombre,correo,rol,empleado_id,creado_en'
 ENTITIES = {
  'clientes': ('cliente','cliente_id',['nit','nombre','apellido','telefono']),
  'platillos': ('platillo','platillo_id',['nombre_platillo','precio','categoria']),
@@ -35,7 +36,7 @@ class ValidationError(Exception):
 def connection():
  import psycopg
  from psycopg.rows import dict_row
- return psycopg.connect(os.environ['DATABASE_URL'], row_factory=dict_row)
+ return psycopg.connect(os.environ['DATABASE_URL'], row_factory=dict_row, connect_timeout=5)
 
 def password_hash(password, salt=None):
  salt = salt or secrets.token_hex(16)
@@ -56,6 +57,39 @@ def require(condition, message):
 def actor(conn, user):
  conn.execute("SELECT set_config('aurea.usuario',%s,true)",(user['correo'],))
 
+def save_user(conn, payload, user):
+ require(user['rol']=='Administrador','Solo el administrador puede gestionar usuarios.')
+ name=str(payload.get('nombre','')).strip()
+ email=str(payload.get('correo','')).strip().lower()
+ role=payload.get('rol')
+ password=payload.get('password','')
+ require(0<len(name)<=80,'Escribe un nombre de hasta 80 caracteres.')
+ require(len(email)<=120 and email.count('@')==1 and all(email.split('@')) and not any(c.isspace() for c in email),'Escribe un correo válido.')
+ require(role in ('Administrador','Gerente','Mesero'),'Selecciona un rol válido.')
+ uid=payload.get('usuario_id')
+ employee=int(payload['empleado_id']) if payload.get('empleado_id') else None
+ if uid is not None:
+  uid=int(uid)
+  require(uid!=user.get('usuario_id') or role=='Administrador','No puedes quitarte tu propio rol de administrador.')
+  require(conn.execute('SELECT usuario_id FROM usuario WHERE usuario_id=%s FOR UPDATE',(uid,)).fetchone(),'El usuario ya no existe.')
+ else:
+  require(bool(password),'Escribe la contraseña del nuevo usuario.')
+ if password: require(isinstance(password,str) and len(password)>=4,'La contraseña debe tener al menos 4 caracteres.')
+ if uid is None:
+  return conn.execute(f'INSERT INTO usuario(nombre,correo,rol,empleado_id,password_hash) VALUES (%s,%s,%s,%s,%s) RETURNING {USER_FIELDS}',(name,email,role,employee,password_hash(password))).fetchone()
+ fields='nombre=%s,correo=%s,rol=%s,empleado_id=%s';values=[name,email,role,employee]
+ if password: fields+=',password_hash=%s';values.append(password_hash(password))
+ return conn.execute(f'UPDATE usuario SET {fields} WHERE usuario_id=%s RETURNING {USER_FIELDS}',values+[uid]).fetchone()
+
+def ensure_initial_admin():
+ with connection() as conn:
+  conn.execute('SELECT pg_advisory_xact_lock(731804)')
+  if conn.execute("SELECT 1 FROM usuario WHERE rol='Administrador' LIMIT 1").fetchone(): return
+  identity={'correo':'Inicialización','rol':'Administrador'}
+  actor(conn,identity)
+  save_user(conn,{'nombre':'Administrador Áurea','correo':os.getenv('AUREA_ADMIN_EMAIL','admin@aurea.gt'),'rol':'Administrador','password':os.getenv('AUREA_ADMIN_PASSWORD','')},identity)
+ print('Primer administrador creado con las credenciales configuradas.',flush=True)
+
 def snapshot(conn, user):
  data = {}
  for key,(table,_,_) in ENTITIES.items():
@@ -64,6 +98,7 @@ def snapshot(conn, user):
   data[key] = conn.execute(f'SELECT * FROM {table} ORDER BY 1').fetchall()
  data['movimientos'] = conn.execute('SELECT * FROM movimiento_inventario ORDER BY fecha_hora DESC LIMIT 200').fetchall() if user['rol']!='Mesero' else []
  data['bitacora'] = conn.execute('SELECT bitacora_id,fecha_hora,usuario,tabla,operacion,anterior,nuevo FROM bitacora ORDER BY bitacora_id DESC LIMIT 300').fetchall() if user['rol']=='Administrador' else []
+ data['usuarios'] = conn.execute(f'SELECT {USER_FIELDS} FROM usuario ORDER BY usuario_id').fetchall() if user['rol']=='Administrador' else []
  if user['rol']=='Mesero':
   for key in ['ingredientes','lotes','personal']: data[key]=[]
  return data
@@ -171,19 +206,35 @@ class Handler(SimpleHTTPRequestHandler):
   self.send_response(status); self.send_header('Content-Type','application/json; charset=utf-8'); self.send_header('Cache-Control','no-store')
   if cookie: self.send_header('Set-Cookie',cookie)
   self.send_header('Content-Length',str(len(raw))); self.end_headers(); self.wfile.write(raw)
- def session(self):
+ def session(self,conn=None):
   cookie=SimpleCookie(self.headers.get('Cookie','')); token=cookie.get('aurea_session')
   record=SESSIONS.get(token.value) if token else None
-  if record and record['expires']>time.time(): return record['user']
-  return None
+  if not record or record['expires']<=time.time(): return None
+  if conn is None:
+   with connection() as session_conn: return self.session(session_conn)
+  # Read current permissions so a changed role takes effect on the next request.
+  user=conn.execute(f'SELECT {USER_FIELDS} FROM usuario WHERE usuario_id=%s',(record['user']['usuario_id'],)).fetchone()
+  if not user: return None
+  record['user']=user
+  return user
  def do_GET(self):
   path=urlparse(self.path).path
-  if path=='/api/session': return self.send_json({'mode':'postgres' if os.getenv('DATABASE_URL') else 'demo','user':self.session()})
+  if path=='/api/health':
+   if not os.getenv('DATABASE_URL'): return self.send_json({'status':'ok','mode':'demo'})
+   try:
+    with connection() as conn: conn.execute('SELECT 1')
+    return self.send_json({'status':'ok','mode':'postgres'})
+   except Exception:
+    return self.send_json({'status':'error','error':'database_unavailable'},503)
+  if path=='/api/session':
+   try: return self.send_json({'mode':'postgres' if os.getenv('DATABASE_URL') else 'demo','user':self.session()})
+   except Exception: return self.send_json({'error':'No se pudo consultar la sesión en PostgreSQL.'},503)
   if path.startswith('/api/'):
-   if not self.session(): return self.send_json({'error':'Inicia sesión.'},401)
    try:
     with connection() as conn:
-     if path=='/api/data': return self.send_json(snapshot(conn,self.session()))
+     user=self.session(conn)
+     if not user: return self.send_json({'error':'Inicia sesión.'},401)
+     if path=='/api/data': return self.send_json(snapshot(conn,user))
     return self.send_json({'error':'Ruta no encontrada.'},404)
    except Exception as exc:
     print(type(exc).__name__,str(exc)); return self.send_json({'error':'No se pudo leer PostgreSQL. Revisa la conexión y las migraciones.'},503)
@@ -195,19 +246,16 @@ class Handler(SimpleHTTPRequestHandler):
    require(not origin or urlparse(origin).netloc==self.headers.get('Host'),'Origen no permitido.')
    size=int(self.headers.get('Content-Length',0)); require(0<size<=65536,'Solicitud inválida.')
    p=json.loads(self.rfile.read(size)); path=urlparse(self.path).path
+   if path=='/api/register': return self.send_json({'error':'Las cuentas las crea el administrador desde Usuarios.'},403)
    if path=='/api/logout':
     cookies=SimpleCookie(self.headers.get('Cookie','')); token=cookies.get('aurea_session')
     if token: SESSIONS.pop(token.value,None)
     return self.send_json({'ok':True},cookie='aurea_session=; HttpOnly; SameSite=Strict; Path=/; Max-Age=0')
    require(bool(os.getenv('DATABASE_URL')),'Usa el acceso de demostración o configura DATABASE_URL.')
    with connection() as conn:
-    if path in ['/api/login','/api/register']:
+    if path=='/api/login':
      email=p.get('correo','').strip().lower(); pwd=p.get('password','')
      require('@' in email and len(email)<=120,'Escribe un correo válido.')
-     if path=='/api/register':
-      require(len(pwd)>=10,'La contraseña debe tener al menos 10 caracteres.')
-      require(p.get('nombre','').strip(),'Escribe tu nombre.')
-      conn.execute('INSERT INTO usuario(nombre,correo,password_hash,rol) VALUES (%s,%s,%s,\'Mesero\')',(p['nombre'],email,password_hash(pwd)))
      key=(self.client_address[0],email)
      with LOCK:
       attempts=[t for t in LOGIN_ATTEMPTS.get(key,[]) if t>time.time()-300]
@@ -220,10 +268,12 @@ class Handler(SimpleHTTPRequestHandler):
      with LOCK: LOGIN_ATTEMPTS.pop(key,None)
      conn.commit()
      return self.send_json({'user':user},cookie=f'aurea_session={token}; HttpOnly; SameSite=Strict; Path=/; Max-Age=28800')
-    user=self.session()
+    user=self.session(conn)
     if not user: return self.send_json({'error':'Tu sesión terminó. Inicia sesión.'},401)
+    if path=='/api/users' and user['rol']!='Administrador': return self.send_json({'error':'Solo el administrador puede gestionar usuarios.'},403)
     actor(conn,user)
-    if path=='/api/entity': result=save_entity(conn,p['entity'],p['data'],p.get('id'),user)
+    if path=='/api/users': result=save_user(conn,p,user)
+    elif path=='/api/entity': result=save_entity(conn,p['entity'],p['data'],p.get('id'),user)
     elif path=='/api/reservation': result=save_reservation(conn,p,user)
     elif path=='/api/movement': result=movement(conn,p,user)
     elif path=='/api/visit': result=record_visit(conn,p)
@@ -242,7 +292,13 @@ class Handler(SimpleHTTPRequestHandler):
      require(user['rol']=='Administrador','Reportes disponibles para administradores.')
      result=reports(conn,p)
     else: return self.send_json({'error':'Ruta no encontrada.'},404)
-    conn.commit(); return self.send_json(result)
+    conn.commit()
+    if path=='/api/users' and p.get('password'):
+     current=SimpleCookie(self.headers.get('Cookie','')).get('aurea_session')
+     with LOCK:
+      for token,record in list(SESSIONS.items()):
+       if record['user']['usuario_id']==result['usuario_id'] and (not current or token!=current.value): SESSIONS.pop(token,None)
+    return self.send_json(result)
   except (ValidationError,KeyError,ValueError,ArithmeticError,json.JSONDecodeError) as exc: return self.send_json({'error':str(exc) or 'Revisa los datos del formulario.'},400)
   except Exception as exc:
    print(type(exc).__name__,str(exc))
@@ -264,11 +320,17 @@ def initialize(seed=False):
   from seed import seed_data
   seed_data()
 
+def serve():
+ host=os.getenv('HOST','127.0.0.1')
+ port=int(os.getenv('PORT','8000'))
+ print(f'Áurea: http://{host}:{port} | '+('PostgreSQL' if os.getenv('DATABASE_URL') else 'Demostración'),flush=True)
+ ThreadingHTTPServer((host,port),Handler).serve_forever()
+
 if __name__=='__main__':
- parser=argparse.ArgumentParser(); parser.add_argument('--init-db',action='store_true'); parser.add_argument('--seed',action='store_true'); args=parser.parse_args()
- if args.init_db or args.seed:
+ parser=argparse.ArgumentParser(); parser.add_argument('--init-db',action='store_true'); parser.add_argument('--seed',action='store_true'); parser.add_argument('--create-admin',action='store_true'); args=parser.parse_args()
+ if args.init_db or args.seed or args.create_admin:
   require(bool(os.getenv('DATABASE_URL')),'Configura DATABASE_URL primero.')
   initialize(args.seed)
+  if args.create_admin: ensure_initial_admin()
  else:
-  port=int(os.getenv('PORT','8000')); print(f'Áurea: http://localhost:{port} | '+('PostgreSQL' if os.getenv('DATABASE_URL') else 'Demostración'),flush=True)
-  ThreadingHTTPServer(('127.0.0.1',port),Handler).serve_forever()
+  serve()
