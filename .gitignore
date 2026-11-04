@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+.env
+tmp/
+.demo-data.json
+*.log
+node_modules/
