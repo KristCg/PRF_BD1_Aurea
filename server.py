@@ -310,12 +310,20 @@ def initialize(seed=False):
  with connection() as conn:
   # Base installation is explicit and only valid for a new, empty database.
   if not conn.execute("SELECT to_regclass('public.cliente') AS name").fetchone()['name']:
-   sql=(ROOT/'db/001_base.sql').read_text(encoding='utf-8')
+   base=ROOT/'db/001_base.sql'
+   require(base.is_file(),'Falta db/001_base.sql para instalar una base nueva compatible con la UI.')
+   sql=base.read_text(encoding='utf-8')
    sql='\n'.join(line for line in sql.splitlines() if not line.startswith('\\'))
    conn.execute(sql,prepare=False)
   conn.commit()
   conn.execute('SET search_path TO public')
-  conn.execute((ROOT/'db/002_aplicacion.sql').read_text(encoding='utf-8'),prepare=False)
+  migration=ROOT/'db/002_aplicacion.sql'
+  if migration.is_file():
+   conn.execute(migration.read_text(encoding='utf-8'),prepare=False)
+  else:
+   # The migration was removed, but existing installations already have its views.
+   ready=conn.execute("SELECT to_regclass('public.v_ventas') IS NOT NULL AND to_regclass('public.v_alertas_inventario') IS NOT NULL AS ready").fetchone()['ready']
+   require(ready,'Falta db/002_aplicacion.sql y la base no tiene el esquema requerido por la UI.')
  if seed:
   from seed import seed_data
   seed_data()

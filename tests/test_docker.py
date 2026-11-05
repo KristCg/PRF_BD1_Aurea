@@ -32,6 +32,32 @@ class DockerStartupTests(unittest.TestCase):
         with self.assertRaises(server.ValidationError):
             self.prepare(seed='invalid')
 
+    def test_initialized_database_starts_without_removed_migration(self):
+        conn = MagicMock()
+        conn.execute.return_value.fetchone.side_effect = [{'name': 'cliente'}, {'ready': True}]
+        with patch('server.connection') as connection, patch.object(server.Path, 'is_file', return_value=False):
+            connection.return_value.__enter__.return_value = conn
+            server.initialize()
+        self.assertEqual(conn.execute.call_count, 3)
+
+    def test_missing_migration_rejects_incomplete_database(self):
+        conn = MagicMock()
+        conn.execute.return_value.fetchone.side_effect = [{'name': 'cliente'}, {'ready': False}]
+        with patch('server.connection') as connection, patch.object(server.Path, 'is_file', return_value=False):
+            connection.return_value.__enter__.return_value = conn
+            with self.assertRaisesRegex(server.ValidationError, '002_aplicacion.sql'):
+                server.initialize()
+
+    def test_available_migration_is_still_applied(self):
+        conn = MagicMock()
+        conn.execute.return_value.fetchone.return_value = {'name': 'cliente'}
+        with patch('server.connection') as connection, \
+                patch.object(server.Path, 'is_file', return_value=True), \
+                patch.object(server.Path, 'read_text', return_value='SELECT 1'):
+            connection.return_value.__enter__.return_value = conn
+            server.initialize()
+        conn.execute.assert_any_call('SELECT 1', prepare=False)
+
     def test_explicit_database_connection_is_preserved(self):
         with patch.dict(os.environ, {'DATABASE_URL': 'existing-connection'}):
             entrypoint.configure_database()
