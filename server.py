@@ -99,6 +99,9 @@ def snapshot(conn, user):
  data['movimientos'] = conn.execute('SELECT * FROM movimiento_inventario ORDER BY fecha_hora DESC LIMIT 200').fetchall() if user['rol']!='Mesero' else []
  data['bitacora'] = conn.execute('SELECT bitacora_id,fecha_hora,usuario,tabla,operacion,anterior,nuevo FROM bitacora ORDER BY bitacora_id DESC LIMIT 300').fetchall() if user['rol']=='Administrador' else []
  data['usuarios'] = conn.execute(f'SELECT {USER_FIELDS} FROM usuario ORDER BY usuario_id').fetchall() if user['rol']=='Administrador' else []
+ data['ordenes'] = conn.execute('SELECT * FROM orden ORDER BY orden_id DESC').fetchall()
+ data['detalle_ordenes'] = conn.execute('SELECT * FROM detalle_orden ORDER BY orden_id,platillo_id').fetchall()
+ data['responsables'] = conn.execute("SELECT empleado_id,nombre_empleado,apellido,sucursal_id FROM empleado WHERE estado='Activo' ORDER BY nombre_empleado").fetchall()
  if user['rol']=='Mesero':
   for key in ['ingredientes','lotes','personal']: data[key]=[]
  return data
@@ -184,6 +187,70 @@ def record_visit(conn,p):
   require(price,'Platillo inválido.'); require(int(p['cantidad'])>0,'Cantidad inválida.')
   conn.execute('INSERT INTO venta(visita_id,platillo_id,cantidad,precio_unitario) VALUES (%s,%s,%s,%s)',(row['visita_id'],p['platillo_id'],p['cantidad'],price['precio']))
  return row
+
+def save_order(conn, p, user):
+ require(user['rol'] in ('Administrador','Gerente','Mesero'),'Tu rol no permite gestionar órdenes.')
+ oid=int(p['orden_id']) if p.get('orden_id') else None
+ previous=conn.execute('SELECT * FROM orden WHERE orden_id=%s FOR UPDATE',(oid,)).fetchone() if oid else None
+ if oid:
+  require(previous is not None,'La orden ya no existe.')
+  require(previous['estado']=='Pendiente','Solo puedes editar órdenes pendientes.')
+ branch=int(p['sucursal_id']); employee=int(p['empleado_id'])
+ require(conn.execute("SELECT 1 FROM empleado WHERE empleado_id=%s AND sucursal_id=%s AND estado='Activo'",(employee,branch)).fetchone(),'Selecciona personal activo de esta sucursal.')
+ if user['rol']=='Mesero':
+  require(employee==user.get('empleado_id'),'Debes registrar la orden con tu empleado vinculado.')
+  require(not previous or previous['empleado_id']==employee,'Solo puedes editar tus propias órdenes.')
+ client=int(p['cliente_id']) if p.get('cliente_id') else None
+ if client:
+  require(conn.execute('SELECT 1 FROM cliente WHERE cliente_id=%s',(client,)).fetchone(),'El cliente ya no existe.')
+ reservation=int(p['reserva_id']) if p.get('reserva_id') else None
+ if reservation:
+  booking=conn.execute('SELECT * FROM reserva WHERE reserva_id=%s',(reservation,)).fetchone()
+  require(booking and booking['sucursal_id']==branch and booking['cliente_id']==client and booking['estado']!='Cancelada','La reserva debe corresponder al cliente y a la sucursal.')
+ notes=str(p.get('observaciones','')).strip()
+ require(len(notes)<=200,'Las observaciones admiten hasta 200 caracteres.')
+ items=p.get('items')
+ require(isinstance(items,list) and 0<len(items)<=50,'Agrega entre 1 y 50 platillos.')
+ lines=[]; seen=set()
+ old_prices={r['platillo_id']:r['precio_unitario'] for r in conn.execute('SELECT platillo_id,precio_unitario FROM detalle_orden WHERE orden_id=%s',(oid,))} if oid else {}
+ for item in items:
+  require(isinstance(item,dict),'Revisa los platillos de la orden.')
+  dish_id=int(item['platillo_id']); quantity=item.get('cantidad')
+  require(type(quantity) is int and 1<=quantity<=32767,'Las cantidades deben ser enteros entre 1 y 32767.')
+  require(dish_id not in seen,'No repitas platillos: ajusta su cantidad.')
+  seen.add(dish_id)
+  dish=conn.execute('SELECT * FROM platillo WHERE platillo_id=%s FOR SHARE',(dish_id,)).fetchone()
+  require(dish and dish.get('disponible',True),'El platillo no está disponible.')
+  note=str(item.get('observaciones','')).strip()
+  require(len(note)<=120,'Las indicaciones de cada platillo admiten hasta 120 caracteres.')
+  lines.append((dish_id,quantity,old_prices.get(dish_id,dish['precio']),note))
+ require(sum(qty*price for _,qty,price,_ in lines)<=Decimal('99999999.99'),'El total de la orden supera el máximo permitido.')
+ if oid:
+  row=conn.execute('UPDATE orden SET sucursal_id=%s,empleado_id=%s,cliente_id=%s,reserva_id=%s,observaciones=%s WHERE orden_id=%s RETURNING *',(branch,employee,client,reservation,notes,oid)).fetchone()
+  conn.execute('DELETE FROM detalle_orden WHERE orden_id=%s',(oid,))
+ else:
+  row=conn.execute('INSERT INTO orden(sucursal_id,empleado_id,cliente_id,reserva_id,observaciones) VALUES (%s,%s,%s,%s,%s) RETURNING *',(branch,employee,client,reservation,notes)).fetchone()
+ for line in lines:
+  conn.execute('INSERT INTO detalle_orden(orden_id,platillo_id,cantidad,precio_unitario,observaciones) VALUES (%s,%s,%s,%s,%s)',(row['orden_id'],*line))
+ return row
+
+def change_order_state(conn, p, user):
+ require(user['rol'] in ('Administrador','Gerente','Mesero'),'Tu rol no permite gestionar órdenes.')
+ target=p.get('estado')
+ require(target in ('Completada','Cancelada'),'Selecciona un estado válido.')
+ row=conn.execute('SELECT * FROM orden WHERE orden_id=%s FOR UPDATE',(int(p['orden_id']),)).fetchone()
+ require(row is not None,'La orden ya no existe.')
+ if user['rol']=='Mesero': require(row['empleado_id']==user.get('empleado_id'),'Solo puedes cambiar tus propias órdenes.')
+ if row['estado']==target: return row
+ require(row['estado']=='Pendiente','La orden ya está cerrada y no puede cambiarse.')
+ visit=None
+ if target=='Completada':
+  lines=conn.execute('SELECT * FROM detalle_orden WHERE orden_id=%s ORDER BY platillo_id',(row['orden_id'],)).fetchall()
+  require(lines,'La orden no tiene platillos.')
+  visit=conn.execute('INSERT INTO visita(cliente_id,sucursal_id,observaciones) VALUES (%s,%s,%s) RETURNING visita_id',(row['cliente_id'],row['sucursal_id'],f"Orden #{row['orden_id']}. "+row['observaciones'])).fetchone()['visita_id']
+  for line in lines:
+   conn.execute('INSERT INTO venta(visita_id,platillo_id,cantidad,precio_unitario) VALUES (%s,%s,%s,%s)',(visit,line['platillo_id'],line['cantidad'],line['precio_unitario']))
+ return conn.execute('UPDATE orden SET estado=%s,visita_id=%s WHERE orden_id=%s RETURNING *',(target,visit,row['orden_id'])).fetchone()
 
 def reports(conn,p):
  start=dt.date.fromisoformat(p['desde']); end=dt.date.fromisoformat(p['hasta'])
@@ -277,6 +344,8 @@ class Handler(SimpleHTTPRequestHandler):
     elif path=='/api/reservation': result=save_reservation(conn,p,user)
     elif path=='/api/movement': result=movement(conn,p,user)
     elif path=='/api/visit': result=record_visit(conn,p)
+    elif path=='/api/order': result=save_order(conn,p,user)
+    elif path=='/api/order-state': result=change_order_state(conn,p,user)
     elif path=='/api/preference':
      if p.get('remove'): conn.execute('DELETE FROM preferencia WHERE cliente_id=%s AND platillo_id=%s',(p['cliente_id'],p['platillo_id']))
      else: conn.execute('INSERT INTO preferencia VALUES (%s,%s) ON CONFLICT DO NOTHING',(p['cliente_id'],p['platillo_id']))
@@ -324,9 +393,40 @@ def initialize(seed=False):
    # The migration was removed, but existing installations already have its views.
    ready=conn.execute("SELECT to_regclass('public.v_ventas') IS NOT NULL AND to_regclass('public.v_alertas_inventario') IS NOT NULL AS ready").fetchone()['ready']
    require(ready,'Falta db/002_aplicacion.sql y la base no tiene el esquema requerido por la UI.')
+  initialize_orders(conn)
  if seed:
   from seed import seed_data
   seed_data()
+
+def initialize_orders(conn):
+ # Extend the running UI schema without replacing its existing data or sales views.
+ conn.execute('''
+ CREATE TABLE IF NOT EXISTS orden (
+  orden_id integer GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+  fecha_hora timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  empleado_id integer NOT NULL REFERENCES empleado,
+  sucursal_id integer NOT NULL REFERENCES sucursal,
+  cliente_id integer REFERENCES cliente,
+  reserva_id integer REFERENCES reserva,
+  estado text NOT NULL DEFAULT 'Pendiente' CHECK (estado IN ('Pendiente','Completada','Cancelada'))
+ );
+ ALTER TABLE orden ADD COLUMN IF NOT EXISTS observaciones varchar(200) NOT NULL DEFAULT '';
+ ALTER TABLE orden ADD COLUMN IF NOT EXISTS visita_id integer UNIQUE REFERENCES visita;
+ CREATE TABLE IF NOT EXISTS detalle_orden (
+  orden_id integer NOT NULL REFERENCES orden ON DELETE CASCADE,
+  platillo_id integer NOT NULL REFERENCES platillo,
+  cantidad smallint NOT NULL CHECK (cantidad>0),
+  precio_unitario numeric(10,2) NOT NULL CHECK (precio_unitario>=0),
+  observaciones varchar(120),
+  PRIMARY KEY (orden_id,platillo_id)
+ );
+ ALTER TABLE visita ALTER COLUMN cliente_id DROP NOT NULL;
+ CREATE INDEX IF NOT EXISTS idx_orden_sucursal_fecha ON orden(sucursal_id,fecha_hora);
+ DROP TRIGGER IF EXISTS auditar ON orden;
+ CREATE TRIGGER auditar AFTER INSERT OR UPDATE OR DELETE ON orden FOR EACH ROW EXECUTE FUNCTION registrar_cambio();
+ DROP TRIGGER IF EXISTS auditar ON detalle_orden;
+ CREATE TRIGGER auditar AFTER INSERT OR UPDATE OR DELETE ON detalle_orden FOR EACH ROW EXECUTE FUNCTION registrar_cambio();
+ ''',prepare=False)
 
 def serve():
  host=os.getenv('HOST','127.0.0.1')

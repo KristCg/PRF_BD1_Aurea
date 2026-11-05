@@ -43,6 +43,55 @@ class DatabaseTests(unittest.TestCase):
   self.assertEqual(stock,lot['cantidad_disponible']+Decimal('.125'))
   row=self.conn.execute("SELECT * FROM bitacora WHERE usuario=%s AND tabla='lote_inventario' ORDER BY bitacora_id DESC LIMIT 1",(self.user['correo'],)).fetchone()
   self.assertEqual(row['operacion'],'UPDATE');self.assertIsNotNone(row['anterior']);self.assertIsNotNone(row['nuevo'])
+ def order(self, **kwargs):
+  employee=self.conn.execute("SELECT empleado_id FROM empleado WHERE sucursal_id=%s AND estado='Activo' LIMIT 1",(self.table['sucursal_id'],)).fetchone()['empleado_id']
+  dishes=self.conn.execute('SELECT platillo_id FROM platillo ORDER BY platillo_id LIMIT 2').fetchall()
+  p={'sucursal_id':self.table['sucursal_id'],'empleado_id':employee,'cliente_id':self.client,'observaciones':'Pedido de prueba',
+   'items':[{'platillo_id':d['platillo_id'],'cantidad':i+1,'precio_unitario':0,'observaciones':'Sin azúcar'} for i,d in enumerate(dishes)]}
+  p.update(kwargs);return p
+ def test_order_completion_records_sales_once_with_server_prices(self):
+  payload=self.order()
+  row=server.save_order(self.conn,payload,self.user)
+  self.assertEqual(row['estado'],'Pendiente')
+  self.assertIsNone(row['visita_id'])
+  total=self.conn.execute('SELECT sum(d.cantidad*p.precio) AS total FROM detalle_orden d JOIN platillo p USING(platillo_id) WHERE orden_id=%s',(row['orden_id'],)).fetchone()['total']
+  done=server.change_order_state(self.conn,{'orden_id':row['orden_id'],'estado':'Completada'},self.user)
+  again=server.change_order_state(self.conn,{'orden_id':row['orden_id'],'estado':'Completada'},self.user)
+  self.assertEqual(done['visita_id'],again['visita_id'])
+  sales=self.conn.execute('SELECT count(*) AS n,sum(cantidad*precio_unitario) AS total FROM venta WHERE visita_id=%s',(done['visita_id'],)).fetchone()
+  self.assertEqual(sales['n'],2);self.assertEqual(sales['total'],total)
+  with self.assertRaisesRegex(server.ValidationError,'cerrada'):
+   server.change_order_state(self.conn,{'orden_id':row['orden_id'],'estado':'Cancelada'},self.user)
+  with self.assertRaisesRegex(server.ValidationError,'pendientes'):
+   server.save_order(self.conn,{**payload,'orden_id':row['orden_id']},self.user)
+ def test_guest_order_and_cancellation(self):
+  row=server.save_order(self.conn,self.order(cliente_id=None),self.user)
+  done=server.change_order_state(self.conn,{'orden_id':row['orden_id'],'estado':'Completada'},self.user)
+  visit=self.conn.execute('SELECT cliente_id FROM visita WHERE visita_id=%s',(done['visita_id'],)).fetchone()
+  self.assertIsNone(visit['cliente_id'])
+  other=server.save_order(self.conn,self.order(),self.user)
+  cancelled=server.change_order_state(self.conn,{'orden_id':other['orden_id'],'estado':'Cancelada'},self.user)
+  self.assertIsNone(cancelled['visita_id'])
+ def test_order_validation_and_waiter_ownership(self):
+  p=self.order();dish=p['items'][0]['platillo_id']
+  for items in [[],[{'platillo_id':dish,'cantidad':0}],[{'platillo_id':dish,'cantidad':1.5}],[{'platillo_id':dish,'cantidad':1}]*2]:
+   with self.assertRaises(server.ValidationError):server.save_order(self.conn,{**p,'items':items},self.user)
+  row=server.save_order(self.conn,p,self.user)
+  outsider={'rol':'Mesero','empleado_id':-1}
+  with self.assertRaisesRegex(server.ValidationError,'propias'):
+   server.change_order_state(self.conn,{'orden_id':row['orden_id'],'estado':'Completada'},outsider)
+  with self.assertRaisesRegex(server.ValidationError,'vinculado'):
+   server.save_order(self.conn,p,outsider)
+  p['empleado_id']=-1
+  with self.assertRaisesRegex(server.ValidationError,'personal activo'):server.save_order(self.conn,p,self.user)
+ def test_order_edit_preserves_quoted_price_and_replaces_items(self):
+  p=self.order();row=server.save_order(self.conn,p,self.user)
+  dish=p['items'][0]['platillo_id']
+  original=self.conn.execute('SELECT precio_unitario FROM detalle_orden WHERE orden_id=%s AND platillo_id=%s',(row['orden_id'],dish)).fetchone()['precio_unitario']
+  self.conn.execute('UPDATE platillo SET precio=precio+1 WHERE platillo_id=%s',(dish,))
+  server.save_order(self.conn,{**p,'orden_id':row['orden_id'],'items':[{'platillo_id':dish,'cantidad':3}]},self.user)
+  lines=self.conn.execute('SELECT * FROM detalle_orden WHERE orden_id=%s',(row['orden_id'],)).fetchall()
+  self.assertEqual(len(lines),1);self.assertEqual(lines[0]['cantidad'],3);self.assertEqual(lines[0]['precio_unitario'],original)
  def test_reports_totals_and_limits(self):
   result=server.reports(self.conn,{'desde':'2000-01-01','hasta':'2100-12-31','sucursal_id':0})
   self.assertEqual(set(result),{'platos','frecuentes','preferencias','insumos','sucursales'})

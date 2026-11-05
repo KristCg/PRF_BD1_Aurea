@@ -38,7 +38,7 @@ class DockerStartupTests(unittest.TestCase):
         with patch('server.connection') as connection, patch.object(server.Path, 'is_file', return_value=False):
             connection.return_value.__enter__.return_value = conn
             server.initialize()
-        self.assertEqual(conn.execute.call_count, 3)
+        self.assertEqual(conn.execute.call_count, 4)
 
     def test_missing_migration_rejects_incomplete_database(self):
         conn = MagicMock()
