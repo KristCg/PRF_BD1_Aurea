@@ -81,6 +81,13 @@ class UserAccountTests(unittest.TestCase):
         }, status=403)
         self.call(self.client(), 'users', {'nombre': 'Sin permiso'}, status=401)
 
+    def test_official_seed_bcrypt_account_can_log_in(self):
+        response = self.call(self.client(), 'login', {
+            'correo': 'diego.mesero', 'password': 'aurea2026',
+        })
+        self.assertEqual(response['user']['rol'], 'Mesero')
+        self.assertEqual(response['user']['empleado_id'], 2)
+
     def test_only_admin_assigns_roles_and_changes_take_effect_immediately(self):
         account = self.create_account()
         self.assertEqual(account['rol'], 'Gerente')

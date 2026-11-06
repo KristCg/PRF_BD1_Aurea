@@ -17,7 +17,7 @@ class DatabaseTests(unittest.TestCase):
  def tearDown(self):
   self.conn.rollback();self.conn.close()
  def reservation(self,**kwargs):
-  p={'cliente_id':self.client,'sucursal_id':self.table['sucursal_id'],'fecha_reserva':(dt.date.today()+dt.timedelta(days=90)).isoformat(),'hora_reserva':'12:00','estado':'Confirmada','personas':2,'duracion_minutos':90,'observaciones':'Prueba','mesas':[self.table['mesa_id']]}
+  p={'cliente_id':self.client,'sucursal_id':self.table['sucursal_id'],'fecha_reserva':(dt.date.today()+dt.timedelta(days=90)).isoformat(),'hora_reserva':'12:00','estado':'Confirmada','personas':2,'duracion_min':90,'observaciones':'Prueba','mesas':[self.table['mesa_id']]}
   p.update(kwargs);return p
  def test_reservation_overlap_and_adjacent_interval(self):
   first=server.save_reservation(self.conn,self.reservation(),self.user)
@@ -60,6 +60,9 @@ class DatabaseTests(unittest.TestCase):
   self.assertEqual(done['visita_id'],again['visita_id'])
   sales=self.conn.execute('SELECT count(*) AS n,sum(cantidad*precio_unitario) AS total FROM venta WHERE visita_id=%s',(done['visita_id'],)).fetchone()
   self.assertEqual(sales['n'],2);self.assertEqual(sales['total'],total)
+  invoice=self.conn.execute('SELECT total FROM factura WHERE orden_id=%s',(row['orden_id'],)).fetchone()
+  self.assertEqual(invoice['total'],total)
+  self.assertTrue(self.conn.execute("SELECT 1 FROM movimiento_inventario WHERE motivo=%s",('Consumo por orden #'+str(row['orden_id']),)).fetchone())
   with self.assertRaisesRegex(server.ValidationError,'cerrada'):
    server.change_order_state(self.conn,{'orden_id':row['orden_id'],'estado':'Cancelada'},self.user)
   with self.assertRaisesRegex(server.ValidationError,'pendientes'):
@@ -92,6 +95,25 @@ class DatabaseTests(unittest.TestCase):
   server.save_order(self.conn,{**p,'orden_id':row['orden_id'],'items':[{'platillo_id':dish,'cantidad':3}]},self.user)
   lines=self.conn.execute('SELECT * FROM detalle_orden WHERE orden_id=%s',(row['orden_id'],)).fetchall()
   self.assertEqual(len(lines),1);self.assertEqual(lines[0]['cantidad'],3);self.assertEqual(lines[0]['precio_unitario'],original)
+ def test_official_catalog_and_expired_stock(self):
+  self.assertEqual(self.conn.execute('SELECT count(*) n FROM ingrediente').fetchone()['n'],31)
+  self.assertEqual(self.conn.execute('SELECT count(*) n FROM platillo').fetchone()['n'],21)
+  pasta=self.conn.execute('SELECT nombre_platillo,precio FROM platillo WHERE platillo_id=2').fetchone()
+  self.assertEqual(pasta['nombre_platillo'],'Pasta Alfredo con Pollo')
+  self.assertEqual(pasta['precio'],Decimal('80.00'))
+  stock=self.conn.execute('SELECT * FROM existencias WHERE ingrediente_id=4 AND sucursal_id=1').fetchone()
+  lots=self.conn.execute('SELECT sum(cantidad_disponible) total FROM lote_inventario WHERE ingrediente_id=4 AND sucursal_id=1 AND fecha_vencimiento>=CURRENT_DATE').fetchone()
+  self.assertEqual(stock['stock_actual'],lots['total'])
+  self.assertGreater(stock['stock_vencido'],0)
+ def test_insufficient_recipe_stock_rolls_back_completion(self):
+  row=server.save_order(self.conn,self.order(),self.user)
+  self.conn.execute("UPDATE lote_inventario SET cantidad_disponible=0 WHERE ingrediente_id=1 AND sucursal_id=%s",(row['sucursal_id'],))
+  with self.assertRaisesRegex(Exception,'suficiente'):
+   with self.conn.transaction():
+    server.change_order_state(self.conn,{'orden_id':row['orden_id'],'estado':'Completada'},self.user)
+  order=self.conn.execute('SELECT estado FROM orden WHERE orden_id=%s',(row['orden_id'],)).fetchone()
+  self.assertEqual(order['estado'],'Pendiente')
+  self.assertIsNone(self.conn.execute('SELECT 1 FROM factura WHERE orden_id=%s',(row['orden_id'],)).fetchone())
  def test_reports_totals_and_limits(self):
   result=server.reports(self.conn,{'desde':'2000-01-01','hasta':'2100-12-31','sucursal_id':0})
   self.assertEqual(set(result),{'platos','frecuentes','preferencias','insumos','sucursales'})

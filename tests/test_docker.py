@@ -32,31 +32,31 @@ class DockerStartupTests(unittest.TestCase):
         with self.assertRaises(server.ValidationError):
             self.prepare(seed='invalid')
 
-    def test_initialized_database_starts_without_removed_migration(self):
+    def test_existing_official_schema_preserves_data(self):
         conn = MagicMock()
         conn.execute.return_value.fetchone.side_effect = [{'name': 'cliente'}, {'ready': True}]
-        with patch('server.connection') as connection, patch.object(server.Path, 'is_file', return_value=False):
+        with patch('server.connection') as connection, patch('seed.create_schema') as create, patch('server.initialize_ui') as ui:
             connection.return_value.__enter__.return_value = conn
             server.initialize()
-        self.assertEqual(conn.execute.call_count, 4)
+        create.assert_not_called()
+        ui.assert_called_once_with(conn)
 
-    def test_missing_migration_rejects_incomplete_database(self):
+    def test_legacy_schema_requires_explicit_migration(self):
         conn = MagicMock()
         conn.execute.return_value.fetchone.side_effect = [{'name': 'cliente'}, {'ready': False}]
-        with patch('server.connection') as connection, patch.object(server.Path, 'is_file', return_value=False):
+        with patch('server.connection') as connection, patch('server.initialize_ui') as ui:
             connection.return_value.__enter__.return_value = conn
-            with self.assertRaisesRegex(server.ValidationError, '002_aplicacion.sql'):
+            with self.assertRaisesRegex(server.ValidationError, 'replace-demo'):
                 server.initialize()
+        ui.assert_not_called()
 
-    def test_available_migration_is_still_applied(self):
+    def test_empty_database_installs_official_scripts(self):
         conn = MagicMock()
-        conn.execute.return_value.fetchone.return_value = {'name': 'cliente'}
-        with patch('server.connection') as connection, \
-                patch.object(server.Path, 'is_file', return_value=True), \
-                patch.object(server.Path, 'read_text', return_value='SELECT 1'):
+        conn.execute.return_value.fetchone.side_effect = [{'name': None}, {'ready': True}]
+        with patch('server.connection') as connection, patch('seed.create_schema') as create, patch('server.initialize_ui'):
             connection.return_value.__enter__.return_value = conn
             server.initialize()
-        conn.execute.assert_any_call('SELECT 1', prepare=False)
+        create.assert_called_once_with(conn)
 
     def test_explicit_database_connection_is_preserved(self):
         with patch.dict(os.environ, {'DATABASE_URL': 'existing-connection'}):

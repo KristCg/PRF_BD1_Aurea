@@ -16,18 +16,19 @@ for(const page of ['inicio','reservas','ordenes','mesas','clientes','platillos',
  assert(!html.includes('Invalid Date'),page+' tiene fecha inválida');
 }
 vm.runInContext(`
- if(alerts().length!==3)throw Error('Se esperan 3 alertas en Zona 10');
+ if(records('platillos').length!==21||records('ingredientes').length!==31||records('sucursales').length!==3)throw Error('El catálogo debe coincidir con seed_catalogo');
+ if(find('platillos',2).precio!==80||find('platillos',12).nombre_platillo!=='Cappuccino')throw Error('Nombre o precio ajeno al catálogo oficial');
  const report=demoReports();
  const total=branchRows('ventas').filter(v=>v.fecha>=state.reportFrom&&v.fecha<=state.reportTo).reduce((n,v)=>n+v.total,0);
  if(report.sucursales.reduce((n,v)=>n+v.ventas,0)!==total)throw Error('Totales inconsistentes');
- const p={cliente_id:1,sucursal_id:1,fecha_reserva:today(),hora_reserva:'10:00',estado:'Confirmada',personas:2,duracion_minutos:90,mesas:[2]};
+ const p={cliente_id:1,sucursal_id:1,fecha_reserva:today(),hora_reserva:'10:00',estado:'Confirmada',personas:2,duracion_min:90,mesas:[2]};
  let overlap=false;try{validateDemoReservation(p)}catch(e){overlap=e.message.includes('Ya existe')}
  if(!overlap)throw Error('La demo debe rechazar cruces');
  let seats=false;try{validateDemoReservation({...p,fecha_reserva:offsetDate(10),personas:99})}catch(e){seats=e.message.includes('capacidad')}
  if(!seats)throw Error('La demo debe validar capacidad');
  const payload={sucursal_id:1,empleado_id:1,cliente_id:1,reserva_id:null,observaciones:'Sin prisa',items:[{platillo_id:1,cantidad:2,precio_unitario:0},{platillo_id:2,cantidad:1}]};
  const order=saveDemoOrder(payload);
- if(orderTotal(order.orden_id)!==154)throw Error('La orden debe usar los precios del menú');
+ if(orderTotal(order.orden_id)!==230)throw Error('La orden debe usar los precios del menú');
  const beforeSales=records('ventas').length;
  changeDemoOrderState(order.orden_id,'Completada');changeDemoOrderState(order.orden_id,'Completada');
  if(records('ventas').length!==beforeSales+2)throw Error('La orden debe registrar ventas una sola vez');
@@ -38,7 +39,7 @@ vm.runInContext(`
  const cancelled=saveDemoOrder(payload);changeDemoOrderState(cancelled.orden_id,'Cancelada');
  if(records('ventas').length!==beforeSales+2)throw Error('Cancelar no debe generar ventas');
  state.page='ordenes';state.filter='';state.query='';render();
- if(!document.querySelector('#app').innerHTML.includes('154.00')||!document.querySelector('#app').innerHTML.includes('Completada'))throw Error('Las órdenes deben mostrar total y estado');
+ if(!document.querySelector('#app').innerHTML.includes('230.00')||!document.querySelector('#app').innerHTML.includes('Completada'))throw Error('Las órdenes deben mostrar total y estado');
  orderDetail(order.orden_id);
  if(!document.querySelector('#modal').innerHTML.includes('Sin prisa'))throw Error('El detalle debe mostrar las observaciones');
  state.user.rol='Mesero';

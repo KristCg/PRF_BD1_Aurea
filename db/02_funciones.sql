@@ -68,7 +68,7 @@ CREATE TRIGGER aud_preferencia_cliente AFTER INSERT OR UPDATE OR DELETE ON prefe
 
 
 -- Auditoria de usuario (cuentas de acceso)
--
+--
 -- fn_bitacora() NO sirve aqui: to_jsonb(NEW) copiaria password_hash a la
 -- bitacora. Esta variante lo quita y, en cambio, anota si la clave cambio.
 -- Los UPDATE que solo tocan ultimo_login (cada inicio de sesion) no se
@@ -154,7 +154,7 @@ END $$;
 
 
 -- C · NOMBRE DEL CLIENTE PARA MOSTRAR
--
+--
 -- Los datos del cliente son opcionales, asi que nombre y apellido
 -- pueden venir nulos. Concatenarlos directo con || devuelve NULL en
 -- cuanto uno de los dos falta, y la pantalla queda en blanco.
