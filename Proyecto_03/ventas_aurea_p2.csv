@@ -1,0 +1,1564 @@
+"orden_id","fecha_hora","sucursal_id","nombre_sucursal","cliente_id","platillo_id","nombre_platillo","categoria","cantidad","precio_unitario"
+2,"2026-10-15 08:00:00-06",1,"Áurea Cayalá",10,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+2,"2026-10-15 08:00:00-06",1,"Áurea Cayalá",10,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+7,"2026-10-15 08:00:00-06",2,"Áurea Naranjo",29,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+7,"2026-10-15 08:00:00-06",2,"Áurea Naranjo",29,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+7,"2026-10-15 08:00:00-06",2,"Áurea Naranjo",29,8,"Pastel de Chocolate","Postre",2,40.00
+7,"2026-10-15 08:00:00-06",2,"Áurea Naranjo",29,14,"Mocha","Bebida",1,35.00
+7,"2026-10-15 08:00:00-06",2,"Áurea Naranjo",29,20,"Mocha Frío","Bebida",2,37.00
+10,"2026-10-15 08:30:00-06",3,"Áurea Roosevelt",30,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+10,"2026-10-15 08:30:00-06",3,"Áurea Roosevelt",30,13,"Latte","Bebida",1,32.00
+10,"2026-10-15 08:30:00-06",3,"Áurea Roosevelt",30,19,"Latte Frío","Bebida",1,34.00
+8,"2026-10-15 09:00:00-06",3,"Áurea Roosevelt",28,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+8,"2026-10-15 09:00:00-06",3,"Áurea Roosevelt",28,11,"Americano","Bebida",1,25.00
+8,"2026-10-15 09:00:00-06",3,"Áurea Roosevelt",28,12,"Cappuccino","Bebida",2,30.00
+8,"2026-10-15 09:00:00-06",3,"Áurea Roosevelt",28,17,"Americano Frío","Bebida",2,27.00
+3,"2026-10-15 13:00:00-06",1,"Áurea Cayalá",14,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+3,"2026-10-15 13:00:00-06",1,"Áurea Cayalá",14,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+3,"2026-10-15 13:00:00-06",1,"Áurea Cayalá",14,17,"Americano Frío","Bebida",2,27.00
+3,"2026-10-15 13:00:00-06",1,"Áurea Cayalá",14,19,"Latte Frío","Bebida",2,34.00
+3,"2026-10-15 13:00:00-06",1,"Áurea Cayalá",14,21,"Té Frío","Bebida",2,27.00
+444,"2026-10-15 13:13:00-06",2,"Áurea Naranjo",NULL,12,"Cappuccino","Bebida",1,30.00
+4,"2026-10-15 13:30:00-06",1,"Áurea Cayalá",7,12,"Cappuccino","Bebida",1,30.00
+4,"2026-10-15 13:30:00-06",1,"Áurea Cayalá",7,15,"Chocolate Caliente","Bebida",1,30.00
+4,"2026-10-15 13:30:00-06",1,"Áurea Cayalá",7,21,"Té Frío","Bebida",2,27.00
+1,"2026-10-15 14:00:00-06",1,"Áurea Cayalá",2,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+1,"2026-10-15 14:00:00-06",1,"Áurea Cayalá",2,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+1,"2026-10-15 14:00:00-06",1,"Áurea Cayalá",2,10,"Espresso","Bebida",2,20.00
+1,"2026-10-15 14:00:00-06",1,"Áurea Cayalá",2,11,"Americano","Bebida",2,25.00
+1,"2026-10-15 14:00:00-06",1,"Áurea Cayalá",2,18,"Cappuccino Frío","Bebida",2,32.00
+6,"2026-10-15 14:00:00-06",2,"Áurea Naranjo",1,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+6,"2026-10-15 14:00:00-06",2,"Áurea Naranjo",1,9,"Croissant de Mantequilla","Postre",2,28.00
+6,"2026-10-15 14:00:00-06",2,"Áurea Naranjo",1,13,"Latte","Bebida",1,32.00
+6,"2026-10-15 14:00:00-06",2,"Áurea Naranjo",1,15,"Chocolate Caliente","Bebida",2,30.00
+6,"2026-10-15 14:00:00-06",2,"Áurea Naranjo",1,19,"Latte Frío","Bebida",1,34.00
+445,"2026-10-15 16:49:00-06",3,"Áurea Roosevelt",NULL,19,"Latte Frío","Bebida",2,34.00
+9,"2026-10-15 18:30:00-06",3,"Áurea Roosevelt",11,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+9,"2026-10-15 18:30:00-06",3,"Áurea Roosevelt",11,18,"Cappuccino Frío","Bebida",2,32.00
+9,"2026-10-15 18:30:00-06",3,"Áurea Roosevelt",11,19,"Latte Frío","Bebida",2,34.00
+9,"2026-10-15 18:30:00-06",3,"Áurea Roosevelt",11,21,"Té Frío","Bebida",1,27.00
+5,"2026-10-15 21:00:00-06",2,"Áurea Naranjo",24,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+5,"2026-10-15 21:00:00-06",2,"Áurea Naranjo",24,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+5,"2026-10-15 21:00:00-06",2,"Áurea Naranjo",24,11,"Americano","Bebida",2,25.00
+5,"2026-10-15 21:00:00-06",2,"Áurea Naranjo",24,12,"Cappuccino","Bebida",1,30.00
+5,"2026-10-15 21:00:00-06",2,"Áurea Naranjo",24,15,"Chocolate Caliente","Bebida",1,30.00
+13,"2026-10-16 08:30:00-06",1,"Áurea Cayalá",5,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+13,"2026-10-16 08:30:00-06",1,"Áurea Cayalá",5,13,"Latte","Bebida",2,32.00
+13,"2026-10-16 08:30:00-06",1,"Áurea Cayalá",5,18,"Cappuccino Frío","Bebida",1,32.00
+17,"2026-10-16 09:00:00-06",3,"Áurea Roosevelt",13,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+17,"2026-10-16 09:00:00-06",3,"Áurea Roosevelt",13,9,"Croissant de Mantequilla","Postre",2,28.00
+18,"2026-10-16 13:00:00-06",3,"Áurea Roosevelt",24,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+18,"2026-10-16 13:00:00-06",3,"Áurea Roosevelt",24,11,"Americano","Bebida",1,25.00
+18,"2026-10-16 13:00:00-06",3,"Áurea Roosevelt",24,13,"Latte","Bebida",2,32.00
+18,"2026-10-16 13:00:00-06",3,"Áurea Roosevelt",24,17,"Americano Frío","Bebida",1,27.00
+18,"2026-10-16 13:00:00-06",3,"Áurea Roosevelt",24,21,"Té Frío","Bebida",1,27.00
+11,"2026-10-16 13:30:00-06",1,"Áurea Cayalá",26,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+11,"2026-10-16 13:30:00-06",1,"Áurea Cayalá",26,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+11,"2026-10-16 13:30:00-06",1,"Áurea Cayalá",26,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+11,"2026-10-16 13:30:00-06",1,"Áurea Cayalá",26,9,"Croissant de Mantequilla","Postre",2,28.00
+14,"2026-10-16 14:00:00-06",2,"Áurea Naranjo",26,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+14,"2026-10-16 14:00:00-06",2,"Áurea Naranjo",26,8,"Pastel de Chocolate","Postre",2,40.00
+14,"2026-10-16 14:00:00-06",2,"Áurea Naranjo",26,11,"Americano","Bebida",2,25.00
+14,"2026-10-16 14:00:00-06",2,"Áurea Naranjo",26,20,"Mocha Frío","Bebida",2,37.00
+14,"2026-10-16 14:00:00-06",2,"Áurea Naranjo",26,21,"Té Frío","Bebida",2,27.00
+16,"2026-10-16 17:00:00-06",3,"Áurea Roosevelt",10,9,"Croissant de Mantequilla","Postre",2,28.00
+16,"2026-10-16 17:00:00-06",3,"Áurea Roosevelt",10,17,"Americano Frío","Bebida",2,27.00
+16,"2026-10-16 17:00:00-06",3,"Áurea Roosevelt",10,19,"Latte Frío","Bebida",1,34.00
+16,"2026-10-16 17:00:00-06",3,"Áurea Roosevelt",10,20,"Mocha Frío","Bebida",2,37.00
+12,"2026-10-16 20:00:00-06",1,"Áurea Cayalá",20,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+12,"2026-10-16 20:00:00-06",1,"Áurea Cayalá",20,10,"Espresso","Bebida",2,20.00
+12,"2026-10-16 20:00:00-06",1,"Áurea Cayalá",20,11,"Americano","Bebida",1,25.00
+12,"2026-10-16 20:00:00-06",1,"Áurea Cayalá",20,17,"Americano Frío","Bebida",2,27.00
+15,"2026-10-16 20:30:00-06",2,"Áurea Naranjo",19,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+15,"2026-10-16 20:30:00-06",2,"Áurea Naranjo",19,9,"Croissant de Mantequilla","Postre",2,28.00
+15,"2026-10-16 20:30:00-06",2,"Áurea Naranjo",19,18,"Cappuccino Frío","Bebida",1,32.00
+15,"2026-10-16 20:30:00-06",2,"Áurea Naranjo",19,19,"Latte Frío","Bebida",1,34.00
+15,"2026-10-16 20:30:00-06",2,"Áurea Naranjo",19,20,"Mocha Frío","Bebida",2,37.00
+24,"2026-10-17 08:00:00-06",2,"Áurea Naranjo",28,11,"Americano","Bebida",1,25.00
+24,"2026-10-17 08:00:00-06",2,"Áurea Naranjo",28,14,"Mocha","Bebida",2,35.00
+24,"2026-10-17 08:00:00-06",2,"Áurea Naranjo",28,16,"Té o Infusión","Bebida",1,25.00
+24,"2026-10-17 08:00:00-06",2,"Áurea Naranjo",28,21,"Té Frío","Bebida",1,27.00
+29,"2026-10-17 09:00:00-06",3,"Áurea Roosevelt",6,10,"Espresso","Bebida",1,20.00
+29,"2026-10-17 09:00:00-06",3,"Áurea Roosevelt",6,13,"Latte","Bebida",2,32.00
+29,"2026-10-17 09:00:00-06",3,"Áurea Roosevelt",6,16,"Té o Infusión","Bebida",1,25.00
+29,"2026-10-17 09:00:00-06",3,"Áurea Roosevelt",6,19,"Latte Frío","Bebida",2,34.00
+29,"2026-10-17 09:00:00-06",3,"Áurea Roosevelt",6,21,"Té Frío","Bebida",2,27.00
+19,"2026-10-17 09:30:00-06",1,"Áurea Cayalá",17,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+19,"2026-10-17 09:30:00-06",1,"Áurea Cayalá",17,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+19,"2026-10-17 09:30:00-06",1,"Áurea Cayalá",17,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+19,"2026-10-17 09:30:00-06",1,"Áurea Cayalá",17,9,"Croissant de Mantequilla","Postre",2,28.00
+19,"2026-10-17 09:30:00-06",1,"Áurea Cayalá",17,15,"Chocolate Caliente","Bebida",1,30.00
+20,"2026-10-17 09:30:00-06",1,"Áurea Cayalá",3,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+20,"2026-10-17 09:30:00-06",1,"Áurea Cayalá",3,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+20,"2026-10-17 09:30:00-06",1,"Áurea Cayalá",3,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+20,"2026-10-17 09:30:00-06",1,"Áurea Cayalá",3,13,"Latte","Bebida",1,32.00
+20,"2026-10-17 09:30:00-06",1,"Áurea Cayalá",3,21,"Té Frío","Bebida",1,27.00
+22,"2026-10-17 10:00:00-06",1,"Áurea Cayalá",2,9,"Croissant de Mantequilla","Postre",2,28.00
+22,"2026-10-17 10:00:00-06",1,"Áurea Cayalá",2,15,"Chocolate Caliente","Bebida",2,30.00
+27,"2026-10-17 10:00:00-06",2,"Áurea Naranjo",29,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+27,"2026-10-17 10:00:00-06",2,"Áurea Naranjo",29,13,"Latte","Bebida",1,32.00
+27,"2026-10-17 10:00:00-06",2,"Áurea Naranjo",29,14,"Mocha","Bebida",1,35.00
+27,"2026-10-17 10:00:00-06",2,"Áurea Naranjo",29,18,"Cappuccino Frío","Bebida",2,32.00
+21,"2026-10-17 12:00:00-06",1,"Áurea Cayalá",13,11,"Americano","Bebida",2,25.00
+21,"2026-10-17 12:00:00-06",1,"Áurea Cayalá",13,13,"Latte","Bebida",1,32.00
+26,"2026-10-17 12:00:00-06",2,"Áurea Naranjo",12,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+26,"2026-10-17 12:00:00-06",2,"Áurea Naranjo",12,14,"Mocha","Bebida",2,35.00
+26,"2026-10-17 12:00:00-06",2,"Áurea Naranjo",12,17,"Americano Frío","Bebida",2,27.00
+37,"2026-10-17 12:30:00-06",1,"Áurea Cayalá",15,12,"Cappuccino","Bebida",1,30.00
+37,"2026-10-17 12:30:00-06",1,"Áurea Cayalá",15,13,"Latte","Bebida",2,32.00
+37,"2026-10-17 12:30:00-06",1,"Áurea Cayalá",15,18,"Cappuccino Frío","Bebida",1,32.00
+39,"2026-10-17 12:30:00-06",1,"Áurea Cayalá",18,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+39,"2026-10-17 12:30:00-06",1,"Áurea Cayalá",18,9,"Croissant de Mantequilla","Postre",1,28.00
+39,"2026-10-17 12:30:00-06",1,"Áurea Cayalá",18,13,"Latte","Bebida",2,32.00
+39,"2026-10-17 12:30:00-06",1,"Áurea Cayalá",18,17,"Americano Frío","Bebida",2,27.00
+43,"2026-10-17 12:30:00-06",2,"Áurea Naranjo",28,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+43,"2026-10-17 12:30:00-06",2,"Áurea Naranjo",28,18,"Cappuccino Frío","Bebida",2,32.00
+47,"2026-10-17 12:30:00-06",2,"Áurea Naranjo",3,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+47,"2026-10-17 12:30:00-06",2,"Áurea Naranjo",3,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+47,"2026-10-17 12:30:00-06",2,"Áurea Naranjo",3,17,"Americano Frío","Bebida",1,27.00
+47,"2026-10-17 12:30:00-06",2,"Áurea Naranjo",3,19,"Latte Frío","Bebida",1,34.00
+48,"2026-10-17 12:30:00-06",2,"Áurea Naranjo",21,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+48,"2026-10-17 12:30:00-06",2,"Áurea Naranjo",21,9,"Croissant de Mantequilla","Postre",1,28.00
+48,"2026-10-17 12:30:00-06",2,"Áurea Naranjo",21,19,"Latte Frío","Bebida",1,34.00
+49,"2026-10-17 12:30:00-06",2,"Áurea Naranjo",14,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+49,"2026-10-17 12:30:00-06",2,"Áurea Naranjo",14,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+49,"2026-10-17 12:30:00-06",2,"Áurea Naranjo",14,16,"Té o Infusión","Bebida",2,25.00
+49,"2026-10-17 12:30:00-06",2,"Áurea Naranjo",14,17,"Americano Frío","Bebida",2,27.00
+52,"2026-10-17 12:30:00-06",3,"Áurea Roosevelt",17,12,"Cappuccino","Bebida",2,30.00
+52,"2026-10-17 12:30:00-06",3,"Áurea Roosevelt",17,13,"Latte","Bebida",1,32.00
+52,"2026-10-17 12:30:00-06",3,"Áurea Roosevelt",17,18,"Cappuccino Frío","Bebida",2,32.00
+59,"2026-10-17 12:30:00-06",3,"Áurea Roosevelt",19,8,"Pastel de Chocolate","Postre",2,40.00
+59,"2026-10-17 12:30:00-06",3,"Áurea Roosevelt",19,19,"Latte Frío","Bebida",1,34.00
+61,"2026-10-17 12:30:00-06",3,"Áurea Roosevelt",20,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+61,"2026-10-17 12:30:00-06",3,"Áurea Roosevelt",20,8,"Pastel de Chocolate","Postre",1,40.00
+61,"2026-10-17 12:30:00-06",3,"Áurea Roosevelt",20,16,"Té o Infusión","Bebida",1,25.00
+63,"2026-10-17 12:30:00-06",3,"Áurea Roosevelt",8,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+63,"2026-10-17 12:30:00-06",3,"Áurea Roosevelt",8,8,"Pastel de Chocolate","Postre",1,40.00
+63,"2026-10-17 12:30:00-06",3,"Áurea Roosevelt",8,12,"Cappuccino","Bebida",2,30.00
+63,"2026-10-17 12:30:00-06",3,"Áurea Roosevelt",8,19,"Latte Frío","Bebida",1,34.00
+64,"2026-10-17 12:30:00-06",3,"Áurea Roosevelt",14,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+64,"2026-10-17 12:30:00-06",3,"Áurea Roosevelt",14,16,"Té o Infusión","Bebida",2,25.00
+30,"2026-10-17 13:00:00-06",1,"Áurea Cayalá",20,9,"Croissant de Mantequilla","Postre",2,28.00
+30,"2026-10-17 13:00:00-06",1,"Áurea Cayalá",20,17,"Americano Frío","Bebida",2,27.00
+32,"2026-10-17 13:00:00-06",1,"Áurea Cayalá",28,19,"Latte Frío","Bebida",1,34.00
+32,"2026-10-17 13:00:00-06",1,"Áurea Cayalá",28,20,"Mocha Frío","Bebida",1,37.00
+33,"2026-10-17 13:00:00-06",1,"Áurea Cayalá",2,8,"Pastel de Chocolate","Postre",1,40.00
+33,"2026-10-17 13:00:00-06",1,"Áurea Cayalá",2,14,"Mocha","Bebida",1,35.00
+33,"2026-10-17 13:00:00-06",1,"Áurea Cayalá",2,18,"Cappuccino Frío","Bebida",2,32.00
+45,"2026-10-17 13:00:00-06",2,"Áurea Naranjo",28,8,"Pastel de Chocolate","Postre",1,40.00
+45,"2026-10-17 13:00:00-06",2,"Áurea Naranjo",28,10,"Espresso","Bebida",1,20.00
+45,"2026-10-17 13:00:00-06",2,"Áurea Naranjo",28,11,"Americano","Bebida",1,25.00
+46,"2026-10-17 13:00:00-06",2,"Áurea Naranjo",19,20,"Mocha Frío","Bebida",2,37.00
+46,"2026-10-17 13:00:00-06",2,"Áurea Naranjo",19,21,"Té Frío","Bebida",1,27.00
+50,"2026-10-17 13:00:00-06",2,"Áurea Naranjo",2,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+50,"2026-10-17 13:00:00-06",2,"Áurea Naranjo",2,13,"Latte","Bebida",1,32.00
+50,"2026-10-17 13:00:00-06",2,"Áurea Naranjo",2,16,"Té o Infusión","Bebida",2,25.00
+51,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",6,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+51,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",6,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+51,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",6,14,"Mocha","Bebida",2,35.00
+53,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",19,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+53,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",19,15,"Chocolate Caliente","Bebida",2,30.00
+55,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",5,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+55,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",5,10,"Espresso","Bebida",1,20.00
+55,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",5,18,"Cappuccino Frío","Bebida",1,32.00
+55,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",5,21,"Té Frío","Bebida",1,27.00
+56,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",21,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+56,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",21,8,"Pastel de Chocolate","Postre",1,40.00
+56,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",21,13,"Latte","Bebida",2,32.00
+60,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",7,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+60,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",7,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+60,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",7,14,"Mocha","Bebida",2,35.00
+60,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",7,15,"Chocolate Caliente","Bebida",2,30.00
+62,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",5,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+62,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",5,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+62,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",5,8,"Pastel de Chocolate","Postre",2,40.00
+62,"2026-10-17 13:00:00-06",3,"Áurea Roosevelt",5,12,"Cappuccino","Bebida",2,30.00
+23,"2026-10-17 13:30:00-06",2,"Áurea Naranjo",17,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+23,"2026-10-17 13:30:00-06",2,"Áurea Naranjo",17,13,"Latte","Bebida",2,32.00
+23,"2026-10-17 13:30:00-06",2,"Áurea Naranjo",17,14,"Mocha","Bebida",2,35.00
+23,"2026-10-17 13:30:00-06",2,"Áurea Naranjo",17,21,"Té Frío","Bebida",1,27.00
+31,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",5,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+31,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",5,9,"Croissant de Mantequilla","Postre",2,28.00
+31,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",5,11,"Americano","Bebida",1,25.00
+31,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",5,15,"Chocolate Caliente","Bebida",2,30.00
+34,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",7,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+34,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",7,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+34,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",7,18,"Cappuccino Frío","Bebida",2,32.00
+34,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",7,21,"Té Frío","Bebida",1,27.00
+35,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",27,18,"Cappuccino Frío","Bebida",2,32.00
+35,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",27,20,"Mocha Frío","Bebida",2,37.00
+36,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",16,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+36,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",16,8,"Pastel de Chocolate","Postre",1,40.00
+38,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",12,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+38,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",12,16,"Té o Infusión","Bebida",2,25.00
+38,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",12,17,"Americano Frío","Bebida",2,27.00
+38,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",12,18,"Cappuccino Frío","Bebida",2,32.00
+40,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",1,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+40,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",1,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+40,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",1,11,"Americano","Bebida",1,25.00
+41,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",6,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+41,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",6,15,"Chocolate Caliente","Bebida",2,30.00
+42,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",21,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+42,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",21,8,"Pastel de Chocolate","Postre",1,40.00
+42,"2026-10-17 13:30:00-06",1,"Áurea Cayalá",21,10,"Espresso","Bebida",1,20.00
+44,"2026-10-17 13:30:00-06",2,"Áurea Naranjo",3,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+44,"2026-10-17 13:30:00-06",2,"Áurea Naranjo",3,9,"Croissant de Mantequilla","Postre",1,28.00
+44,"2026-10-17 13:30:00-06",2,"Áurea Naranjo",3,11,"Americano","Bebida",1,25.00
+54,"2026-10-17 13:30:00-06",3,"Áurea Roosevelt",18,16,"Té o Infusión","Bebida",1,25.00
+54,"2026-10-17 13:30:00-06",3,"Áurea Roosevelt",18,19,"Latte Frío","Bebida",2,34.00
+57,"2026-10-17 13:30:00-06",3,"Áurea Roosevelt",7,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+57,"2026-10-17 13:30:00-06",3,"Áurea Roosevelt",7,19,"Latte Frío","Bebida",1,34.00
+58,"2026-10-17 13:30:00-06",3,"Áurea Roosevelt",27,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+58,"2026-10-17 13:30:00-06",3,"Áurea Roosevelt",27,13,"Latte","Bebida",2,32.00
+58,"2026-10-17 13:30:00-06",3,"Áurea Roosevelt",27,16,"Té o Infusión","Bebida",2,25.00
+58,"2026-10-17 13:30:00-06",3,"Áurea Roosevelt",27,17,"Americano Frío","Bebida",2,27.00
+446,"2026-10-17 13:33:00-06",2,"Áurea Naranjo",NULL,10,"Espresso","Bebida",2,20.00
+446,"2026-10-17 13:33:00-06",2,"Áurea Naranjo",NULL,13,"Latte","Bebida",2,32.00
+25,"2026-10-17 14:00:00-06",2,"Áurea Naranjo",6,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+25,"2026-10-17 14:00:00-06",2,"Áurea Naranjo",6,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+25,"2026-10-17 14:00:00-06",2,"Áurea Naranjo",6,8,"Pastel de Chocolate","Postre",2,40.00
+25,"2026-10-17 14:00:00-06",2,"Áurea Naranjo",6,15,"Chocolate Caliente","Bebida",1,30.00
+28,"2026-10-17 20:00:00-06",3,"Áurea Roosevelt",14,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+28,"2026-10-17 20:00:00-06",3,"Áurea Roosevelt",14,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+28,"2026-10-17 20:00:00-06",3,"Áurea Roosevelt",14,17,"Americano Frío","Bebida",2,27.00
+73,"2026-10-18 08:00:00-06",3,"Áurea Roosevelt",24,15,"Chocolate Caliente","Bebida",2,30.00
+73,"2026-10-18 08:00:00-06",3,"Áurea Roosevelt",24,19,"Latte Frío","Bebida",2,34.00
+73,"2026-10-18 08:00:00-06",3,"Áurea Roosevelt",24,20,"Mocha Frío","Bebida",1,37.00
+73,"2026-10-18 08:00:00-06",3,"Áurea Roosevelt",24,21,"Té Frío","Bebida",1,27.00
+74,"2026-10-18 08:30:00-06",3,"Áurea Roosevelt",8,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+74,"2026-10-18 08:30:00-06",3,"Áurea Roosevelt",8,8,"Pastel de Chocolate","Postre",1,40.00
+74,"2026-10-18 08:30:00-06",3,"Áurea Roosevelt",8,13,"Latte","Bebida",1,32.00
+74,"2026-10-18 08:30:00-06",3,"Áurea Roosevelt",8,15,"Chocolate Caliente","Bebida",1,30.00
+74,"2026-10-18 08:30:00-06",3,"Áurea Roosevelt",8,16,"Té o Infusión","Bebida",1,25.00
+75,"2026-10-18 10:00:00-06",3,"Áurea Roosevelt",4,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+75,"2026-10-18 10:00:00-06",3,"Áurea Roosevelt",4,10,"Espresso","Bebida",2,20.00
+75,"2026-10-18 10:00:00-06",3,"Áurea Roosevelt",4,11,"Americano","Bebida",2,25.00
+75,"2026-10-18 10:00:00-06",3,"Áurea Roosevelt",4,15,"Chocolate Caliente","Bebida",1,30.00
+75,"2026-10-18 10:00:00-06",3,"Áurea Roosevelt",4,19,"Latte Frío","Bebida",2,34.00
+67,"2026-10-18 12:30:00-06",1,"Áurea Cayalá",8,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+67,"2026-10-18 12:30:00-06",1,"Áurea Cayalá",8,15,"Chocolate Caliente","Bebida",2,30.00
+84,"2026-10-18 12:30:00-06",1,"Áurea Cayalá",3,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+84,"2026-10-18 12:30:00-06",1,"Áurea Cayalá",3,10,"Espresso","Bebida",2,20.00
+85,"2026-10-18 12:30:00-06",1,"Áurea Cayalá",21,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+85,"2026-10-18 12:30:00-06",1,"Áurea Cayalá",21,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+85,"2026-10-18 12:30:00-06",1,"Áurea Cayalá",21,13,"Latte","Bebida",2,32.00
+85,"2026-10-18 12:30:00-06",1,"Áurea Cayalá",21,16,"Té o Infusión","Bebida",1,25.00
+92,"2026-10-18 12:30:00-06",2,"Áurea Naranjo",27,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+92,"2026-10-18 12:30:00-06",2,"Áurea Naranjo",27,8,"Pastel de Chocolate","Postre",2,40.00
+94,"2026-10-18 12:30:00-06",2,"Áurea Naranjo",10,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+94,"2026-10-18 12:30:00-06",2,"Áurea Naranjo",10,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+94,"2026-10-18 12:30:00-06",2,"Áurea Naranjo",10,17,"Americano Frío","Bebida",2,27.00
+97,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",14,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+97,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",14,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+97,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",14,8,"Pastel de Chocolate","Postre",2,40.00
+97,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",14,9,"Croissant de Mantequilla","Postre",1,28.00
+98,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",30,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+98,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",30,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+98,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",30,9,"Croissant de Mantequilla","Postre",2,28.00
+101,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",15,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+101,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",15,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+102,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",25,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+102,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",25,14,"Mocha","Bebida",2,35.00
+102,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",25,18,"Cappuccino Frío","Bebida",1,32.00
+102,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",25,19,"Latte Frío","Bebida",1,34.00
+103,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",14,10,"Espresso","Bebida",2,20.00
+103,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",14,13,"Latte","Bebida",1,32.00
+106,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",15,13,"Latte","Bebida",2,32.00
+106,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",15,14,"Mocha","Bebida",2,35.00
+108,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",25,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+108,"2026-10-18 12:30:00-06",3,"Áurea Roosevelt",25,8,"Pastel de Chocolate","Postre",2,40.00
+66,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",21,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+66,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",21,20,"Mocha Frío","Bebida",1,37.00
+66,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",21,21,"Té Frío","Bebida",1,27.00
+70,"2026-10-18 13:00:00-06",2,"Áurea Naranjo",29,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+70,"2026-10-18 13:00:00-06",2,"Áurea Naranjo",29,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+70,"2026-10-18 13:00:00-06",2,"Áurea Naranjo",29,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+70,"2026-10-18 13:00:00-06",2,"Áurea Naranjo",29,16,"Té o Infusión","Bebida",2,25.00
+70,"2026-10-18 13:00:00-06",2,"Áurea Naranjo",29,19,"Latte Frío","Bebida",1,34.00
+78,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",23,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+78,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",23,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+78,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",23,12,"Cappuccino","Bebida",1,30.00
+79,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",7,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+79,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",7,18,"Cappuccino Frío","Bebida",2,32.00
+79,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",7,19,"Latte Frío","Bebida",2,34.00
+80,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",29,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+80,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",29,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+80,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",29,19,"Latte Frío","Bebida",2,34.00
+80,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",29,20,"Mocha Frío","Bebida",2,37.00
+81,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",2,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+81,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",2,21,"Té Frío","Bebida",1,27.00
+82,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",10,19,"Latte Frío","Bebida",1,34.00
+82,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",10,21,"Té Frío","Bebida",2,27.00
+86,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",23,9,"Croissant de Mantequilla","Postre",2,28.00
+86,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",23,12,"Cappuccino","Bebida",2,30.00
+86,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",23,15,"Chocolate Caliente","Bebida",2,30.00
+86,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",23,18,"Cappuccino Frío","Bebida",2,32.00
+87,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",4,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+87,"2026-10-18 13:00:00-06",1,"Áurea Cayalá",4,13,"Latte","Bebida",1,32.00
+88,"2026-10-18 13:00:00-06",2,"Áurea Naranjo",3,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+88,"2026-10-18 13:00:00-06",2,"Áurea Naranjo",3,15,"Chocolate Caliente","Bebida",2,30.00
+88,"2026-10-18 13:00:00-06",2,"Áurea Naranjo",3,21,"Té Frío","Bebida",2,27.00
+89,"2026-10-18 13:00:00-06",2,"Áurea Naranjo",23,15,"Chocolate Caliente","Bebida",2,30.00
+89,"2026-10-18 13:00:00-06",2,"Áurea Naranjo",23,20,"Mocha Frío","Bebida",1,37.00
+95,"2026-10-18 13:00:00-06",2,"Áurea Naranjo",16,10,"Espresso","Bebida",1,20.00
+95,"2026-10-18 13:00:00-06",2,"Áurea Naranjo",16,12,"Cappuccino","Bebida",1,30.00
+95,"2026-10-18 13:00:00-06",2,"Áurea Naranjo",16,19,"Latte Frío","Bebida",1,34.00
+99,"2026-10-18 13:00:00-06",3,"Áurea Roosevelt",17,9,"Croissant de Mantequilla","Postre",2,28.00
+99,"2026-10-18 13:00:00-06",3,"Áurea Roosevelt",17,13,"Latte","Bebida",1,32.00
+99,"2026-10-18 13:00:00-06",3,"Áurea Roosevelt",17,14,"Mocha","Bebida",1,35.00
+107,"2026-10-18 13:00:00-06",3,"Áurea Roosevelt",4,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+107,"2026-10-18 13:00:00-06",3,"Áurea Roosevelt",4,10,"Espresso","Bebida",1,20.00
+107,"2026-10-18 13:00:00-06",3,"Áurea Roosevelt",4,19,"Latte Frío","Bebida",1,34.00
+107,"2026-10-18 13:00:00-06",3,"Áurea Roosevelt",4,21,"Té Frío","Bebida",2,27.00
+109,"2026-10-18 13:00:00-06",3,"Áurea Roosevelt",23,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+109,"2026-10-18 13:00:00-06",3,"Áurea Roosevelt",23,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+109,"2026-10-18 13:00:00-06",3,"Áurea Roosevelt",23,18,"Cappuccino Frío","Bebida",2,32.00
+110,"2026-10-18 13:00:00-06",3,"Áurea Roosevelt",16,16,"Té o Infusión","Bebida",1,25.00
+110,"2026-10-18 13:00:00-06",3,"Áurea Roosevelt",16,17,"Americano Frío","Bebida",2,27.00
+447,"2026-10-18 13:00:00-06",3,"Áurea Roosevelt",NULL,21,"Té Frío","Bebida",2,27.00
+68,"2026-10-18 13:30:00-06",1,"Áurea Cayalá",19,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+68,"2026-10-18 13:30:00-06",1,"Áurea Cayalá",19,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+68,"2026-10-18 13:30:00-06",1,"Áurea Cayalá",19,9,"Croissant de Mantequilla","Postre",2,28.00
+68,"2026-10-18 13:30:00-06",1,"Áurea Cayalá",19,14,"Mocha","Bebida",2,35.00
+76,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",15,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+76,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",15,12,"Cappuccino","Bebida",2,30.00
+76,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",15,13,"Latte","Bebida",2,32.00
+76,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",15,21,"Té Frío","Bebida",2,27.00
+77,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",16,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+77,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",16,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+77,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",16,8,"Pastel de Chocolate","Postre",1,40.00
+77,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",16,16,"Té o Infusión","Bebida",1,25.00
+77,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",16,18,"Cappuccino Frío","Bebida",2,32.00
+83,"2026-10-18 13:30:00-06",1,"Áurea Cayalá",20,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+83,"2026-10-18 13:30:00-06",1,"Áurea Cayalá",20,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+83,"2026-10-18 13:30:00-06",1,"Áurea Cayalá",20,12,"Cappuccino","Bebida",2,30.00
+83,"2026-10-18 13:30:00-06",1,"Áurea Cayalá",20,21,"Té Frío","Bebida",2,27.00
+90,"2026-10-18 13:30:00-06",2,"Áurea Naranjo",12,18,"Cappuccino Frío","Bebida",2,32.00
+90,"2026-10-18 13:30:00-06",2,"Áurea Naranjo",12,20,"Mocha Frío","Bebida",1,37.00
+90,"2026-10-18 13:30:00-06",2,"Áurea Naranjo",12,21,"Té Frío","Bebida",1,27.00
+91,"2026-10-18 13:30:00-06",2,"Áurea Naranjo",14,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+91,"2026-10-18 13:30:00-06",2,"Áurea Naranjo",14,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+91,"2026-10-18 13:30:00-06",2,"Áurea Naranjo",14,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+93,"2026-10-18 13:30:00-06",2,"Áurea Naranjo",24,12,"Cappuccino","Bebida",1,30.00
+93,"2026-10-18 13:30:00-06",2,"Áurea Naranjo",24,18,"Cappuccino Frío","Bebida",1,32.00
+96,"2026-10-18 13:30:00-06",2,"Áurea Naranjo",5,14,"Mocha","Bebida",2,35.00
+96,"2026-10-18 13:30:00-06",2,"Áurea Naranjo",5,16,"Té o Infusión","Bebida",1,25.00
+100,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",4,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+100,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",4,12,"Cappuccino","Bebida",2,30.00
+100,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",4,13,"Latte","Bebida",1,32.00
+100,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",4,19,"Latte Frío","Bebida",2,34.00
+104,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",21,14,"Mocha","Bebida",2,35.00
+104,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",21,15,"Chocolate Caliente","Bebida",1,30.00
+104,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",21,16,"Té o Infusión","Bebida",1,25.00
+105,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",27,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+105,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",27,9,"Croissant de Mantequilla","Postre",1,28.00
+105,"2026-10-18 13:30:00-06",3,"Áurea Roosevelt",27,17,"Americano Frío","Bebida",2,27.00
+71,"2026-10-18 16:00:00-06",2,"Áurea Naranjo",21,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+71,"2026-10-18 16:00:00-06",2,"Áurea Naranjo",21,11,"Americano","Bebida",2,25.00
+71,"2026-10-18 16:00:00-06",2,"Áurea Naranjo",21,12,"Cappuccino","Bebida",2,30.00
+71,"2026-10-18 16:00:00-06",2,"Áurea Naranjo",21,16,"Té o Infusión","Bebida",2,25.00
+72,"2026-10-18 17:00:00-06",2,"Áurea Naranjo",1,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+72,"2026-10-18 17:00:00-06",2,"Áurea Naranjo",1,16,"Té o Infusión","Bebida",1,25.00
+72,"2026-10-18 17:00:00-06",2,"Áurea Naranjo",1,17,"Americano Frío","Bebida",2,27.00
+69,"2026-10-18 19:00:00-06",2,"Áurea Naranjo",11,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+69,"2026-10-18 19:00:00-06",2,"Áurea Naranjo",11,10,"Espresso","Bebida",2,20.00
+69,"2026-10-18 19:00:00-06",2,"Áurea Naranjo",11,15,"Chocolate Caliente","Bebida",1,30.00
+69,"2026-10-18 19:00:00-06",2,"Áurea Naranjo",11,21,"Té Frío","Bebida",1,27.00
+65,"2026-10-18 20:00:00-06",1,"Áurea Cayalá",10,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+65,"2026-10-18 20:00:00-06",1,"Áurea Cayalá",10,14,"Mocha","Bebida",2,35.00
+114,"2026-10-19 12:00:00-06",2,"Áurea Naranjo",14,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+114,"2026-10-19 12:00:00-06",2,"Áurea Naranjo",14,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+114,"2026-10-19 12:00:00-06",2,"Áurea Naranjo",14,10,"Espresso","Bebida",1,20.00
+114,"2026-10-19 12:00:00-06",2,"Áurea Naranjo",14,16,"Té o Infusión","Bebida",2,25.00
+111,"2026-10-19 12:30:00-06",1,"Áurea Cayalá",23,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+111,"2026-10-19 12:30:00-06",1,"Áurea Cayalá",23,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+111,"2026-10-19 12:30:00-06",1,"Áurea Cayalá",23,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+111,"2026-10-19 12:30:00-06",1,"Áurea Cayalá",23,18,"Cappuccino Frío","Bebida",1,32.00
+111,"2026-10-19 12:30:00-06",1,"Áurea Cayalá",23,20,"Mocha Frío","Bebida",1,37.00
+117,"2026-10-19 12:30:00-06",3,"Áurea Roosevelt",5,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+117,"2026-10-19 12:30:00-06",3,"Áurea Roosevelt",5,8,"Pastel de Chocolate","Postre",2,40.00
+117,"2026-10-19 12:30:00-06",3,"Áurea Roosevelt",5,14,"Mocha","Bebida",2,35.00
+117,"2026-10-19 12:30:00-06",3,"Áurea Roosevelt",5,18,"Cappuccino Frío","Bebida",1,32.00
+117,"2026-10-19 12:30:00-06",3,"Áurea Roosevelt",5,19,"Latte Frío","Bebida",2,34.00
+112,"2026-10-19 13:30:00-06",1,"Áurea Cayalá",17,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+112,"2026-10-19 13:30:00-06",1,"Áurea Cayalá",17,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+112,"2026-10-19 13:30:00-06",1,"Áurea Cayalá",17,10,"Espresso","Bebida",1,20.00
+112,"2026-10-19 13:30:00-06",1,"Áurea Cayalá",17,21,"Té Frío","Bebida",1,27.00
+118,"2026-10-19 13:30:00-06",3,"Áurea Roosevelt",27,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+118,"2026-10-19 13:30:00-06",3,"Áurea Roosevelt",27,13,"Latte","Bebida",1,32.00
+118,"2026-10-19 13:30:00-06",3,"Áurea Roosevelt",27,15,"Chocolate Caliente","Bebida",2,30.00
+113,"2026-10-19 14:00:00-06",1,"Áurea Cayalá",22,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+113,"2026-10-19 14:00:00-06",1,"Áurea Cayalá",22,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+113,"2026-10-19 14:00:00-06",1,"Áurea Cayalá",22,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+113,"2026-10-19 14:00:00-06",1,"Áurea Cayalá",22,11,"Americano","Bebida",2,25.00
+113,"2026-10-19 14:00:00-06",1,"Áurea Cayalá",22,13,"Latte","Bebida",1,32.00
+449,"2026-10-19 17:07:00-06",2,"Áurea Naranjo",NULL,14,"Mocha","Bebida",1,35.00
+449,"2026-10-19 17:07:00-06",2,"Áurea Naranjo",NULL,19,"Latte Frío","Bebida",1,34.00
+115,"2026-10-19 18:30:00-06",2,"Áurea Naranjo",4,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+115,"2026-10-19 18:30:00-06",2,"Áurea Naranjo",4,10,"Espresso","Bebida",1,20.00
+115,"2026-10-19 18:30:00-06",2,"Áurea Naranjo",4,14,"Mocha","Bebida",2,35.00
+115,"2026-10-19 18:30:00-06",2,"Áurea Naranjo",4,15,"Chocolate Caliente","Bebida",1,30.00
+115,"2026-10-19 18:30:00-06",2,"Áurea Naranjo",4,21,"Té Frío","Bebida",1,27.00
+450,"2026-10-19 18:55:00-06",3,"Áurea Roosevelt",NULL,8,"Pastel de Chocolate","Postre",2,40.00
+450,"2026-10-19 18:55:00-06",3,"Áurea Roosevelt",NULL,17,"Americano Frío","Bebida",1,27.00
+119,"2026-10-19 19:00:00-06",3,"Áurea Roosevelt",28,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+119,"2026-10-19 19:00:00-06",3,"Áurea Roosevelt",28,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+119,"2026-10-19 19:00:00-06",3,"Áurea Roosevelt",28,12,"Cappuccino","Bebida",1,30.00
+119,"2026-10-19 19:00:00-06",3,"Áurea Roosevelt",28,16,"Té o Infusión","Bebida",1,25.00
+448,"2026-10-19 19:02:00-06",1,"Áurea Cayalá",NULL,8,"Pastel de Chocolate","Postre",2,40.00
+448,"2026-10-19 19:02:00-06",1,"Áurea Cayalá",NULL,16,"Té o Infusión","Bebida",2,25.00
+120,"2026-10-19 20:00:00-06",3,"Áurea Roosevelt",29,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+120,"2026-10-19 20:00:00-06",3,"Áurea Roosevelt",29,12,"Cappuccino","Bebida",1,30.00
+120,"2026-10-19 20:00:00-06",3,"Áurea Roosevelt",29,16,"Té o Infusión","Bebida",1,25.00
+120,"2026-10-19 20:00:00-06",3,"Áurea Roosevelt",29,20,"Mocha Frío","Bebida",1,37.00
+120,"2026-10-19 20:00:00-06",3,"Áurea Roosevelt",29,21,"Té Frío","Bebida",1,27.00
+116,"2026-10-19 21:00:00-06",2,"Áurea Naranjo",20,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+116,"2026-10-19 21:00:00-06",2,"Áurea Naranjo",20,14,"Mocha","Bebida",1,35.00
+127,"2026-10-20 08:30:00-06",3,"Áurea Roosevelt",14,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+127,"2026-10-20 08:30:00-06",3,"Áurea Roosevelt",14,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+127,"2026-10-20 08:30:00-06",3,"Áurea Roosevelt",14,8,"Pastel de Chocolate","Postre",2,40.00
+127,"2026-10-20 08:30:00-06",3,"Áurea Roosevelt",14,9,"Croissant de Mantequilla","Postre",2,28.00
+127,"2026-10-20 08:30:00-06",3,"Áurea Roosevelt",14,12,"Cappuccino","Bebida",1,30.00
+121,"2026-10-20 09:30:00-06",1,"Áurea Cayalá",23,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+121,"2026-10-20 09:30:00-06",1,"Áurea Cayalá",23,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+121,"2026-10-20 09:30:00-06",1,"Áurea Cayalá",23,10,"Espresso","Bebida",2,20.00
+124,"2026-10-20 09:30:00-06",2,"Áurea Naranjo",16,8,"Pastel de Chocolate","Postre",1,40.00
+124,"2026-10-20 09:30:00-06",2,"Áurea Naranjo",16,10,"Espresso","Bebida",2,20.00
+124,"2026-10-20 09:30:00-06",2,"Áurea Naranjo",16,12,"Cappuccino","Bebida",2,30.00
+124,"2026-10-20 09:30:00-06",2,"Áurea Naranjo",16,13,"Latte","Bebida",2,32.00
+129,"2026-10-20 09:30:00-06",3,"Áurea Roosevelt",29,8,"Pastel de Chocolate","Postre",2,40.00
+129,"2026-10-20 09:30:00-06",3,"Áurea Roosevelt",29,12,"Cappuccino","Bebida",2,30.00
+129,"2026-10-20 09:30:00-06",3,"Áurea Roosevelt",29,15,"Chocolate Caliente","Bebida",2,30.00
+129,"2026-10-20 09:30:00-06",3,"Áurea Roosevelt",29,19,"Latte Frío","Bebida",2,34.00
+125,"2026-10-20 10:00:00-06",2,"Áurea Naranjo",30,15,"Chocolate Caliente","Bebida",1,30.00
+125,"2026-10-20 10:00:00-06",2,"Áurea Naranjo",30,20,"Mocha Frío","Bebida",1,37.00
+123,"2026-10-20 12:00:00-06",2,"Áurea Naranjo",5,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+123,"2026-10-20 12:00:00-06",2,"Áurea Naranjo",5,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+123,"2026-10-20 12:00:00-06",2,"Áurea Naranjo",5,17,"Americano Frío","Bebida",1,27.00
+122,"2026-10-20 12:30:00-06",1,"Áurea Cayalá",4,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+122,"2026-10-20 12:30:00-06",1,"Áurea Cayalá",4,9,"Croissant de Mantequilla","Postre",2,28.00
+122,"2026-10-20 12:30:00-06",1,"Áurea Cayalá",4,14,"Mocha","Bebida",1,35.00
+122,"2026-10-20 12:30:00-06",1,"Áurea Cayalá",4,17,"Americano Frío","Bebida",1,27.00
+122,"2026-10-20 12:30:00-06",1,"Áurea Cayalá",4,20,"Mocha Frío","Bebida",2,37.00
+452,"2026-10-20 17:49:00-06",2,"Áurea Naranjo",NULL,10,"Espresso","Bebida",1,20.00
+452,"2026-10-20 17:49:00-06",2,"Áurea Naranjo",NULL,19,"Latte Frío","Bebida",1,34.00
+451,"2026-10-20 18:08:00-06",1,"Áurea Cayalá",NULL,16,"Té o Infusión","Bebida",2,25.00
+128,"2026-10-20 18:30:00-06",3,"Áurea Roosevelt",17,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+128,"2026-10-20 18:30:00-06",3,"Áurea Roosevelt",17,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+128,"2026-10-20 18:30:00-06",3,"Áurea Roosevelt",17,16,"Té o Infusión","Bebida",1,25.00
+128,"2026-10-20 18:30:00-06",3,"Áurea Roosevelt",17,19,"Latte Frío","Bebida",2,34.00
+126,"2026-10-20 20:00:00-06",2,"Áurea Naranjo",13,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+126,"2026-10-20 20:00:00-06",2,"Áurea Naranjo",13,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+126,"2026-10-20 20:00:00-06",2,"Áurea Naranjo",13,12,"Cappuccino","Bebida",2,30.00
+138,"2026-10-21 08:00:00-06",2,"Áurea Naranjo",10,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+138,"2026-10-21 08:00:00-06",2,"Áurea Naranjo",10,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+138,"2026-10-21 08:00:00-06",2,"Áurea Naranjo",10,10,"Espresso","Bebida",2,20.00
+138,"2026-10-21 08:00:00-06",2,"Áurea Naranjo",10,17,"Americano Frío","Bebida",1,27.00
+138,"2026-10-21 08:00:00-06",2,"Áurea Naranjo",10,20,"Mocha Frío","Bebida",1,37.00
+139,"2026-10-21 08:00:00-06",3,"Áurea Roosevelt",16,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+139,"2026-10-21 08:00:00-06",3,"Áurea Roosevelt",16,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+139,"2026-10-21 08:00:00-06",3,"Áurea Roosevelt",16,11,"Americano","Bebida",1,25.00
+139,"2026-10-21 08:00:00-06",3,"Áurea Roosevelt",16,13,"Latte","Bebida",1,32.00
+135,"2026-10-21 09:00:00-06",2,"Áurea Naranjo",19,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+135,"2026-10-21 09:00:00-06",2,"Áurea Naranjo",19,13,"Latte","Bebida",2,32.00
+135,"2026-10-21 09:00:00-06",2,"Áurea Naranjo",19,14,"Mocha","Bebida",1,35.00
+135,"2026-10-21 09:00:00-06",2,"Áurea Naranjo",19,16,"Té o Infusión","Bebida",2,25.00
+137,"2026-10-21 10:00:00-06",2,"Áurea Naranjo",8,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+137,"2026-10-21 10:00:00-06",2,"Áurea Naranjo",8,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+137,"2026-10-21 10:00:00-06",2,"Áurea Naranjo",8,16,"Té o Infusión","Bebida",1,25.00
+137,"2026-10-21 10:00:00-06",2,"Áurea Naranjo",8,19,"Latte Frío","Bebida",2,34.00
+453,"2026-10-21 12:39:00-06",1,"Áurea Cayalá",NULL,16,"Té o Infusión","Bebida",2,25.00
+136,"2026-10-21 13:00:00-06",2,"Áurea Naranjo",12,16,"Té o Infusión","Bebida",1,25.00
+136,"2026-10-21 13:00:00-06",2,"Áurea Naranjo",12,18,"Cappuccino Frío","Bebida",1,32.00
+140,"2026-10-21 13:30:00-06",3,"Áurea Roosevelt",27,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+140,"2026-10-21 13:30:00-06",3,"Áurea Roosevelt",27,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+140,"2026-10-21 13:30:00-06",3,"Áurea Roosevelt",27,11,"Americano","Bebida",2,25.00
+140,"2026-10-21 13:30:00-06",3,"Áurea Roosevelt",27,14,"Mocha","Bebida",2,35.00
+133,"2026-10-21 14:00:00-06",1,"Áurea Cayalá",20,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+133,"2026-10-21 14:00:00-06",1,"Áurea Cayalá",20,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+133,"2026-10-21 14:00:00-06",1,"Áurea Cayalá",20,16,"Té o Infusión","Bebida",1,25.00
+141,"2026-10-21 14:00:00-06",3,"Áurea Roosevelt",29,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+141,"2026-10-21 14:00:00-06",3,"Áurea Roosevelt",29,15,"Chocolate Caliente","Bebida",2,30.00
+141,"2026-10-21 14:00:00-06",3,"Áurea Roosevelt",29,17,"Americano Frío","Bebida",2,27.00
+130,"2026-10-21 16:30:00-06",1,"Áurea Cayalá",20,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+130,"2026-10-21 16:30:00-06",1,"Áurea Cayalá",20,8,"Pastel de Chocolate","Postre",2,40.00
+130,"2026-10-21 16:30:00-06",1,"Áurea Cayalá",20,9,"Croissant de Mantequilla","Postre",2,28.00
+130,"2026-10-21 16:30:00-06",1,"Áurea Cayalá",20,13,"Latte","Bebida",2,32.00
+130,"2026-10-21 16:30:00-06",1,"Áurea Cayalá",20,21,"Té Frío","Bebida",2,27.00
+454,"2026-10-21 17:17:00-06",3,"Áurea Roosevelt",NULL,20,"Mocha Frío","Bebida",1,37.00
+131,"2026-10-21 18:30:00-06",1,"Áurea Cayalá",24,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+131,"2026-10-21 18:30:00-06",1,"Áurea Cayalá",24,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+131,"2026-10-21 18:30:00-06",1,"Áurea Cayalá",24,16,"Té o Infusión","Bebida",2,25.00
+131,"2026-10-21 18:30:00-06",1,"Áurea Cayalá",24,19,"Latte Frío","Bebida",2,34.00
+131,"2026-10-21 18:30:00-06",1,"Áurea Cayalá",24,21,"Té Frío","Bebida",1,27.00
+142,"2026-10-21 19:00:00-06",3,"Áurea Roosevelt",10,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+142,"2026-10-21 19:00:00-06",3,"Áurea Roosevelt",10,9,"Croissant de Mantequilla","Postre",1,28.00
+142,"2026-10-21 19:00:00-06",3,"Áurea Roosevelt",10,10,"Espresso","Bebida",2,20.00
+142,"2026-10-21 19:00:00-06",3,"Áurea Roosevelt",10,13,"Latte","Bebida",1,32.00
+134,"2026-10-21 20:00:00-06",1,"Áurea Cayalá",6,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+134,"2026-10-21 20:00:00-06",1,"Áurea Cayalá",6,8,"Pastel de Chocolate","Postre",2,40.00
+134,"2026-10-21 20:00:00-06",1,"Áurea Cayalá",6,12,"Cappuccino","Bebida",2,30.00
+134,"2026-10-21 20:00:00-06",1,"Áurea Cayalá",6,15,"Chocolate Caliente","Bebida",1,30.00
+132,"2026-10-21 21:00:00-06",1,"Áurea Cayalá",5,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+132,"2026-10-21 21:00:00-06",1,"Áurea Cayalá",5,16,"Té o Infusión","Bebida",2,25.00
+132,"2026-10-21 21:00:00-06",1,"Áurea Cayalá",5,18,"Cappuccino Frío","Bebida",1,32.00
+143,"2026-10-22 08:00:00-06",1,"Áurea Cayalá",4,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+143,"2026-10-22 08:00:00-06",1,"Áurea Cayalá",4,11,"Americano","Bebida",2,25.00
+143,"2026-10-22 08:00:00-06",1,"Áurea Cayalá",4,12,"Cappuccino","Bebida",1,30.00
+143,"2026-10-22 08:00:00-06",1,"Áurea Cayalá",4,18,"Cappuccino Frío","Bebida",2,32.00
+151,"2026-10-22 08:00:00-06",3,"Áurea Roosevelt",18,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+151,"2026-10-22 08:00:00-06",3,"Áurea Roosevelt",18,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+151,"2026-10-22 08:00:00-06",3,"Áurea Roosevelt",18,9,"Croissant de Mantequilla","Postre",1,28.00
+151,"2026-10-22 08:00:00-06",3,"Áurea Roosevelt",18,19,"Latte Frío","Bebida",2,34.00
+144,"2026-10-22 09:30:00-06",1,"Áurea Cayalá",29,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+144,"2026-10-22 09:30:00-06",1,"Áurea Cayalá",29,12,"Cappuccino","Bebida",2,30.00
+144,"2026-10-22 09:30:00-06",1,"Áurea Cayalá",29,15,"Chocolate Caliente","Bebida",1,30.00
+145,"2026-10-22 09:30:00-06",1,"Áurea Cayalá",1,8,"Pastel de Chocolate","Postre",2,40.00
+145,"2026-10-22 09:30:00-06",1,"Áurea Cayalá",1,12,"Cappuccino","Bebida",1,30.00
+145,"2026-10-22 09:30:00-06",1,"Áurea Cayalá",1,21,"Té Frío","Bebida",1,27.00
+146,"2026-10-22 13:30:00-06",2,"Áurea Naranjo",18,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+146,"2026-10-22 13:30:00-06",2,"Áurea Naranjo",18,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+146,"2026-10-22 13:30:00-06",2,"Áurea Naranjo",18,16,"Té o Infusión","Bebida",2,25.00
+146,"2026-10-22 13:30:00-06",2,"Áurea Naranjo",18,20,"Mocha Frío","Bebida",2,37.00
+152,"2026-10-22 14:00:00-06",3,"Áurea Roosevelt",30,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+152,"2026-10-22 14:00:00-06",3,"Áurea Roosevelt",30,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+147,"2026-10-22 15:00:00-06",2,"Áurea Naranjo",3,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+147,"2026-10-22 15:00:00-06",2,"Áurea Naranjo",3,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+147,"2026-10-22 15:00:00-06",2,"Áurea Naranjo",3,12,"Cappuccino","Bebida",1,30.00
+147,"2026-10-22 15:00:00-06",2,"Áurea Naranjo",3,14,"Mocha","Bebida",1,35.00
+147,"2026-10-22 15:00:00-06",2,"Áurea Naranjo",3,19,"Latte Frío","Bebida",1,34.00
+456,"2026-10-22 15:42:00-06",2,"Áurea Naranjo",NULL,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+456,"2026-10-22 15:42:00-06",2,"Áurea Naranjo",NULL,20,"Mocha Frío","Bebida",2,37.00
+455,"2026-10-22 16:08:00-06",1,"Áurea Cayalá",NULL,19,"Latte Frío","Bebida",1,34.00
+149,"2026-10-22 17:30:00-06",3,"Áurea Roosevelt",1,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+149,"2026-10-22 17:30:00-06",3,"Áurea Roosevelt",1,9,"Croissant de Mantequilla","Postre",1,28.00
+149,"2026-10-22 17:30:00-06",3,"Áurea Roosevelt",1,15,"Chocolate Caliente","Bebida",1,30.00
+457,"2026-10-22 17:57:00-06",3,"Áurea Roosevelt",NULL,9,"Croissant de Mantequilla","Postre",2,28.00
+148,"2026-10-22 19:30:00-06",2,"Áurea Naranjo",3,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+148,"2026-10-22 19:30:00-06",2,"Áurea Naranjo",3,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+148,"2026-10-22 19:30:00-06",2,"Áurea Naranjo",3,13,"Latte","Bebida",1,32.00
+148,"2026-10-22 19:30:00-06",2,"Áurea Naranjo",3,20,"Mocha Frío","Bebida",1,37.00
+150,"2026-10-22 21:00:00-06",3,"Áurea Roosevelt",1,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+150,"2026-10-22 21:00:00-06",3,"Áurea Roosevelt",1,8,"Pastel de Chocolate","Postre",1,40.00
+150,"2026-10-22 21:00:00-06",3,"Áurea Roosevelt",1,9,"Croissant de Mantequilla","Postre",2,28.00
+150,"2026-10-22 21:00:00-06",3,"Áurea Roosevelt",1,17,"Americano Frío","Bebida",2,27.00
+150,"2026-10-22 21:00:00-06",3,"Áurea Roosevelt",1,18,"Cappuccino Frío","Bebida",2,32.00
+155,"2026-10-23 09:00:00-06",1,"Áurea Cayalá",10,10,"Espresso","Bebida",1,20.00
+155,"2026-10-23 09:00:00-06",1,"Áurea Cayalá",10,19,"Latte Frío","Bebida",1,34.00
+161,"2026-10-23 09:00:00-06",2,"Áurea Naranjo",16,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+161,"2026-10-23 09:00:00-06",2,"Áurea Naranjo",16,15,"Chocolate Caliente","Bebida",1,30.00
+165,"2026-10-23 09:00:00-06",3,"Áurea Roosevelt",19,14,"Mocha","Bebida",2,35.00
+165,"2026-10-23 09:00:00-06",3,"Áurea Roosevelt",19,17,"Americano Frío","Bebida",1,27.00
+166,"2026-10-23 10:00:00-06",3,"Áurea Roosevelt",3,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+166,"2026-10-23 10:00:00-06",3,"Áurea Roosevelt",3,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+166,"2026-10-23 10:00:00-06",3,"Áurea Roosevelt",3,9,"Croissant de Mantequilla","Postre",1,28.00
+166,"2026-10-23 10:00:00-06",3,"Áurea Roosevelt",3,19,"Latte Frío","Bebida",2,34.00
+459,"2026-10-23 12:00:00-06",2,"Áurea Naranjo",NULL,18,"Cappuccino Frío","Bebida",2,32.00
+459,"2026-10-23 12:00:00-06",2,"Áurea Naranjo",NULL,21,"Té Frío","Bebida",1,27.00
+154,"2026-10-23 12:30:00-06",1,"Áurea Cayalá",24,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+154,"2026-10-23 12:30:00-06",1,"Áurea Cayalá",24,10,"Espresso","Bebida",2,20.00
+154,"2026-10-23 12:30:00-06",1,"Áurea Cayalá",24,18,"Cappuccino Frío","Bebida",1,32.00
+154,"2026-10-23 12:30:00-06",1,"Áurea Cayalá",24,20,"Mocha Frío","Bebida",2,37.00
+157,"2026-10-23 12:30:00-06",1,"Áurea Cayalá",22,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+157,"2026-10-23 12:30:00-06",1,"Áurea Cayalá",22,8,"Pastel de Chocolate","Postre",1,40.00
+157,"2026-10-23 12:30:00-06",1,"Áurea Cayalá",22,19,"Latte Frío","Bebida",2,34.00
+157,"2026-10-23 12:30:00-06",1,"Áurea Cayalá",22,20,"Mocha Frío","Bebida",2,37.00
+159,"2026-10-23 12:30:00-06",2,"Áurea Naranjo",27,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+159,"2026-10-23 12:30:00-06",2,"Áurea Naranjo",27,11,"Americano","Bebida",2,25.00
+159,"2026-10-23 12:30:00-06",2,"Áurea Naranjo",27,17,"Americano Frío","Bebida",1,27.00
+159,"2026-10-23 12:30:00-06",2,"Áurea Naranjo",27,20,"Mocha Frío","Bebida",2,37.00
+164,"2026-10-23 12:30:00-06",3,"Áurea Roosevelt",7,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+164,"2026-10-23 12:30:00-06",3,"Áurea Roosevelt",7,12,"Cappuccino","Bebida",1,30.00
+164,"2026-10-23 12:30:00-06",3,"Áurea Roosevelt",7,19,"Latte Frío","Bebida",1,34.00
+158,"2026-10-23 13:00:00-06",1,"Áurea Cayalá",14,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+158,"2026-10-23 13:00:00-06",1,"Áurea Cayalá",14,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+158,"2026-10-23 13:00:00-06",1,"Áurea Cayalá",14,11,"Americano","Bebida",1,25.00
+158,"2026-10-23 13:00:00-06",1,"Áurea Cayalá",14,14,"Mocha","Bebida",1,35.00
+158,"2026-10-23 13:00:00-06",1,"Áurea Cayalá",14,18,"Cappuccino Frío","Bebida",2,32.00
+153,"2026-10-23 13:30:00-06",1,"Áurea Cayalá",3,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+153,"2026-10-23 13:30:00-06",1,"Áurea Cayalá",3,13,"Latte","Bebida",2,32.00
+153,"2026-10-23 13:30:00-06",1,"Áurea Cayalá",3,14,"Mocha","Bebida",2,35.00
+153,"2026-10-23 13:30:00-06",1,"Áurea Cayalá",3,19,"Latte Frío","Bebida",2,34.00
+163,"2026-10-23 13:30:00-06",2,"Áurea Naranjo",13,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+163,"2026-10-23 13:30:00-06",2,"Áurea Naranjo",13,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+163,"2026-10-23 13:30:00-06",2,"Áurea Naranjo",13,13,"Latte","Bebida",1,32.00
+163,"2026-10-23 13:30:00-06",2,"Áurea Naranjo",13,15,"Chocolate Caliente","Bebida",1,30.00
+160,"2026-10-23 14:00:00-06",2,"Áurea Naranjo",1,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+160,"2026-10-23 14:00:00-06",2,"Áurea Naranjo",1,8,"Pastel de Chocolate","Postre",2,40.00
+162,"2026-10-23 14:00:00-06",2,"Áurea Naranjo",25,13,"Latte","Bebida",1,32.00
+162,"2026-10-23 14:00:00-06",2,"Áurea Naranjo",25,14,"Mocha","Bebida",1,35.00
+162,"2026-10-23 14:00:00-06",2,"Áurea Naranjo",25,15,"Chocolate Caliente","Bebida",2,30.00
+162,"2026-10-23 14:00:00-06",2,"Áurea Naranjo",25,21,"Té Frío","Bebida",2,27.00
+458,"2026-10-23 18:13:00-06",1,"Áurea Cayalá",NULL,16,"Té o Infusión","Bebida",1,25.00
+156,"2026-10-23 19:30:00-06",1,"Áurea Cayalá",22,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+156,"2026-10-23 19:30:00-06",1,"Áurea Cayalá",22,19,"Latte Frío","Bebida",1,34.00
+167,"2026-10-23 20:30:00-06",3,"Áurea Roosevelt",7,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+167,"2026-10-23 20:30:00-06",3,"Áurea Roosevelt",7,11,"Americano","Bebida",1,25.00
+167,"2026-10-23 20:30:00-06",3,"Áurea Roosevelt",7,16,"Té o Infusión","Bebida",1,25.00
+178,"2026-10-24 08:30:00-06",3,"Áurea Roosevelt",22,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+178,"2026-10-24 08:30:00-06",3,"Áurea Roosevelt",22,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+178,"2026-10-24 08:30:00-06",3,"Áurea Roosevelt",22,9,"Croissant de Mantequilla","Postre",1,28.00
+178,"2026-10-24 08:30:00-06",3,"Áurea Roosevelt",22,11,"Americano","Bebida",1,25.00
+183,"2026-10-24 08:30:00-06",3,"Áurea Roosevelt",24,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+183,"2026-10-24 08:30:00-06",3,"Áurea Roosevelt",24,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+183,"2026-10-24 08:30:00-06",3,"Áurea Roosevelt",24,17,"Americano Frío","Bebida",2,27.00
+183,"2026-10-24 08:30:00-06",3,"Áurea Roosevelt",24,20,"Mocha Frío","Bebida",1,37.00
+177,"2026-10-24 09:30:00-06",3,"Áurea Roosevelt",13,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+177,"2026-10-24 09:30:00-06",3,"Áurea Roosevelt",13,12,"Cappuccino","Bebida",1,30.00
+175,"2026-10-24 10:00:00-06",2,"Áurea Naranjo",26,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+175,"2026-10-24 10:00:00-06",2,"Áurea Naranjo",26,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+175,"2026-10-24 10:00:00-06",2,"Áurea Naranjo",26,8,"Pastel de Chocolate","Postre",2,40.00
+175,"2026-10-24 10:00:00-06",2,"Áurea Naranjo",26,13,"Latte","Bebida",2,32.00
+182,"2026-10-24 12:30:00-06",3,"Áurea Roosevelt",18,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+182,"2026-10-24 12:30:00-06",3,"Áurea Roosevelt",18,10,"Espresso","Bebida",2,20.00
+182,"2026-10-24 12:30:00-06",3,"Áurea Roosevelt",18,12,"Cappuccino","Bebida",1,30.00
+182,"2026-10-24 12:30:00-06",3,"Áurea Roosevelt",18,15,"Chocolate Caliente","Bebida",1,30.00
+182,"2026-10-24 12:30:00-06",3,"Áurea Roosevelt",18,21,"Té Frío","Bebida",1,27.00
+185,"2026-10-24 12:30:00-06",1,"Áurea Cayalá",13,10,"Espresso","Bebida",2,20.00
+185,"2026-10-24 12:30:00-06",1,"Áurea Cayalá",13,12,"Cappuccino","Bebida",1,30.00
+187,"2026-10-24 12:30:00-06",1,"Áurea Cayalá",6,10,"Espresso","Bebida",2,20.00
+187,"2026-10-24 12:30:00-06",1,"Áurea Cayalá",6,13,"Latte","Bebida",1,32.00
+187,"2026-10-24 12:30:00-06",1,"Áurea Cayalá",6,16,"Té o Infusión","Bebida",2,25.00
+187,"2026-10-24 12:30:00-06",1,"Áurea Cayalá",6,17,"Americano Frío","Bebida",2,27.00
+191,"2026-10-24 12:30:00-06",1,"Áurea Cayalá",17,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+191,"2026-10-24 12:30:00-06",1,"Áurea Cayalá",17,14,"Mocha","Bebida",1,35.00
+192,"2026-10-24 12:30:00-06",1,"Áurea Cayalá",17,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+192,"2026-10-24 12:30:00-06",1,"Áurea Cayalá",17,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+192,"2026-10-24 12:30:00-06",1,"Áurea Cayalá",17,20,"Mocha Frío","Bebida",2,37.00
+192,"2026-10-24 12:30:00-06",1,"Áurea Cayalá",17,21,"Té Frío","Bebida",1,27.00
+198,"2026-10-24 12:30:00-06",2,"Áurea Naranjo",29,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+198,"2026-10-24 12:30:00-06",2,"Áurea Naranjo",29,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+198,"2026-10-24 12:30:00-06",2,"Áurea Naranjo",29,10,"Espresso","Bebida",2,20.00
+198,"2026-10-24 12:30:00-06",2,"Áurea Naranjo",29,13,"Latte","Bebida",2,32.00
+201,"2026-10-24 12:30:00-06",2,"Áurea Naranjo",20,11,"Americano","Bebida",1,25.00
+201,"2026-10-24 12:30:00-06",2,"Áurea Naranjo",20,18,"Cappuccino Frío","Bebida",1,32.00
+206,"2026-10-24 12:30:00-06",3,"Áurea Roosevelt",12,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+206,"2026-10-24 12:30:00-06",3,"Áurea Roosevelt",12,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+206,"2026-10-24 12:30:00-06",3,"Áurea Roosevelt",12,11,"Americano","Bebida",1,25.00
+206,"2026-10-24 12:30:00-06",3,"Áurea Roosevelt",12,14,"Mocha","Bebida",2,35.00
+208,"2026-10-24 12:30:00-06",3,"Áurea Roosevelt",29,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+208,"2026-10-24 12:30:00-06",3,"Áurea Roosevelt",29,17,"Americano Frío","Bebida",1,27.00
+211,"2026-10-24 12:30:00-06",3,"Áurea Roosevelt",28,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+211,"2026-10-24 12:30:00-06",3,"Áurea Roosevelt",28,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+211,"2026-10-24 12:30:00-06",3,"Áurea Roosevelt",28,20,"Mocha Frío","Bebida",2,37.00
+174,"2026-10-24 13:00:00-06",2,"Áurea Naranjo",22,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+174,"2026-10-24 13:00:00-06",2,"Áurea Naranjo",22,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+174,"2026-10-24 13:00:00-06",2,"Áurea Naranjo",22,9,"Croissant de Mantequilla","Postre",2,28.00
+174,"2026-10-24 13:00:00-06",2,"Áurea Naranjo",22,11,"Americano","Bebida",1,25.00
+174,"2026-10-24 13:00:00-06",2,"Áurea Naranjo",22,16,"Té o Infusión","Bebida",1,25.00
+180,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",24,13,"Latte","Bebida",2,32.00
+180,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",24,15,"Chocolate Caliente","Bebida",1,30.00
+180,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",24,18,"Cappuccino Frío","Bebida",2,32.00
+180,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",24,20,"Mocha Frío","Bebida",2,37.00
+184,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",17,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+184,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",17,8,"Pastel de Chocolate","Postre",2,40.00
+184,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",17,9,"Croissant de Mantequilla","Postre",2,28.00
+184,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",17,17,"Americano Frío","Bebida",1,27.00
+186,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",25,10,"Espresso","Bebida",1,20.00
+186,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",25,19,"Latte Frío","Bebida",2,34.00
+189,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",12,12,"Cappuccino","Bebida",2,30.00
+189,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",12,15,"Chocolate Caliente","Bebida",2,30.00
+189,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",12,16,"Té o Infusión","Bebida",2,25.00
+189,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",12,17,"Americano Frío","Bebida",1,27.00
+193,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",15,8,"Pastel de Chocolate","Postre",2,40.00
+193,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",15,19,"Latte Frío","Bebida",1,34.00
+194,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",23,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+194,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",23,12,"Cappuccino","Bebida",1,30.00
+194,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",23,13,"Latte","Bebida",2,32.00
+194,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",23,20,"Mocha Frío","Bebida",2,37.00
+195,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",22,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+195,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",22,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+195,"2026-10-24 13:00:00-06",1,"Áurea Cayalá",22,20,"Mocha Frío","Bebida",1,37.00
+197,"2026-10-24 13:00:00-06",2,"Áurea Naranjo",6,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+197,"2026-10-24 13:00:00-06",2,"Áurea Naranjo",6,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+197,"2026-10-24 13:00:00-06",2,"Áurea Naranjo",6,9,"Croissant de Mantequilla","Postre",1,28.00
+197,"2026-10-24 13:00:00-06",2,"Áurea Naranjo",6,13,"Latte","Bebida",2,32.00
+200,"2026-10-24 13:00:00-06",2,"Áurea Naranjo",25,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+200,"2026-10-24 13:00:00-06",2,"Áurea Naranjo",25,14,"Mocha","Bebida",1,35.00
+200,"2026-10-24 13:00:00-06",2,"Áurea Naranjo",25,15,"Chocolate Caliente","Bebida",2,30.00
+200,"2026-10-24 13:00:00-06",2,"Áurea Naranjo",25,16,"Té o Infusión","Bebida",2,25.00
+204,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",15,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+204,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",15,13,"Latte","Bebida",2,32.00
+210,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",20,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+210,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",20,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+210,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",20,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+210,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",20,13,"Latte","Bebida",2,32.00
+212,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",8,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+212,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",8,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+212,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",8,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+213,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",3,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+213,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",3,10,"Espresso","Bebida",1,20.00
+213,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",3,18,"Cappuccino Frío","Bebida",1,32.00
+215,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",17,11,"Americano","Bebida",1,25.00
+215,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",17,13,"Latte","Bebida",1,32.00
+215,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",17,14,"Mocha","Bebida",1,35.00
+215,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",17,15,"Chocolate Caliente","Bebida",1,30.00
+216,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",20,10,"Espresso","Bebida",1,20.00
+216,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",20,15,"Chocolate Caliente","Bebida",1,30.00
+216,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",20,18,"Cappuccino Frío","Bebida",1,32.00
+216,"2026-10-24 13:00:00-06",3,"Áurea Roosevelt",20,21,"Té Frío","Bebida",1,27.00
+169,"2026-10-24 13:30:00-06",1,"Áurea Cayalá",3,11,"Americano","Bebida",1,25.00
+169,"2026-10-24 13:30:00-06",1,"Áurea Cayalá",3,13,"Latte","Bebida",2,32.00
+169,"2026-10-24 13:30:00-06",1,"Áurea Cayalá",3,14,"Mocha","Bebida",1,35.00
+169,"2026-10-24 13:30:00-06",1,"Áurea Cayalá",3,17,"Americano Frío","Bebida",1,27.00
+188,"2026-10-24 13:30:00-06",1,"Áurea Cayalá",7,14,"Mocha","Bebida",1,35.00
+188,"2026-10-24 13:30:00-06",1,"Áurea Cayalá",7,19,"Latte Frío","Bebida",1,34.00
+190,"2026-10-24 13:30:00-06",1,"Áurea Cayalá",13,9,"Croissant de Mantequilla","Postre",2,28.00
+190,"2026-10-24 13:30:00-06",1,"Áurea Cayalá",13,13,"Latte","Bebida",2,32.00
+190,"2026-10-24 13:30:00-06",1,"Áurea Cayalá",13,18,"Cappuccino Frío","Bebida",2,32.00
+196,"2026-10-24 13:30:00-06",2,"Áurea Naranjo",12,15,"Chocolate Caliente","Bebida",2,30.00
+196,"2026-10-24 13:30:00-06",2,"Áurea Naranjo",12,16,"Té o Infusión","Bebida",2,25.00
+196,"2026-10-24 13:30:00-06",2,"Áurea Naranjo",12,20,"Mocha Frío","Bebida",2,37.00
+199,"2026-10-24 13:30:00-06",2,"Áurea Naranjo",26,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+199,"2026-10-24 13:30:00-06",2,"Áurea Naranjo",26,20,"Mocha Frío","Bebida",1,37.00
+202,"2026-10-24 13:30:00-06",2,"Áurea Naranjo",23,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+202,"2026-10-24 13:30:00-06",2,"Áurea Naranjo",23,9,"Croissant de Mantequilla","Postre",1,28.00
+202,"2026-10-24 13:30:00-06",2,"Áurea Naranjo",23,12,"Cappuccino","Bebida",2,30.00
+202,"2026-10-24 13:30:00-06",2,"Áurea Naranjo",23,20,"Mocha Frío","Bebida",1,37.00
+203,"2026-10-24 13:30:00-06",2,"Áurea Naranjo",5,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+203,"2026-10-24 13:30:00-06",2,"Áurea Naranjo",5,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+203,"2026-10-24 13:30:00-06",2,"Áurea Naranjo",5,8,"Pastel de Chocolate","Postre",1,40.00
+203,"2026-10-24 13:30:00-06",2,"Áurea Naranjo",5,12,"Cappuccino","Bebida",2,30.00
+205,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",25,9,"Croissant de Mantequilla","Postre",2,28.00
+205,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",25,19,"Latte Frío","Bebida",1,34.00
+207,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",14,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+207,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",14,12,"Cappuccino","Bebida",1,30.00
+207,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",14,19,"Latte Frío","Bebida",2,34.00
+209,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",6,9,"Croissant de Mantequilla","Postre",2,28.00
+209,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",6,10,"Espresso","Bebida",2,20.00
+209,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",6,16,"Té o Infusión","Bebida",2,25.00
+209,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",6,20,"Mocha Frío","Bebida",1,37.00
+214,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",9,11,"Americano","Bebida",1,25.00
+214,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",9,15,"Chocolate Caliente","Bebida",2,30.00
+214,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",9,16,"Té o Infusión","Bebida",1,25.00
+214,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",9,18,"Cappuccino Frío","Bebida",2,32.00
+217,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",12,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+217,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",12,17,"Americano Frío","Bebida",2,27.00
+217,"2026-10-24 13:30:00-06",3,"Áurea Roosevelt",12,19,"Latte Frío","Bebida",1,34.00
+173,"2026-10-24 15:30:00-06",2,"Áurea Naranjo",20,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+173,"2026-10-24 15:30:00-06",2,"Áurea Naranjo",20,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+173,"2026-10-24 15:30:00-06",2,"Áurea Naranjo",20,8,"Pastel de Chocolate","Postre",2,40.00
+173,"2026-10-24 15:30:00-06",2,"Áurea Naranjo",20,18,"Cappuccino Frío","Bebida",1,32.00
+170,"2026-10-24 16:00:00-06",1,"Áurea Cayalá",7,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+170,"2026-10-24 16:00:00-06",1,"Áurea Cayalá",7,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+170,"2026-10-24 16:00:00-06",1,"Áurea Cayalá",7,11,"Americano","Bebida",1,25.00
+460,"2026-10-24 16:20:00-06",2,"Áurea Naranjo",NULL,9,"Croissant de Mantequilla","Postre",2,28.00
+171,"2026-10-24 16:30:00-06",1,"Áurea Cayalá",22,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+171,"2026-10-24 16:30:00-06",1,"Áurea Cayalá",22,10,"Espresso","Bebida",1,20.00
+171,"2026-10-24 16:30:00-06",1,"Áurea Cayalá",22,14,"Mocha","Bebida",2,35.00
+171,"2026-10-24 16:30:00-06",1,"Áurea Cayalá",22,16,"Té o Infusión","Bebida",1,25.00
+171,"2026-10-24 16:30:00-06",1,"Áurea Cayalá",22,21,"Té Frío","Bebida",2,27.00
+168,"2026-10-24 17:00:00-06",1,"Áurea Cayalá",22,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+168,"2026-10-24 17:00:00-06",1,"Áurea Cayalá",22,9,"Croissant de Mantequilla","Postre",2,28.00
+168,"2026-10-24 17:00:00-06",1,"Áurea Cayalá",22,10,"Espresso","Bebida",1,20.00
+168,"2026-10-24 17:00:00-06",1,"Áurea Cayalá",22,17,"Americano Frío","Bebida",2,27.00
+176,"2026-10-24 19:00:00-06",2,"Áurea Naranjo",21,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+176,"2026-10-24 19:00:00-06",2,"Áurea Naranjo",21,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+176,"2026-10-24 19:00:00-06",2,"Áurea Naranjo",21,17,"Americano Frío","Bebida",1,27.00
+176,"2026-10-24 19:00:00-06",2,"Áurea Naranjo",21,19,"Latte Frío","Bebida",1,34.00
+176,"2026-10-24 19:00:00-06",2,"Áurea Naranjo",21,20,"Mocha Frío","Bebida",1,37.00
+181,"2026-10-24 19:00:00-06",3,"Áurea Roosevelt",28,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+181,"2026-10-24 19:00:00-06",3,"Áurea Roosevelt",28,13,"Latte","Bebida",1,32.00
+181,"2026-10-24 19:00:00-06",3,"Áurea Roosevelt",28,16,"Té o Infusión","Bebida",1,25.00
+181,"2026-10-24 19:00:00-06",3,"Áurea Roosevelt",28,17,"Americano Frío","Bebida",1,27.00
+172,"2026-10-24 20:30:00-06",1,"Áurea Cayalá",24,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+172,"2026-10-24 20:30:00-06",1,"Áurea Cayalá",24,8,"Pastel de Chocolate","Postre",2,40.00
+172,"2026-10-24 20:30:00-06",1,"Áurea Cayalá",24,9,"Croissant de Mantequilla","Postre",1,28.00
+172,"2026-10-24 20:30:00-06",1,"Áurea Cayalá",24,14,"Mocha","Bebida",1,35.00
+172,"2026-10-24 20:30:00-06",1,"Áurea Cayalá",24,21,"Té Frío","Bebida",2,27.00
+179,"2026-10-24 21:00:00-06",3,"Áurea Roosevelt",24,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+179,"2026-10-24 21:00:00-06",3,"Áurea Roosevelt",24,13,"Latte","Bebida",1,32.00
+179,"2026-10-24 21:00:00-06",3,"Áurea Roosevelt",24,15,"Chocolate Caliente","Bebida",2,30.00
+179,"2026-10-24 21:00:00-06",3,"Áurea Roosevelt",24,16,"Té o Infusión","Bebida",2,25.00
+225,"2026-10-25 08:00:00-06",2,"Áurea Naranjo",10,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+225,"2026-10-25 08:00:00-06",2,"Áurea Naranjo",10,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+225,"2026-10-25 08:00:00-06",2,"Áurea Naranjo",10,13,"Latte","Bebida",1,32.00
+225,"2026-10-25 08:00:00-06",2,"Áurea Naranjo",10,15,"Chocolate Caliente","Bebida",1,30.00
+225,"2026-10-25 08:00:00-06",2,"Áurea Naranjo",10,18,"Cappuccino Frío","Bebida",2,32.00
+219,"2026-10-25 08:30:00-06",1,"Áurea Cayalá",14,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+219,"2026-10-25 08:30:00-06",1,"Áurea Cayalá",14,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+219,"2026-10-25 08:30:00-06",1,"Áurea Cayalá",14,12,"Cappuccino","Bebida",2,30.00
+219,"2026-10-25 08:30:00-06",1,"Áurea Cayalá",14,16,"Té o Infusión","Bebida",2,25.00
+219,"2026-10-25 08:30:00-06",1,"Áurea Cayalá",14,17,"Americano Frío","Bebida",2,27.00
+231,"2026-10-25 08:30:00-06",3,"Áurea Roosevelt",22,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+231,"2026-10-25 08:30:00-06",3,"Áurea Roosevelt",22,10,"Espresso","Bebida",1,20.00
+231,"2026-10-25 08:30:00-06",3,"Áurea Roosevelt",22,11,"Americano","Bebida",1,25.00
+231,"2026-10-25 08:30:00-06",3,"Áurea Roosevelt",22,17,"Americano Frío","Bebida",2,27.00
+231,"2026-10-25 08:30:00-06",3,"Áurea Roosevelt",22,21,"Té Frío","Bebida",2,27.00
+220,"2026-10-25 09:00:00-06",1,"Áurea Cayalá",20,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+220,"2026-10-25 09:00:00-06",1,"Áurea Cayalá",20,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+220,"2026-10-25 09:00:00-06",1,"Áurea Cayalá",20,17,"Americano Frío","Bebida",1,27.00
+220,"2026-10-25 09:00:00-06",1,"Áurea Cayalá",20,20,"Mocha Frío","Bebida",1,37.00
+461,"2026-10-25 09:51:00-06",3,"Áurea Roosevelt",NULL,18,"Cappuccino Frío","Bebida",1,32.00
+223,"2026-10-25 10:00:00-06",2,"Áurea Naranjo",19,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+223,"2026-10-25 10:00:00-06",2,"Áurea Naranjo",19,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+229,"2026-10-25 10:00:00-06",3,"Áurea Roosevelt",5,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+229,"2026-10-25 10:00:00-06",3,"Áurea Roosevelt",5,13,"Latte","Bebida",1,32.00
+229,"2026-10-25 10:00:00-06",3,"Áurea Roosevelt",5,15,"Chocolate Caliente","Bebida",2,30.00
+224,"2026-10-25 12:30:00-06",2,"Áurea Naranjo",11,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+224,"2026-10-25 12:30:00-06",2,"Áurea Naranjo",11,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+224,"2026-10-25 12:30:00-06",2,"Áurea Naranjo",11,9,"Croissant de Mantequilla","Postre",1,28.00
+230,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",29,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+230,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",29,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+230,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",29,13,"Latte","Bebida",1,32.00
+230,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",29,20,"Mocha Frío","Bebida",1,37.00
+236,"2026-10-25 12:30:00-06",1,"Áurea Cayalá",22,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+236,"2026-10-25 12:30:00-06",1,"Áurea Cayalá",22,10,"Espresso","Bebida",2,20.00
+236,"2026-10-25 12:30:00-06",1,"Áurea Cayalá",22,15,"Chocolate Caliente","Bebida",2,30.00
+236,"2026-10-25 12:30:00-06",1,"Áurea Cayalá",22,18,"Cappuccino Frío","Bebida",1,32.00
+240,"2026-10-25 12:30:00-06",1,"Áurea Cayalá",15,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+240,"2026-10-25 12:30:00-06",1,"Áurea Cayalá",15,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+240,"2026-10-25 12:30:00-06",1,"Áurea Cayalá",15,9,"Croissant de Mantequilla","Postre",1,28.00
+243,"2026-10-25 12:30:00-06",1,"Áurea Cayalá",19,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+243,"2026-10-25 12:30:00-06",1,"Áurea Cayalá",19,12,"Cappuccino","Bebida",1,30.00
+244,"2026-10-25 12:30:00-06",1,"Áurea Cayalá",20,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+244,"2026-10-25 12:30:00-06",1,"Áurea Cayalá",20,13,"Latte","Bebida",2,32.00
+245,"2026-10-25 12:30:00-06",1,"Áurea Cayalá",7,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+245,"2026-10-25 12:30:00-06",1,"Áurea Cayalá",7,15,"Chocolate Caliente","Bebida",1,30.00
+245,"2026-10-25 12:30:00-06",1,"Áurea Cayalá",7,21,"Té Frío","Bebida",2,27.00
+248,"2026-10-25 12:30:00-06",2,"Áurea Naranjo",28,9,"Croissant de Mantequilla","Postre",1,28.00
+248,"2026-10-25 12:30:00-06",2,"Áurea Naranjo",28,11,"Americano","Bebida",2,25.00
+248,"2026-10-25 12:30:00-06",2,"Áurea Naranjo",28,17,"Americano Frío","Bebida",2,27.00
+248,"2026-10-25 12:30:00-06",2,"Áurea Naranjo",28,21,"Té Frío","Bebida",2,27.00
+251,"2026-10-25 12:30:00-06",2,"Áurea Naranjo",6,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+251,"2026-10-25 12:30:00-06",2,"Áurea Naranjo",6,9,"Croissant de Mantequilla","Postre",2,28.00
+251,"2026-10-25 12:30:00-06",2,"Áurea Naranjo",6,15,"Chocolate Caliente","Bebida",1,30.00
+251,"2026-10-25 12:30:00-06",2,"Áurea Naranjo",6,16,"Té o Infusión","Bebida",2,25.00
+253,"2026-10-25 12:30:00-06",2,"Áurea Naranjo",9,10,"Espresso","Bebida",1,20.00
+253,"2026-10-25 12:30:00-06",2,"Áurea Naranjo",9,20,"Mocha Frío","Bebida",1,37.00
+254,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",6,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+254,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",6,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+256,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",23,9,"Croissant de Mantequilla","Postre",1,28.00
+256,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",23,19,"Latte Frío","Bebida",2,34.00
+256,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",23,20,"Mocha Frío","Bebida",1,37.00
+262,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",8,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+262,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",8,9,"Croissant de Mantequilla","Postre",2,28.00
+262,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",8,19,"Latte Frío","Bebida",2,34.00
+265,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",30,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+265,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",30,16,"Té o Infusión","Bebida",2,25.00
+266,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",18,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+266,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",18,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+266,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",18,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+266,"2026-10-25 12:30:00-06",3,"Áurea Roosevelt",18,20,"Mocha Frío","Bebida",1,37.00
+233,"2026-10-25 13:00:00-06",1,"Áurea Cayalá",21,13,"Latte","Bebida",2,32.00
+233,"2026-10-25 13:00:00-06",1,"Áurea Cayalá",21,14,"Mocha","Bebida",2,35.00
+235,"2026-10-25 13:00:00-06",1,"Áurea Cayalá",14,11,"Americano","Bebida",1,25.00
+235,"2026-10-25 13:00:00-06",1,"Áurea Cayalá",14,13,"Latte","Bebida",1,32.00
+237,"2026-10-25 13:00:00-06",1,"Áurea Cayalá",1,11,"Americano","Bebida",2,25.00
+237,"2026-10-25 13:00:00-06",1,"Áurea Cayalá",1,15,"Chocolate Caliente","Bebida",1,30.00
+237,"2026-10-25 13:00:00-06",1,"Áurea Cayalá",1,20,"Mocha Frío","Bebida",1,37.00
+238,"2026-10-25 13:00:00-06",1,"Áurea Cayalá",3,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+238,"2026-10-25 13:00:00-06",1,"Áurea Cayalá",3,10,"Espresso","Bebida",1,20.00
+239,"2026-10-25 13:00:00-06",1,"Áurea Cayalá",15,10,"Espresso","Bebida",1,20.00
+239,"2026-10-25 13:00:00-06",1,"Áurea Cayalá",15,13,"Latte","Bebida",1,32.00
+242,"2026-10-25 13:00:00-06",1,"Áurea Cayalá",17,13,"Latte","Bebida",1,32.00
+242,"2026-10-25 13:00:00-06",1,"Áurea Cayalá",17,15,"Chocolate Caliente","Bebida",2,30.00
+246,"2026-10-25 13:00:00-06",2,"Áurea Naranjo",8,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+246,"2026-10-25 13:00:00-06",2,"Áurea Naranjo",8,12,"Cappuccino","Bebida",1,30.00
+247,"2026-10-25 13:00:00-06",2,"Áurea Naranjo",23,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+247,"2026-10-25 13:00:00-06",2,"Áurea Naranjo",23,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+247,"2026-10-25 13:00:00-06",2,"Áurea Naranjo",23,11,"Americano","Bebida",1,25.00
+250,"2026-10-25 13:00:00-06",2,"Áurea Naranjo",23,9,"Croissant de Mantequilla","Postre",2,28.00
+250,"2026-10-25 13:00:00-06",2,"Áurea Naranjo",23,13,"Latte","Bebida",1,32.00
+252,"2026-10-25 13:00:00-06",2,"Áurea Naranjo",26,10,"Espresso","Bebida",2,20.00
+252,"2026-10-25 13:00:00-06",2,"Áurea Naranjo",26,13,"Latte","Bebida",2,32.00
+252,"2026-10-25 13:00:00-06",2,"Áurea Naranjo",26,15,"Chocolate Caliente","Bebida",2,30.00
+255,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",10,8,"Pastel de Chocolate","Postre",1,40.00
+255,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",10,15,"Chocolate Caliente","Bebida",1,30.00
+257,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",1,9,"Croissant de Mantequilla","Postre",1,28.00
+257,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",1,16,"Té o Infusión","Bebida",2,25.00
+257,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",1,17,"Americano Frío","Bebida",2,27.00
+257,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",1,21,"Té Frío","Bebida",2,27.00
+258,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",4,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+258,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",4,14,"Mocha","Bebida",2,35.00
+258,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",4,19,"Latte Frío","Bebida",2,34.00
+259,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",7,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+259,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",7,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+259,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",7,18,"Cappuccino Frío","Bebida",1,32.00
+259,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",7,20,"Mocha Frío","Bebida",1,37.00
+260,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",25,10,"Espresso","Bebida",2,20.00
+260,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",25,14,"Mocha","Bebida",2,35.00
+261,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",18,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+261,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",18,17,"Americano Frío","Bebida",1,27.00
+261,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",18,19,"Latte Frío","Bebida",1,34.00
+264,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",25,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+264,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",25,9,"Croissant de Mantequilla","Postre",2,28.00
+264,"2026-10-25 13:00:00-06",3,"Áurea Roosevelt",25,21,"Té Frío","Bebida",1,27.00
+234,"2026-10-25 13:30:00-06",1,"Áurea Cayalá",13,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+234,"2026-10-25 13:30:00-06",1,"Áurea Cayalá",13,16,"Té o Infusión","Bebida",1,25.00
+234,"2026-10-25 13:30:00-06",1,"Áurea Cayalá",13,18,"Cappuccino Frío","Bebida",1,32.00
+241,"2026-10-25 13:30:00-06",1,"Áurea Cayalá",22,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+241,"2026-10-25 13:30:00-06",1,"Áurea Cayalá",22,12,"Cappuccino","Bebida",1,30.00
+241,"2026-10-25 13:30:00-06",1,"Áurea Cayalá",22,17,"Americano Frío","Bebida",1,27.00
+249,"2026-10-25 13:30:00-06",2,"Áurea Naranjo",24,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+249,"2026-10-25 13:30:00-06",2,"Áurea Naranjo",24,8,"Pastel de Chocolate","Postre",2,40.00
+249,"2026-10-25 13:30:00-06",2,"Áurea Naranjo",24,9,"Croissant de Mantequilla","Postre",1,28.00
+249,"2026-10-25 13:30:00-06",2,"Áurea Naranjo",24,18,"Cappuccino Frío","Bebida",2,32.00
+263,"2026-10-25 13:30:00-06",3,"Áurea Roosevelt",10,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+263,"2026-10-25 13:30:00-06",3,"Áurea Roosevelt",10,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+263,"2026-10-25 13:30:00-06",3,"Áurea Roosevelt",10,19,"Latte Frío","Bebida",1,34.00
+267,"2026-10-25 13:30:00-06",3,"Áurea Roosevelt",9,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+267,"2026-10-25 13:30:00-06",3,"Áurea Roosevelt",9,12,"Cappuccino","Bebida",1,30.00
+218,"2026-10-25 14:00:00-06",1,"Áurea Cayalá",3,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+218,"2026-10-25 14:00:00-06",1,"Áurea Cayalá",3,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+218,"2026-10-25 14:00:00-06",1,"Áurea Cayalá",3,8,"Pastel de Chocolate","Postre",2,40.00
+218,"2026-10-25 14:00:00-06",1,"Áurea Cayalá",3,11,"Americano","Bebida",1,25.00
+218,"2026-10-25 14:00:00-06",1,"Áurea Cayalá",3,15,"Chocolate Caliente","Bebida",2,30.00
+226,"2026-10-25 14:00:00-06",2,"Áurea Naranjo",29,10,"Espresso","Bebida",1,20.00
+226,"2026-10-25 14:00:00-06",2,"Áurea Naranjo",29,14,"Mocha","Bebida",2,35.00
+226,"2026-10-25 14:00:00-06",2,"Áurea Naranjo",29,15,"Chocolate Caliente","Bebida",2,30.00
+226,"2026-10-25 14:00:00-06",2,"Áurea Naranjo",29,18,"Cappuccino Frío","Bebida",1,32.00
+226,"2026-10-25 14:00:00-06",2,"Áurea Naranjo",29,21,"Té Frío","Bebida",1,27.00
+232,"2026-10-25 15:00:00-06",3,"Áurea Roosevelt",14,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+232,"2026-10-25 15:00:00-06",3,"Áurea Roosevelt",14,18,"Cappuccino Frío","Bebida",1,32.00
+232,"2026-10-25 15:00:00-06",3,"Áurea Roosevelt",14,20,"Mocha Frío","Bebida",2,37.00
+228,"2026-10-25 15:30:00-06",2,"Áurea Naranjo",18,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+228,"2026-10-25 15:30:00-06",2,"Áurea Naranjo",18,9,"Croissant de Mantequilla","Postre",1,28.00
+228,"2026-10-25 15:30:00-06",2,"Áurea Naranjo",18,14,"Mocha","Bebida",2,35.00
+228,"2026-10-25 15:30:00-06",2,"Áurea Naranjo",18,19,"Latte Frío","Bebida",2,34.00
+228,"2026-10-25 15:30:00-06",2,"Áurea Naranjo",18,21,"Té Frío","Bebida",1,27.00
+227,"2026-10-25 17:00:00-06",2,"Áurea Naranjo",11,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+227,"2026-10-25 17:00:00-06",2,"Áurea Naranjo",11,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+227,"2026-10-25 17:00:00-06",2,"Áurea Naranjo",11,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+227,"2026-10-25 17:00:00-06",2,"Áurea Naranjo",11,14,"Mocha","Bebida",1,35.00
+227,"2026-10-25 17:00:00-06",2,"Áurea Naranjo",11,17,"Americano Frío","Bebida",2,27.00
+221,"2026-10-25 19:00:00-06",1,"Áurea Cayalá",2,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+221,"2026-10-25 19:00:00-06",1,"Áurea Cayalá",2,8,"Pastel de Chocolate","Postre",1,40.00
+222,"2026-10-25 20:30:00-06",1,"Áurea Cayalá",12,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+222,"2026-10-25 20:30:00-06",1,"Áurea Cayalá",12,9,"Croissant de Mantequilla","Postre",2,28.00
+222,"2026-10-25 20:30:00-06",1,"Áurea Cayalá",12,20,"Mocha Frío","Bebida",1,37.00
+277,"2026-10-26 08:00:00-06",3,"Áurea Roosevelt",13,10,"Espresso","Bebida",2,20.00
+277,"2026-10-26 08:00:00-06",3,"Áurea Roosevelt",13,11,"Americano","Bebida",1,25.00
+277,"2026-10-26 08:00:00-06",3,"Áurea Roosevelt",13,15,"Chocolate Caliente","Bebida",2,30.00
+277,"2026-10-26 08:00:00-06",3,"Áurea Roosevelt",13,17,"Americano Frío","Bebida",1,27.00
+277,"2026-10-26 08:00:00-06",3,"Áurea Roosevelt",13,18,"Cappuccino Frío","Bebida",2,32.00
+275,"2026-10-26 09:00:00-06",2,"Áurea Naranjo",16,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+275,"2026-10-26 09:00:00-06",2,"Áurea Naranjo",16,10,"Espresso","Bebida",1,20.00
+276,"2026-10-26 10:00:00-06",2,"Áurea Naranjo",8,15,"Chocolate Caliente","Bebida",2,30.00
+276,"2026-10-26 10:00:00-06",2,"Áurea Naranjo",8,16,"Té o Infusión","Bebida",1,25.00
+276,"2026-10-26 10:00:00-06",2,"Áurea Naranjo",8,17,"Americano Frío","Bebida",1,27.00
+463,"2026-10-26 10:02:00-06",2,"Áurea Naranjo",NULL,13,"Latte","Bebida",2,32.00
+463,"2026-10-26 10:02:00-06",2,"Áurea Naranjo",NULL,18,"Cappuccino Frío","Bebida",2,32.00
+462,"2026-10-26 11:26:00-06",1,"Áurea Cayalá",NULL,15,"Chocolate Caliente","Bebida",1,30.00
+462,"2026-10-26 11:26:00-06",1,"Áurea Cayalá",NULL,18,"Cappuccino Frío","Bebida",2,32.00
+278,"2026-10-26 12:00:00-06",3,"Áurea Roosevelt",11,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+278,"2026-10-26 12:00:00-06",3,"Áurea Roosevelt",11,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+278,"2026-10-26 12:00:00-06",3,"Áurea Roosevelt",11,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+278,"2026-10-26 12:00:00-06",3,"Áurea Roosevelt",11,10,"Espresso","Bebida",1,20.00
+270,"2026-10-26 12:30:00-06",1,"Áurea Cayalá",1,8,"Pastel de Chocolate","Postre",2,40.00
+270,"2026-10-26 12:30:00-06",1,"Áurea Cayalá",1,12,"Cappuccino","Bebida",2,30.00
+270,"2026-10-26 12:30:00-06",1,"Áurea Cayalá",1,17,"Americano Frío","Bebida",1,27.00
+270,"2026-10-26 12:30:00-06",1,"Áurea Cayalá",1,18,"Cappuccino Frío","Bebida",1,32.00
+274,"2026-10-26 12:30:00-06",2,"Áurea Naranjo",24,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+274,"2026-10-26 12:30:00-06",2,"Áurea Naranjo",24,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+274,"2026-10-26 12:30:00-06",2,"Áurea Naranjo",24,9,"Croissant de Mantequilla","Postre",2,28.00
+274,"2026-10-26 12:30:00-06",2,"Áurea Naranjo",24,10,"Espresso","Bebida",1,20.00
+272,"2026-10-26 13:00:00-06",2,"Áurea Naranjo",27,12,"Cappuccino","Bebida",2,30.00
+272,"2026-10-26 13:00:00-06",2,"Áurea Naranjo",27,15,"Chocolate Caliente","Bebida",1,30.00
+272,"2026-10-26 13:00:00-06",2,"Áurea Naranjo",27,16,"Té o Infusión","Bebida",2,25.00
+272,"2026-10-26 13:00:00-06",2,"Áurea Naranjo",27,18,"Cappuccino Frío","Bebida",1,32.00
+272,"2026-10-26 13:00:00-06",2,"Áurea Naranjo",27,21,"Té Frío","Bebida",2,27.00
+273,"2026-10-26 15:00:00-06",2,"Áurea Naranjo",19,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+273,"2026-10-26 15:00:00-06",2,"Áurea Naranjo",19,8,"Pastel de Chocolate","Postre",2,40.00
+273,"2026-10-26 15:00:00-06",2,"Áurea Naranjo",19,12,"Cappuccino","Bebida",1,30.00
+271,"2026-10-26 18:30:00-06",1,"Áurea Cayalá",16,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+271,"2026-10-26 18:30:00-06",1,"Áurea Cayalá",16,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+271,"2026-10-26 18:30:00-06",1,"Áurea Cayalá",16,8,"Pastel de Chocolate","Postre",2,40.00
+271,"2026-10-26 18:30:00-06",1,"Áurea Cayalá",16,10,"Espresso","Bebida",1,20.00
+268,"2026-10-26 20:30:00-06",1,"Áurea Cayalá",12,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+268,"2026-10-26 20:30:00-06",1,"Áurea Cayalá",12,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+268,"2026-10-26 20:30:00-06",1,"Áurea Cayalá",12,14,"Mocha","Bebida",2,35.00
+269,"2026-10-26 21:00:00-06",1,"Áurea Cayalá",4,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+269,"2026-10-26 21:00:00-06",1,"Áurea Cayalá",4,20,"Mocha Frío","Bebida",1,37.00
+283,"2026-10-27 08:00:00-06",2,"Áurea Naranjo",19,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+283,"2026-10-27 08:00:00-06",2,"Áurea Naranjo",19,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+283,"2026-10-27 08:00:00-06",2,"Áurea Naranjo",19,11,"Americano","Bebida",2,25.00
+283,"2026-10-27 08:00:00-06",2,"Áurea Naranjo",19,15,"Chocolate Caliente","Bebida",2,30.00
+283,"2026-10-27 08:00:00-06",2,"Áurea Naranjo",19,20,"Mocha Frío","Bebida",1,37.00
+284,"2026-10-27 08:30:00-06",3,"Áurea Roosevelt",21,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+284,"2026-10-27 08:30:00-06",3,"Áurea Roosevelt",21,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+284,"2026-10-27 08:30:00-06",3,"Áurea Roosevelt",21,12,"Cappuccino","Bebida",2,30.00
+282,"2026-10-27 09:30:00-06",2,"Áurea Naranjo",20,10,"Espresso","Bebida",1,20.00
+282,"2026-10-27 09:30:00-06",2,"Áurea Naranjo",20,11,"Americano","Bebida",1,25.00
+282,"2026-10-27 09:30:00-06",2,"Áurea Naranjo",20,12,"Cappuccino","Bebida",2,30.00
+282,"2026-10-27 09:30:00-06",2,"Áurea Naranjo",20,21,"Té Frío","Bebida",2,27.00
+286,"2026-10-27 09:30:00-06",3,"Áurea Roosevelt",14,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+286,"2026-10-27 09:30:00-06",3,"Áurea Roosevelt",14,11,"Americano","Bebida",2,25.00
+286,"2026-10-27 09:30:00-06",3,"Áurea Roosevelt",14,21,"Té Frío","Bebida",1,27.00
+279,"2026-10-27 13:00:00-06",1,"Áurea Cayalá",27,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+279,"2026-10-27 13:00:00-06",1,"Áurea Cayalá",27,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+279,"2026-10-27 13:00:00-06",1,"Áurea Cayalá",27,8,"Pastel de Chocolate","Postre",1,40.00
+279,"2026-10-27 13:00:00-06",1,"Áurea Cayalá",27,17,"Americano Frío","Bebida",2,27.00
+279,"2026-10-27 13:00:00-06",1,"Áurea Cayalá",27,19,"Latte Frío","Bebida",2,34.00
+280,"2026-10-27 13:00:00-06",1,"Áurea Cayalá",2,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+280,"2026-10-27 13:00:00-06",1,"Áurea Cayalá",2,10,"Espresso","Bebida",1,20.00
+280,"2026-10-27 13:00:00-06",1,"Áurea Cayalá",2,18,"Cappuccino Frío","Bebida",1,32.00
+280,"2026-10-27 13:00:00-06",1,"Áurea Cayalá",2,21,"Té Frío","Bebida",1,27.00
+285,"2026-10-27 13:30:00-06",3,"Áurea Roosevelt",12,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+285,"2026-10-27 13:30:00-06",3,"Áurea Roosevelt",12,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+285,"2026-10-27 13:30:00-06",3,"Áurea Roosevelt",12,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+285,"2026-10-27 13:30:00-06",3,"Áurea Roosevelt",12,17,"Americano Frío","Bebida",1,27.00
+285,"2026-10-27 13:30:00-06",3,"Áurea Roosevelt",12,19,"Latte Frío","Bebida",1,34.00
+465,"2026-10-27 14:08:00-06",3,"Áurea Roosevelt",NULL,8,"Pastel de Chocolate","Postre",2,40.00
+464,"2026-10-27 15:09:00-06",2,"Áurea Naranjo",NULL,13,"Latte","Bebida",2,32.00
+281,"2026-10-27 18:30:00-06",2,"Áurea Naranjo",6,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+281,"2026-10-27 18:30:00-06",2,"Áurea Naranjo",6,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+281,"2026-10-27 18:30:00-06",2,"Áurea Naranjo",6,11,"Americano","Bebida",1,25.00
+281,"2026-10-27 18:30:00-06",2,"Áurea Naranjo",6,17,"Americano Frío","Bebida",2,27.00
+293,"2026-10-28 08:00:00-06",2,"Áurea Naranjo",6,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+293,"2026-10-28 08:00:00-06",2,"Áurea Naranjo",6,17,"Americano Frío","Bebida",2,27.00
+293,"2026-10-28 08:00:00-06",2,"Áurea Naranjo",6,19,"Latte Frío","Bebida",1,34.00
+287,"2026-10-28 08:30:00-06",1,"Áurea Cayalá",25,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+287,"2026-10-28 08:30:00-06",1,"Áurea Cayalá",25,12,"Cappuccino","Bebida",1,30.00
+287,"2026-10-28 08:30:00-06",1,"Áurea Cayalá",25,16,"Té o Infusión","Bebida",1,25.00
+291,"2026-10-28 08:30:00-06",2,"Áurea Naranjo",3,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+291,"2026-10-28 08:30:00-06",2,"Áurea Naranjo",3,8,"Pastel de Chocolate","Postre",1,40.00
+291,"2026-10-28 08:30:00-06",2,"Áurea Naranjo",3,14,"Mocha","Bebida",1,35.00
+291,"2026-10-28 08:30:00-06",2,"Áurea Naranjo",3,15,"Chocolate Caliente","Bebida",1,30.00
+291,"2026-10-28 08:30:00-06",2,"Áurea Naranjo",3,21,"Té Frío","Bebida",2,27.00
+288,"2026-10-28 09:00:00-06",1,"Áurea Cayalá",14,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+288,"2026-10-28 09:00:00-06",1,"Áurea Cayalá",14,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+288,"2026-10-28 09:00:00-06",1,"Áurea Cayalá",14,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+467,"2026-10-28 10:13:00-06",3,"Áurea Roosevelt",NULL,10,"Espresso","Bebida",1,20.00
+467,"2026-10-28 10:13:00-06",3,"Áurea Roosevelt",NULL,17,"Americano Frío","Bebida",1,27.00
+297,"2026-10-28 13:00:00-06",3,"Áurea Roosevelt",13,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+297,"2026-10-28 13:00:00-06",3,"Áurea Roosevelt",13,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+297,"2026-10-28 13:00:00-06",3,"Áurea Roosevelt",13,16,"Té o Infusión","Bebida",1,25.00
+296,"2026-10-28 14:00:00-06",3,"Áurea Roosevelt",28,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+296,"2026-10-28 14:00:00-06",3,"Áurea Roosevelt",28,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+296,"2026-10-28 14:00:00-06",3,"Áurea Roosevelt",28,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+296,"2026-10-28 14:00:00-06",3,"Áurea Roosevelt",28,9,"Croissant de Mantequilla","Postre",2,28.00
+296,"2026-10-28 14:00:00-06",3,"Áurea Roosevelt",28,21,"Té Frío","Bebida",1,27.00
+466,"2026-10-28 14:59:00-06",2,"Áurea Naranjo",NULL,10,"Espresso","Bebida",1,20.00
+292,"2026-10-28 15:00:00-06",2,"Áurea Naranjo",27,8,"Pastel de Chocolate","Postre",2,40.00
+292,"2026-10-28 15:00:00-06",2,"Áurea Naranjo",27,15,"Chocolate Caliente","Bebida",1,30.00
+292,"2026-10-28 15:00:00-06",2,"Áurea Naranjo",27,17,"Americano Frío","Bebida",1,27.00
+289,"2026-10-28 19:00:00-06",1,"Áurea Cayalá",3,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+289,"2026-10-28 19:00:00-06",1,"Áurea Cayalá",3,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+289,"2026-10-28 19:00:00-06",1,"Áurea Cayalá",3,17,"Americano Frío","Bebida",2,27.00
+295,"2026-10-28 19:30:00-06",3,"Áurea Roosevelt",27,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+295,"2026-10-28 19:30:00-06",3,"Áurea Roosevelt",27,10,"Espresso","Bebida",2,20.00
+290,"2026-10-28 20:00:00-06",2,"Áurea Naranjo",28,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+290,"2026-10-28 20:00:00-06",2,"Áurea Naranjo",28,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+290,"2026-10-28 20:00:00-06",2,"Áurea Naranjo",28,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+290,"2026-10-28 20:00:00-06",2,"Áurea Naranjo",28,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+294,"2026-10-28 21:00:00-06",3,"Áurea Roosevelt",27,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+294,"2026-10-28 21:00:00-06",3,"Áurea Roosevelt",27,8,"Pastel de Chocolate","Postre",2,40.00
+294,"2026-10-28 21:00:00-06",3,"Áurea Roosevelt",27,12,"Cappuccino","Bebida",1,30.00
+294,"2026-10-28 21:00:00-06",3,"Áurea Roosevelt",27,13,"Latte","Bebida",2,32.00
+294,"2026-10-28 21:00:00-06",3,"Áurea Roosevelt",27,14,"Mocha","Bebida",1,35.00
+299,"2026-10-29 09:00:00-06",1,"Áurea Cayalá",14,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+299,"2026-10-29 09:00:00-06",1,"Áurea Cayalá",14,8,"Pastel de Chocolate","Postre",2,40.00
+299,"2026-10-29 09:00:00-06",1,"Áurea Cayalá",14,20,"Mocha Frío","Bebida",1,37.00
+301,"2026-10-29 09:00:00-06",1,"Áurea Cayalá",10,8,"Pastel de Chocolate","Postre",1,40.00
+301,"2026-10-29 09:00:00-06",1,"Áurea Cayalá",10,10,"Espresso","Bebida",2,20.00
+301,"2026-10-29 09:00:00-06",1,"Áurea Cayalá",10,12,"Cappuccino","Bebida",2,30.00
+301,"2026-10-29 09:00:00-06",1,"Áurea Cayalá",10,18,"Cappuccino Frío","Bebida",2,32.00
+301,"2026-10-29 09:00:00-06",1,"Áurea Cayalá",10,19,"Latte Frío","Bebida",2,34.00
+307,"2026-10-29 10:00:00-06",3,"Áurea Roosevelt",11,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+307,"2026-10-29 10:00:00-06",3,"Áurea Roosevelt",11,13,"Latte","Bebida",2,32.00
+307,"2026-10-29 10:00:00-06",3,"Áurea Roosevelt",11,20,"Mocha Frío","Bebida",1,37.00
+302,"2026-10-29 12:00:00-06",2,"Áurea Naranjo",7,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+302,"2026-10-29 12:00:00-06",2,"Áurea Naranjo",7,12,"Cappuccino","Bebida",1,30.00
+302,"2026-10-29 12:00:00-06",2,"Áurea Naranjo",7,14,"Mocha","Bebida",1,35.00
+302,"2026-10-29 12:00:00-06",2,"Áurea Naranjo",7,16,"Té o Infusión","Bebida",2,25.00
+298,"2026-10-29 12:30:00-06",1,"Áurea Cayalá",13,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+298,"2026-10-29 12:30:00-06",1,"Áurea Cayalá",13,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+298,"2026-10-29 12:30:00-06",1,"Áurea Cayalá",13,11,"Americano","Bebida",2,25.00
+298,"2026-10-29 12:30:00-06",1,"Áurea Cayalá",13,14,"Mocha","Bebida",2,35.00
+298,"2026-10-29 12:30:00-06",1,"Áurea Cayalá",13,19,"Latte Frío","Bebida",1,34.00
+300,"2026-10-29 12:30:00-06",1,"Áurea Cayalá",24,9,"Croissant de Mantequilla","Postre",1,28.00
+300,"2026-10-29 12:30:00-06",1,"Áurea Cayalá",24,12,"Cappuccino","Bebida",2,30.00
+300,"2026-10-29 12:30:00-06",1,"Áurea Cayalá",24,18,"Cappuccino Frío","Bebida",2,32.00
+300,"2026-10-29 12:30:00-06",1,"Áurea Cayalá",24,19,"Latte Frío","Bebida",1,34.00
+304,"2026-10-29 12:30:00-06",3,"Áurea Roosevelt",11,9,"Croissant de Mantequilla","Postre",2,28.00
+304,"2026-10-29 12:30:00-06",3,"Áurea Roosevelt",11,11,"Americano","Bebida",1,25.00
+304,"2026-10-29 12:30:00-06",3,"Áurea Roosevelt",11,17,"Americano Frío","Bebida",2,27.00
+304,"2026-10-29 12:30:00-06",3,"Áurea Roosevelt",11,18,"Cappuccino Frío","Bebida",2,32.00
+304,"2026-10-29 12:30:00-06",3,"Áurea Roosevelt",11,20,"Mocha Frío","Bebida",1,37.00
+305,"2026-10-29 13:30:00-06",3,"Áurea Roosevelt",25,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+305,"2026-10-29 13:30:00-06",3,"Áurea Roosevelt",25,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+305,"2026-10-29 13:30:00-06",3,"Áurea Roosevelt",25,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+305,"2026-10-29 13:30:00-06",3,"Áurea Roosevelt",25,12,"Cappuccino","Bebida",1,30.00
+305,"2026-10-29 13:30:00-06",3,"Áurea Roosevelt",25,21,"Té Frío","Bebida",2,27.00
+468,"2026-10-29 16:03:00-06",2,"Áurea Naranjo",NULL,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+468,"2026-10-29 16:03:00-06",2,"Áurea Naranjo",NULL,20,"Mocha Frío","Bebida",1,37.00
+306,"2026-10-29 18:30:00-06",3,"Áurea Roosevelt",8,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+306,"2026-10-29 18:30:00-06",3,"Áurea Roosevelt",8,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+306,"2026-10-29 18:30:00-06",3,"Áurea Roosevelt",8,14,"Mocha","Bebida",2,35.00
+306,"2026-10-29 18:30:00-06",3,"Áurea Roosevelt",8,16,"Té o Infusión","Bebida",2,25.00
+303,"2026-10-29 19:00:00-06",3,"Áurea Roosevelt",27,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+303,"2026-10-29 19:00:00-06",3,"Áurea Roosevelt",27,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+303,"2026-10-29 19:00:00-06",3,"Áurea Roosevelt",27,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+303,"2026-10-29 19:00:00-06",3,"Áurea Roosevelt",27,12,"Cappuccino","Bebida",1,30.00
+303,"2026-10-29 19:00:00-06",3,"Áurea Roosevelt",27,21,"Té Frío","Bebida",2,27.00
+311,"2026-10-30 08:00:00-06",1,"Áurea Cayalá",21,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+311,"2026-10-30 08:00:00-06",1,"Áurea Cayalá",21,17,"Americano Frío","Bebida",1,27.00
+311,"2026-10-30 08:00:00-06",1,"Áurea Cayalá",21,18,"Cappuccino Frío","Bebida",1,32.00
+311,"2026-10-30 08:00:00-06",1,"Áurea Cayalá",21,21,"Té Frío","Bebida",1,27.00
+310,"2026-10-30 08:30:00-06",1,"Áurea Cayalá",22,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+310,"2026-10-30 08:30:00-06",1,"Áurea Cayalá",22,10,"Espresso","Bebida",1,20.00
+310,"2026-10-30 08:30:00-06",1,"Áurea Cayalá",22,13,"Latte","Bebida",2,32.00
+309,"2026-10-30 09:00:00-06",1,"Áurea Cayalá",29,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+309,"2026-10-30 09:00:00-06",1,"Áurea Cayalá",29,12,"Cappuccino","Bebida",2,30.00
+309,"2026-10-30 09:00:00-06",1,"Áurea Cayalá",29,14,"Mocha","Bebida",2,35.00
+309,"2026-10-30 09:00:00-06",1,"Áurea Cayalá",29,15,"Chocolate Caliente","Bebida",1,30.00
+309,"2026-10-30 09:00:00-06",1,"Áurea Cayalá",29,19,"Latte Frío","Bebida",1,34.00
+315,"2026-10-30 09:00:00-06",2,"Áurea Naranjo",27,13,"Latte","Bebida",2,32.00
+315,"2026-10-30 09:00:00-06",2,"Áurea Naranjo",27,16,"Té o Infusión","Bebida",2,25.00
+312,"2026-10-30 09:30:00-06",2,"Áurea Naranjo",17,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+312,"2026-10-30 09:30:00-06",2,"Áurea Naranjo",17,11,"Americano","Bebida",2,25.00
+312,"2026-10-30 09:30:00-06",2,"Áurea Naranjo",17,19,"Latte Frío","Bebida",1,34.00
+312,"2026-10-30 09:30:00-06",2,"Áurea Naranjo",17,20,"Mocha Frío","Bebida",2,37.00
+314,"2026-10-30 12:00:00-06",2,"Áurea Naranjo",28,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+314,"2026-10-30 12:00:00-06",2,"Áurea Naranjo",28,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+314,"2026-10-30 12:00:00-06",2,"Áurea Naranjo",28,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+314,"2026-10-30 12:00:00-06",2,"Áurea Naranjo",28,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+314,"2026-10-30 12:00:00-06",2,"Áurea Naranjo",28,20,"Mocha Frío","Bebida",1,37.00
+316,"2026-10-30 13:00:00-06",3,"Áurea Roosevelt",9,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+316,"2026-10-30 13:00:00-06",3,"Áurea Roosevelt",9,17,"Americano Frío","Bebida",2,27.00
+469,"2026-10-30 13:17:00-06",1,"Áurea Cayalá",NULL,18,"Cappuccino Frío","Bebida",2,32.00
+317,"2026-10-30 13:30:00-06",3,"Áurea Roosevelt",25,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+317,"2026-10-30 13:30:00-06",3,"Áurea Roosevelt",25,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+317,"2026-10-30 13:30:00-06",3,"Áurea Roosevelt",25,9,"Croissant de Mantequilla","Postre",2,28.00
+317,"2026-10-30 13:30:00-06",3,"Áurea Roosevelt",25,14,"Mocha","Bebida",1,35.00
+320,"2026-10-30 15:30:00-06",3,"Áurea Roosevelt",5,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+320,"2026-10-30 15:30:00-06",3,"Áurea Roosevelt",5,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+320,"2026-10-30 15:30:00-06",3,"Áurea Roosevelt",5,8,"Pastel de Chocolate","Postre",2,40.00
+320,"2026-10-30 15:30:00-06",3,"Áurea Roosevelt",5,15,"Chocolate Caliente","Bebida",1,30.00
+320,"2026-10-30 15:30:00-06",3,"Áurea Roosevelt",5,16,"Té o Infusión","Bebida",1,25.00
+319,"2026-10-30 17:00:00-06",3,"Áurea Roosevelt",7,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+319,"2026-10-30 17:00:00-06",3,"Áurea Roosevelt",7,10,"Espresso","Bebida",2,20.00
+319,"2026-10-30 17:00:00-06",3,"Áurea Roosevelt",7,12,"Cappuccino","Bebida",1,30.00
+319,"2026-10-30 17:00:00-06",3,"Áurea Roosevelt",7,20,"Mocha Frío","Bebida",1,37.00
+470,"2026-10-30 18:15:00-06",2,"Áurea Naranjo",NULL,8,"Pastel de Chocolate","Postre",2,40.00
+470,"2026-10-30 18:15:00-06",2,"Áurea Naranjo",NULL,19,"Latte Frío","Bebida",1,34.00
+308,"2026-10-30 19:00:00-06",1,"Áurea Cayalá",20,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+308,"2026-10-30 19:00:00-06",1,"Áurea Cayalá",20,9,"Croissant de Mantequilla","Postre",2,28.00
+308,"2026-10-30 19:00:00-06",1,"Áurea Cayalá",20,10,"Espresso","Bebida",2,20.00
+308,"2026-10-30 19:00:00-06",1,"Áurea Cayalá",20,13,"Latte","Bebida",1,32.00
+318,"2026-10-30 19:00:00-06",3,"Áurea Roosevelt",16,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+318,"2026-10-30 19:00:00-06",3,"Áurea Roosevelt",16,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+318,"2026-10-30 19:00:00-06",3,"Áurea Roosevelt",16,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+318,"2026-10-30 19:00:00-06",3,"Áurea Roosevelt",16,11,"Americano","Bebida",2,25.00
+318,"2026-10-30 19:00:00-06",3,"Áurea Roosevelt",16,13,"Latte","Bebida",2,32.00
+313,"2026-10-30 21:00:00-06",2,"Áurea Naranjo",5,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+313,"2026-10-30 21:00:00-06",2,"Áurea Naranjo",5,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+313,"2026-10-30 21:00:00-06",2,"Áurea Naranjo",5,8,"Pastel de Chocolate","Postre",2,40.00
+326,"2026-10-31 09:00:00-06",1,"Áurea Cayalá",1,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+326,"2026-10-31 09:00:00-06",1,"Áurea Cayalá",1,8,"Pastel de Chocolate","Postre",2,40.00
+326,"2026-10-31 09:00:00-06",1,"Áurea Cayalá",1,19,"Latte Frío","Bebida",2,34.00
+326,"2026-10-31 09:00:00-06",1,"Áurea Cayalá",1,20,"Mocha Frío","Bebida",1,37.00
+325,"2026-10-31 10:00:00-06",1,"Áurea Cayalá",17,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+325,"2026-10-31 10:00:00-06",1,"Áurea Cayalá",17,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+322,"2026-10-31 12:00:00-06",1,"Áurea Cayalá",5,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+322,"2026-10-31 12:00:00-06",1,"Áurea Cayalá",5,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+322,"2026-10-31 12:00:00-06",1,"Áurea Cayalá",5,9,"Croissant de Mantequilla","Postre",1,28.00
+322,"2026-10-31 12:00:00-06",1,"Áurea Cayalá",5,10,"Espresso","Bebida",2,20.00
+322,"2026-10-31 12:00:00-06",1,"Áurea Cayalá",5,19,"Latte Frío","Bebida",1,34.00
+328,"2026-10-31 12:00:00-06",2,"Áurea Naranjo",2,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+328,"2026-10-31 12:00:00-06",2,"Áurea Naranjo",2,14,"Mocha","Bebida",2,35.00
+328,"2026-10-31 12:00:00-06",2,"Áurea Naranjo",2,16,"Té o Infusión","Bebida",2,25.00
+328,"2026-10-31 12:00:00-06",2,"Áurea Naranjo",2,21,"Té Frío","Bebida",1,27.00
+335,"2026-10-31 12:30:00-06",1,"Áurea Cayalá",4,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+335,"2026-10-31 12:30:00-06",1,"Áurea Cayalá",4,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+335,"2026-10-31 12:30:00-06",1,"Áurea Cayalá",4,16,"Té o Infusión","Bebida",1,25.00
+339,"2026-10-31 12:30:00-06",1,"Áurea Cayalá",20,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+339,"2026-10-31 12:30:00-06",1,"Áurea Cayalá",20,11,"Americano","Bebida",2,25.00
+339,"2026-10-31 12:30:00-06",1,"Áurea Cayalá",20,16,"Té o Infusión","Bebida",1,25.00
+341,"2026-10-31 12:30:00-06",1,"Áurea Cayalá",14,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+341,"2026-10-31 12:30:00-06",1,"Áurea Cayalá",14,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+342,"2026-10-31 12:30:00-06",1,"Áurea Cayalá",2,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+342,"2026-10-31 12:30:00-06",1,"Áurea Cayalá",2,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+342,"2026-10-31 12:30:00-06",1,"Áurea Cayalá",2,10,"Espresso","Bebida",2,20.00
+342,"2026-10-31 12:30:00-06",1,"Áurea Cayalá",2,12,"Cappuccino","Bebida",2,30.00
+345,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",22,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+345,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",22,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+345,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",22,14,"Mocha","Bebida",2,35.00
+345,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",22,21,"Té Frío","Bebida",2,27.00
+346,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",8,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+346,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",8,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+346,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",8,15,"Chocolate Caliente","Bebida",1,30.00
+347,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",6,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+347,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",6,10,"Espresso","Bebida",2,20.00
+347,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",6,11,"Americano","Bebida",1,25.00
+347,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",6,15,"Chocolate Caliente","Bebida",2,30.00
+350,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",7,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+350,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",7,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+350,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",7,14,"Mocha","Bebida",2,35.00
+351,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",5,8,"Pastel de Chocolate","Postre",2,40.00
+351,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",5,9,"Croissant de Mantequilla","Postre",2,28.00
+351,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",5,10,"Espresso","Bebida",2,20.00
+351,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",5,15,"Chocolate Caliente","Bebida",2,30.00
+352,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",2,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+352,"2026-10-31 12:30:00-06",2,"Áurea Naranjo",2,8,"Pastel de Chocolate","Postre",1,40.00
+355,"2026-10-31 12:30:00-06",3,"Áurea Roosevelt",21,8,"Pastel de Chocolate","Postre",1,40.00
+355,"2026-10-31 12:30:00-06",3,"Áurea Roosevelt",21,10,"Espresso","Bebida",1,20.00
+355,"2026-10-31 12:30:00-06",3,"Áurea Roosevelt",21,18,"Cappuccino Frío","Bebida",2,32.00
+359,"2026-10-31 12:30:00-06",3,"Áurea Roosevelt",6,9,"Croissant de Mantequilla","Postre",2,28.00
+359,"2026-10-31 12:30:00-06",3,"Áurea Roosevelt",6,13,"Latte","Bebida",2,32.00
+359,"2026-10-31 12:30:00-06",3,"Áurea Roosevelt",6,15,"Chocolate Caliente","Bebida",2,30.00
+321,"2026-10-31 13:00:00-06",1,"Áurea Cayalá",14,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+321,"2026-10-31 13:00:00-06",1,"Áurea Cayalá",14,18,"Cappuccino Frío","Bebida",2,32.00
+334,"2026-10-31 13:00:00-06",1,"Áurea Cayalá",25,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+334,"2026-10-31 13:00:00-06",1,"Áurea Cayalá",25,11,"Americano","Bebida",2,25.00
+334,"2026-10-31 13:00:00-06",1,"Áurea Cayalá",25,17,"Americano Frío","Bebida",1,27.00
+336,"2026-10-31 13:00:00-06",1,"Áurea Cayalá",17,8,"Pastel de Chocolate","Postre",2,40.00
+336,"2026-10-31 13:00:00-06",1,"Áurea Cayalá",17,9,"Croissant de Mantequilla","Postre",1,28.00
+336,"2026-10-31 13:00:00-06",1,"Áurea Cayalá",17,10,"Espresso","Bebida",2,20.00
+337,"2026-10-31 13:00:00-06",1,"Áurea Cayalá",19,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+337,"2026-10-31 13:00:00-06",1,"Áurea Cayalá",19,13,"Latte","Bebida",2,32.00
+337,"2026-10-31 13:00:00-06",1,"Áurea Cayalá",19,20,"Mocha Frío","Bebida",1,37.00
+338,"2026-10-31 13:00:00-06",1,"Áurea Cayalá",12,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+338,"2026-10-31 13:00:00-06",1,"Áurea Cayalá",12,17,"Americano Frío","Bebida",2,27.00
+340,"2026-10-31 13:00:00-06",1,"Áurea Cayalá",23,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+340,"2026-10-31 13:00:00-06",1,"Áurea Cayalá",23,14,"Mocha","Bebida",1,35.00
+348,"2026-10-31 13:00:00-06",2,"Áurea Naranjo",24,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+348,"2026-10-31 13:00:00-06",2,"Áurea Naranjo",24,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+348,"2026-10-31 13:00:00-06",2,"Áurea Naranjo",24,20,"Mocha Frío","Bebida",2,37.00
+349,"2026-10-31 13:00:00-06",2,"Áurea Naranjo",18,8,"Pastel de Chocolate","Postre",2,40.00
+349,"2026-10-31 13:00:00-06",2,"Áurea Naranjo",18,16,"Té o Infusión","Bebida",2,25.00
+357,"2026-10-31 13:00:00-06",3,"Áurea Roosevelt",7,9,"Croissant de Mantequilla","Postre",2,28.00
+357,"2026-10-31 13:00:00-06",3,"Áurea Roosevelt",7,12,"Cappuccino","Bebida",1,30.00
+357,"2026-10-31 13:00:00-06",3,"Áurea Roosevelt",7,13,"Latte","Bebida",2,32.00
+360,"2026-10-31 13:00:00-06",3,"Áurea Roosevelt",25,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+360,"2026-10-31 13:00:00-06",3,"Áurea Roosevelt",25,17,"Americano Frío","Bebida",1,27.00
+363,"2026-10-31 13:00:00-06",3,"Áurea Roosevelt",1,8,"Pastel de Chocolate","Postre",2,40.00
+363,"2026-10-31 13:00:00-06",3,"Áurea Roosevelt",1,14,"Mocha","Bebida",1,35.00
+363,"2026-10-31 13:00:00-06",3,"Áurea Roosevelt",1,18,"Cappuccino Frío","Bebida",2,32.00
+363,"2026-10-31 13:00:00-06",3,"Áurea Roosevelt",1,21,"Té Frío","Bebida",2,27.00
+471,"2026-10-31 13:20:00-06",1,"Áurea Cayalá",NULL,13,"Latte","Bebida",1,32.00
+471,"2026-10-31 13:20:00-06",1,"Áurea Cayalá",NULL,21,"Té Frío","Bebida",1,27.00
+332,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",19,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+332,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",19,12,"Cappuccino","Bebida",2,30.00
+332,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",19,15,"Chocolate Caliente","Bebida",1,30.00
+332,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",19,16,"Té o Infusión","Bebida",2,25.00
+332,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",19,20,"Mocha Frío","Bebida",1,37.00
+343,"2026-10-31 13:30:00-06",1,"Áurea Cayalá",12,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+343,"2026-10-31 13:30:00-06",1,"Áurea Cayalá",12,13,"Latte","Bebida",2,32.00
+344,"2026-10-31 13:30:00-06",1,"Áurea Cayalá",12,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+344,"2026-10-31 13:30:00-06",1,"Áurea Cayalá",12,19,"Latte Frío","Bebida",2,34.00
+353,"2026-10-31 13:30:00-06",2,"Áurea Naranjo",8,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+353,"2026-10-31 13:30:00-06",2,"Áurea Naranjo",8,13,"Latte","Bebida",2,32.00
+353,"2026-10-31 13:30:00-06",2,"Áurea Naranjo",8,15,"Chocolate Caliente","Bebida",2,30.00
+353,"2026-10-31 13:30:00-06",2,"Áurea Naranjo",8,19,"Latte Frío","Bebida",1,34.00
+354,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",22,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+354,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",22,9,"Croissant de Mantequilla","Postre",1,28.00
+356,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",22,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+356,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",22,17,"Americano Frío","Bebida",2,27.00
+358,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",16,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+358,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",16,16,"Té o Infusión","Bebida",2,25.00
+361,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",18,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+361,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",18,10,"Espresso","Bebida",2,20.00
+362,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",18,9,"Croissant de Mantequilla","Postre",1,28.00
+362,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",18,14,"Mocha","Bebida",2,35.00
+362,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",18,18,"Cappuccino Frío","Bebida",2,32.00
+362,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",18,19,"Latte Frío","Bebida",1,34.00
+364,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",7,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+364,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",7,15,"Chocolate Caliente","Bebida",1,30.00
+364,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",7,20,"Mocha Frío","Bebida",2,37.00
+365,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",14,9,"Croissant de Mantequilla","Postre",1,28.00
+365,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",14,16,"Té o Infusión","Bebida",2,25.00
+365,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",14,18,"Cappuccino Frío","Bebida",1,32.00
+365,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",14,20,"Mocha Frío","Bebida",2,37.00
+366,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",21,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+366,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",21,12,"Cappuccino","Bebida",2,30.00
+367,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",7,14,"Mocha","Bebida",1,35.00
+367,"2026-10-31 13:30:00-06",3,"Áurea Roosevelt",7,15,"Chocolate Caliente","Bebida",2,30.00
+472,"2026-10-31 15:05:00-06",3,"Áurea Roosevelt",NULL,10,"Espresso","Bebida",1,20.00
+472,"2026-10-31 15:05:00-06",3,"Áurea Roosevelt",NULL,11,"Americano","Bebida",2,25.00
+333,"2026-10-31 16:30:00-06",3,"Áurea Roosevelt",11,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+333,"2026-10-31 16:30:00-06",3,"Áurea Roosevelt",11,11,"Americano","Bebida",2,25.00
+333,"2026-10-31 16:30:00-06",3,"Áurea Roosevelt",11,16,"Té o Infusión","Bebida",1,25.00
+333,"2026-10-31 16:30:00-06",3,"Áurea Roosevelt",11,21,"Té Frío","Bebida",2,27.00
+323,"2026-10-31 17:00:00-06",1,"Áurea Cayalá",16,12,"Cappuccino","Bebida",2,30.00
+323,"2026-10-31 17:00:00-06",1,"Áurea Cayalá",16,17,"Americano Frío","Bebida",1,27.00
+324,"2026-10-31 17:00:00-06",1,"Áurea Cayalá",25,11,"Americano","Bebida",1,25.00
+324,"2026-10-31 17:00:00-06",1,"Áurea Cayalá",25,15,"Chocolate Caliente","Bebida",1,30.00
+324,"2026-10-31 17:00:00-06",1,"Áurea Cayalá",25,19,"Latte Frío","Bebida",1,34.00
+324,"2026-10-31 17:00:00-06",1,"Áurea Cayalá",25,21,"Té Frío","Bebida",2,27.00
+327,"2026-10-31 18:30:00-06",2,"Áurea Naranjo",5,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+327,"2026-10-31 18:30:00-06",2,"Áurea Naranjo",5,15,"Chocolate Caliente","Bebida",1,30.00
+327,"2026-10-31 18:30:00-06",2,"Áurea Naranjo",5,17,"Americano Frío","Bebida",2,27.00
+327,"2026-10-31 18:30:00-06",2,"Áurea Naranjo",5,19,"Latte Frío","Bebida",2,34.00
+327,"2026-10-31 18:30:00-06",2,"Áurea Naranjo",5,20,"Mocha Frío","Bebida",2,37.00
+329,"2026-10-31 20:00:00-06",2,"Áurea Naranjo",1,8,"Pastel de Chocolate","Postre",1,40.00
+329,"2026-10-31 20:00:00-06",2,"Áurea Naranjo",1,14,"Mocha","Bebida",1,35.00
+329,"2026-10-31 20:00:00-06",2,"Áurea Naranjo",1,15,"Chocolate Caliente","Bebida",1,30.00
+329,"2026-10-31 20:00:00-06",2,"Áurea Naranjo",1,16,"Té o Infusión","Bebida",2,25.00
+331,"2026-10-31 20:00:00-06",3,"Áurea Roosevelt",15,8,"Pastel de Chocolate","Postre",2,40.00
+331,"2026-10-31 20:00:00-06",3,"Áurea Roosevelt",15,15,"Chocolate Caliente","Bebida",1,30.00
+331,"2026-10-31 20:00:00-06",3,"Áurea Roosevelt",15,16,"Té o Infusión","Bebida",2,25.00
+331,"2026-10-31 20:00:00-06",3,"Áurea Roosevelt",15,18,"Cappuccino Frío","Bebida",1,32.00
+330,"2026-10-31 20:30:00-06",3,"Áurea Roosevelt",14,9,"Croissant de Mantequilla","Postre",2,28.00
+330,"2026-10-31 20:30:00-06",3,"Áurea Roosevelt",14,13,"Latte","Bebida",1,32.00
+381,"2026-11-01 08:00:00-06",3,"Áurea Roosevelt",24,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+381,"2026-11-01 08:00:00-06",3,"Áurea Roosevelt",24,11,"Americano","Bebida",2,25.00
+381,"2026-11-01 08:00:00-06",3,"Áurea Roosevelt",24,13,"Latte","Bebida",1,32.00
+381,"2026-11-01 08:00:00-06",3,"Áurea Roosevelt",24,15,"Chocolate Caliente","Bebida",2,30.00
+381,"2026-11-01 08:00:00-06",3,"Áurea Roosevelt",24,16,"Té o Infusión","Bebida",2,25.00
+369,"2026-11-01 09:30:00-06",1,"Áurea Cayalá",23,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+369,"2026-11-01 09:30:00-06",1,"Áurea Cayalá",23,9,"Croissant de Mantequilla","Postre",1,28.00
+369,"2026-11-01 09:30:00-06",1,"Áurea Cayalá",23,16,"Té o Infusión","Bebida",2,25.00
+369,"2026-11-01 09:30:00-06",1,"Áurea Cayalá",23,18,"Cappuccino Frío","Bebida",1,32.00
+474,"2026-11-01 11:35:00-06",2,"Áurea Naranjo",NULL,12,"Cappuccino","Bebida",1,30.00
+379,"2026-11-01 12:00:00-06",3,"Áurea Roosevelt",23,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+379,"2026-11-01 12:00:00-06",3,"Áurea Roosevelt",23,13,"Latte","Bebida",1,32.00
+379,"2026-11-01 12:00:00-06",3,"Áurea Roosevelt",23,20,"Mocha Frío","Bebida",1,37.00
+475,"2026-11-01 12:10:00-06",3,"Áurea Roosevelt",NULL,20,"Mocha Frío","Bebida",2,37.00
+370,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",10,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+370,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",10,11,"Americano","Bebida",1,25.00
+370,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",10,15,"Chocolate Caliente","Bebida",1,30.00
+370,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",10,21,"Té Frío","Bebida",2,27.00
+376,"2026-11-01 12:30:00-06",2,"Áurea Naranjo",16,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+376,"2026-11-01 12:30:00-06",2,"Áurea Naranjo",16,9,"Croissant de Mantequilla","Postre",2,28.00
+382,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",4,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+382,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",4,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+382,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",4,11,"Americano","Bebida",1,25.00
+382,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",4,20,"Mocha Frío","Bebida",2,37.00
+383,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",23,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+383,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",23,8,"Pastel de Chocolate","Postre",1,40.00
+383,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",23,17,"Americano Frío","Bebida",2,27.00
+385,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",21,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+385,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",21,8,"Pastel de Chocolate","Postre",2,40.00
+385,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",21,10,"Espresso","Bebida",1,20.00
+386,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",23,11,"Americano","Bebida",1,25.00
+386,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",23,12,"Cappuccino","Bebida",2,30.00
+386,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",23,15,"Chocolate Caliente","Bebida",1,30.00
+386,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",23,21,"Té Frío","Bebida",2,27.00
+388,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",10,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+388,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",10,8,"Pastel de Chocolate","Postre",1,40.00
+388,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",10,20,"Mocha Frío","Bebida",2,37.00
+389,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",12,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+389,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",12,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+389,"2026-11-01 12:30:00-06",1,"Áurea Cayalá",12,10,"Espresso","Bebida",1,20.00
+392,"2026-11-01 12:30:00-06",2,"Áurea Naranjo",7,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+392,"2026-11-01 12:30:00-06",2,"Áurea Naranjo",7,12,"Cappuccino","Bebida",1,30.00
+392,"2026-11-01 12:30:00-06",2,"Áurea Naranjo",7,20,"Mocha Frío","Bebida",1,37.00
+395,"2026-11-01 12:30:00-06",2,"Áurea Naranjo",19,12,"Cappuccino","Bebida",1,30.00
+395,"2026-11-01 12:30:00-06",2,"Áurea Naranjo",19,14,"Mocha","Bebida",2,35.00
+395,"2026-11-01 12:30:00-06",2,"Áurea Naranjo",19,17,"Americano Frío","Bebida",2,27.00
+395,"2026-11-01 12:30:00-06",2,"Áurea Naranjo",19,18,"Cappuccino Frío","Bebida",2,32.00
+399,"2026-11-01 12:30:00-06",2,"Áurea Naranjo",10,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+399,"2026-11-01 12:30:00-06",2,"Áurea Naranjo",10,14,"Mocha","Bebida",1,35.00
+400,"2026-11-01 12:30:00-06",2,"Áurea Naranjo",10,13,"Latte","Bebida",2,32.00
+400,"2026-11-01 12:30:00-06",2,"Áurea Naranjo",10,17,"Americano Frío","Bebida",1,27.00
+401,"2026-11-01 12:30:00-06",3,"Áurea Roosevelt",26,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+401,"2026-11-01 12:30:00-06",3,"Áurea Roosevelt",26,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+401,"2026-11-01 12:30:00-06",3,"Áurea Roosevelt",26,14,"Mocha","Bebida",2,35.00
+411,"2026-11-01 12:30:00-06",3,"Áurea Roosevelt",16,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+411,"2026-11-01 12:30:00-06",3,"Áurea Roosevelt",16,13,"Latte","Bebida",2,32.00
+411,"2026-11-01 12:30:00-06",3,"Áurea Roosevelt",16,16,"Té o Infusión","Bebida",1,25.00
+411,"2026-11-01 12:30:00-06",3,"Áurea Roosevelt",16,20,"Mocha Frío","Bebida",2,37.00
+413,"2026-11-01 12:30:00-06",3,"Áurea Roosevelt",7,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+413,"2026-11-01 12:30:00-06",3,"Áurea Roosevelt",7,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+413,"2026-11-01 12:30:00-06",3,"Áurea Roosevelt",7,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+414,"2026-11-01 12:30:00-06",3,"Áurea Roosevelt",9,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+414,"2026-11-01 12:30:00-06",3,"Áurea Roosevelt",9,11,"Americano","Bebida",2,25.00
+414,"2026-11-01 12:30:00-06",3,"Áurea Roosevelt",9,13,"Latte","Bebida",1,32.00
+378,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",17,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+378,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",17,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+378,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",17,9,"Croissant de Mantequilla","Postre",2,28.00
+378,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",17,10,"Espresso","Bebida",1,20.00
+378,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",17,12,"Cappuccino","Bebida",2,30.00
+391,"2026-11-01 13:00:00-06",1,"Áurea Cayalá",28,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+391,"2026-11-01 13:00:00-06",1,"Áurea Cayalá",28,11,"Americano","Bebida",2,25.00
+391,"2026-11-01 13:00:00-06",1,"Áurea Cayalá",28,12,"Cappuccino","Bebida",1,30.00
+391,"2026-11-01 13:00:00-06",1,"Áurea Cayalá",28,16,"Té o Infusión","Bebida",2,25.00
+396,"2026-11-01 13:00:00-06",2,"Áurea Naranjo",13,10,"Espresso","Bebida",2,20.00
+396,"2026-11-01 13:00:00-06",2,"Áurea Naranjo",13,20,"Mocha Frío","Bebida",2,37.00
+397,"2026-11-01 13:00:00-06",2,"Áurea Naranjo",8,9,"Croissant de Mantequilla","Postre",1,28.00
+397,"2026-11-01 13:00:00-06",2,"Áurea Naranjo",8,14,"Mocha","Bebida",2,35.00
+404,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",4,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+404,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",4,15,"Chocolate Caliente","Bebida",2,30.00
+404,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",4,18,"Cappuccino Frío","Bebida",1,32.00
+404,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",4,21,"Té Frío","Bebida",1,27.00
+406,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",14,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+406,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",14,10,"Espresso","Bebida",2,20.00
+406,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",14,12,"Cappuccino","Bebida",1,30.00
+407,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",13,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+407,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",13,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+407,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",13,14,"Mocha","Bebida",1,35.00
+407,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",13,19,"Latte Frío","Bebida",1,34.00
+408,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",5,11,"Americano","Bebida",2,25.00
+408,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",5,12,"Cappuccino","Bebida",2,30.00
+408,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",5,13,"Latte","Bebida",1,32.00
+408,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",5,20,"Mocha Frío","Bebida",1,37.00
+410,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",7,13,"Latte","Bebida",1,32.00
+410,"2026-11-01 13:00:00-06",3,"Áurea Roosevelt",7,17,"Americano Frío","Bebida",2,27.00
+371,"2026-11-01 13:30:00-06",1,"Áurea Cayalá",24,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+371,"2026-11-01 13:30:00-06",1,"Áurea Cayalá",24,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+371,"2026-11-01 13:30:00-06",1,"Áurea Cayalá",24,13,"Latte","Bebida",1,32.00
+371,"2026-11-01 13:30:00-06",1,"Áurea Cayalá",24,21,"Té Frío","Bebida",2,27.00
+384,"2026-11-01 13:30:00-06",1,"Áurea Cayalá",7,9,"Croissant de Mantequilla","Postre",1,28.00
+384,"2026-11-01 13:30:00-06",1,"Áurea Cayalá",7,14,"Mocha","Bebida",1,35.00
+384,"2026-11-01 13:30:00-06",1,"Áurea Cayalá",7,21,"Té Frío","Bebida",1,27.00
+387,"2026-11-01 13:30:00-06",1,"Áurea Cayalá",9,8,"Pastel de Chocolate","Postre",2,40.00
+387,"2026-11-01 13:30:00-06",1,"Áurea Cayalá",9,11,"Americano","Bebida",2,25.00
+390,"2026-11-01 13:30:00-06",1,"Áurea Cayalá",11,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+390,"2026-11-01 13:30:00-06",1,"Áurea Cayalá",11,11,"Americano","Bebida",2,25.00
+393,"2026-11-01 13:30:00-06",2,"Áurea Naranjo",28,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+393,"2026-11-01 13:30:00-06",2,"Áurea Naranjo",28,8,"Pastel de Chocolate","Postre",2,40.00
+393,"2026-11-01 13:30:00-06",2,"Áurea Naranjo",28,14,"Mocha","Bebida",2,35.00
+394,"2026-11-01 13:30:00-06",2,"Áurea Naranjo",19,14,"Mocha","Bebida",2,35.00
+394,"2026-11-01 13:30:00-06",2,"Áurea Naranjo",19,15,"Chocolate Caliente","Bebida",1,30.00
+394,"2026-11-01 13:30:00-06",2,"Áurea Naranjo",19,19,"Latte Frío","Bebida",1,34.00
+398,"2026-11-01 13:30:00-06",2,"Áurea Naranjo",17,8,"Pastel de Chocolate","Postre",1,40.00
+398,"2026-11-01 13:30:00-06",2,"Áurea Naranjo",17,12,"Cappuccino","Bebida",2,30.00
+402,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",26,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+402,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",26,12,"Cappuccino","Bebida",1,30.00
+402,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",26,13,"Latte","Bebida",1,32.00
+402,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",26,16,"Té o Infusión","Bebida",1,25.00
+403,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",4,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+403,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",4,10,"Espresso","Bebida",1,20.00
+403,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",4,16,"Té o Infusión","Bebida",2,25.00
+403,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",4,19,"Latte Frío","Bebida",2,34.00
+405,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",1,10,"Espresso","Bebida",1,20.00
+405,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",1,11,"Americano","Bebida",2,25.00
+409,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",10,8,"Pastel de Chocolate","Postre",1,40.00
+409,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",10,16,"Té o Infusión","Bebida",1,25.00
+409,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",10,18,"Cappuccino Frío","Bebida",1,32.00
+412,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",27,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+412,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",27,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+412,"2026-11-01 13:30:00-06",3,"Áurea Roosevelt",27,9,"Croissant de Mantequilla","Postre",1,28.00
+374,"2026-11-01 14:00:00-06",2,"Áurea Naranjo",6,10,"Espresso","Bebida",2,20.00
+374,"2026-11-01 14:00:00-06",2,"Áurea Naranjo",6,11,"Americano","Bebida",2,25.00
+374,"2026-11-01 14:00:00-06",2,"Áurea Naranjo",6,13,"Latte","Bebida",1,32.00
+374,"2026-11-01 14:00:00-06",2,"Áurea Naranjo",6,18,"Cappuccino Frío","Bebida",2,32.00
+374,"2026-11-01 14:00:00-06",2,"Áurea Naranjo",6,19,"Latte Frío","Bebida",1,34.00
+473,"2026-11-01 16:42:00-06",1,"Áurea Cayalá",NULL,9,"Croissant de Mantequilla","Postre",2,28.00
+473,"2026-11-01 16:42:00-06",1,"Áurea Cayalá",NULL,17,"Americano Frío","Bebida",2,27.00
+377,"2026-11-01 18:30:00-06",3,"Áurea Roosevelt",23,9,"Croissant de Mantequilla","Postre",1,28.00
+377,"2026-11-01 18:30:00-06",3,"Áurea Roosevelt",23,16,"Té o Infusión","Bebida",1,25.00
+377,"2026-11-01 18:30:00-06",3,"Áurea Roosevelt",23,17,"Americano Frío","Bebida",1,27.00
+377,"2026-11-01 18:30:00-06",3,"Áurea Roosevelt",23,18,"Cappuccino Frío","Bebida",2,32.00
+373,"2026-11-01 19:00:00-06",2,"Áurea Naranjo",21,9,"Croissant de Mantequilla","Postre",2,28.00
+373,"2026-11-01 19:00:00-06",2,"Áurea Naranjo",21,11,"Americano","Bebida",2,25.00
+373,"2026-11-01 19:00:00-06",2,"Áurea Naranjo",21,12,"Cappuccino","Bebida",1,30.00
+373,"2026-11-01 19:00:00-06",2,"Áurea Naranjo",21,18,"Cappuccino Frío","Bebida",1,32.00
+373,"2026-11-01 19:00:00-06",2,"Áurea Naranjo",21,20,"Mocha Frío","Bebida",2,37.00
+368,"2026-11-01 20:30:00-06",1,"Áurea Cayalá",28,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+368,"2026-11-01 20:30:00-06",1,"Áurea Cayalá",28,9,"Croissant de Mantequilla","Postre",2,28.00
+368,"2026-11-01 20:30:00-06",1,"Áurea Cayalá",28,14,"Mocha","Bebida",2,35.00
+368,"2026-11-01 20:30:00-06",1,"Áurea Cayalá",28,15,"Chocolate Caliente","Bebida",1,30.00
+372,"2026-11-01 20:30:00-06",2,"Áurea Naranjo",25,14,"Mocha","Bebida",2,35.00
+372,"2026-11-01 20:30:00-06",2,"Áurea Naranjo",25,16,"Té o Infusión","Bebida",1,25.00
+380,"2026-11-01 20:30:00-06",3,"Áurea Roosevelt",18,8,"Pastel de Chocolate","Postre",1,40.00
+380,"2026-11-01 20:30:00-06",3,"Áurea Roosevelt",18,9,"Croissant de Mantequilla","Postre",2,28.00
+380,"2026-11-01 20:30:00-06",3,"Áurea Roosevelt",18,10,"Espresso","Bebida",1,20.00
+380,"2026-11-01 20:30:00-06",3,"Áurea Roosevelt",18,17,"Americano Frío","Bebida",1,27.00
+375,"2026-11-01 21:00:00-06",2,"Áurea Naranjo",12,10,"Espresso","Bebida",1,20.00
+375,"2026-11-01 21:00:00-06",2,"Áurea Naranjo",12,17,"Americano Frío","Bebida",2,27.00
+375,"2026-11-01 21:00:00-06",2,"Áurea Naranjo",12,18,"Cappuccino Frío","Bebida",1,32.00
+375,"2026-11-01 21:00:00-06",2,"Áurea Naranjo",12,21,"Té Frío","Bebida",1,27.00
+420,"2026-11-02 08:30:00-06",2,"Áurea Naranjo",17,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+420,"2026-11-02 08:30:00-06",2,"Áurea Naranjo",17,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+420,"2026-11-02 08:30:00-06",2,"Áurea Naranjo",17,14,"Mocha","Bebida",1,35.00
+420,"2026-11-02 08:30:00-06",2,"Áurea Naranjo",17,21,"Té Frío","Bebida",2,27.00
+424,"2026-11-02 08:30:00-06",3,"Áurea Roosevelt",2,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+424,"2026-11-02 08:30:00-06",3,"Áurea Roosevelt",2,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+424,"2026-11-02 08:30:00-06",3,"Áurea Roosevelt",2,13,"Latte","Bebida",1,32.00
+424,"2026-11-02 08:30:00-06",3,"Áurea Roosevelt",2,16,"Té o Infusión","Bebida",2,25.00
+424,"2026-11-02 08:30:00-06",3,"Áurea Roosevelt",2,20,"Mocha Frío","Bebida",2,37.00
+417,"2026-11-02 09:30:00-06",1,"Áurea Cayalá",21,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+417,"2026-11-02 09:30:00-06",1,"Áurea Cayalá",21,11,"Americano","Bebida",2,25.00
+417,"2026-11-02 09:30:00-06",1,"Áurea Cayalá",21,15,"Chocolate Caliente","Bebida",1,30.00
+423,"2026-11-02 10:00:00-06",2,"Áurea Naranjo",18,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+423,"2026-11-02 10:00:00-06",2,"Áurea Naranjo",18,8,"Pastel de Chocolate","Postre",2,40.00
+423,"2026-11-02 10:00:00-06",2,"Áurea Naranjo",18,11,"Americano","Bebida",1,25.00
+418,"2026-11-02 12:00:00-06",1,"Áurea Cayalá",18,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+418,"2026-11-02 12:00:00-06",1,"Áurea Cayalá",18,12,"Cappuccino","Bebida",2,30.00
+425,"2026-11-02 12:00:00-06",3,"Áurea Roosevelt",16,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+425,"2026-11-02 12:00:00-06",3,"Áurea Roosevelt",16,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+416,"2026-11-02 13:00:00-06",1,"Áurea Cayalá",3,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+416,"2026-11-02 13:00:00-06",1,"Áurea Cayalá",3,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+416,"2026-11-02 13:00:00-06",1,"Áurea Cayalá",3,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+416,"2026-11-02 13:00:00-06",1,"Áurea Cayalá",3,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+416,"2026-11-02 13:00:00-06",1,"Áurea Cayalá",3,13,"Latte","Bebida",1,32.00
+419,"2026-11-02 13:00:00-06",1,"Áurea Cayalá",21,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+419,"2026-11-02 13:00:00-06",1,"Áurea Cayalá",21,16,"Té o Infusión","Bebida",1,25.00
+419,"2026-11-02 13:00:00-06",1,"Áurea Cayalá",21,17,"Americano Frío","Bebida",1,27.00
+419,"2026-11-02 13:00:00-06",1,"Áurea Cayalá",21,19,"Latte Frío","Bebida",2,34.00
+419,"2026-11-02 13:00:00-06",1,"Áurea Cayalá",21,21,"Té Frío","Bebida",2,27.00
+427,"2026-11-02 13:30:00-06",3,"Áurea Roosevelt",23,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+427,"2026-11-02 13:30:00-06",3,"Áurea Roosevelt",23,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+427,"2026-11-02 13:30:00-06",3,"Áurea Roosevelt",23,10,"Espresso","Bebida",2,20.00
+427,"2026-11-02 13:30:00-06",3,"Áurea Roosevelt",23,18,"Cappuccino Frío","Bebida",1,32.00
+415,"2026-11-02 14:00:00-06",1,"Áurea Cayalá",18,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+415,"2026-11-02 14:00:00-06",1,"Áurea Cayalá",18,8,"Pastel de Chocolate","Postre",1,40.00
+415,"2026-11-02 14:00:00-06",1,"Áurea Cayalá",18,15,"Chocolate Caliente","Bebida",2,30.00
+415,"2026-11-02 14:00:00-06",1,"Áurea Cayalá",18,18,"Cappuccino Frío","Bebida",2,32.00
+415,"2026-11-02 14:00:00-06",1,"Áurea Cayalá",18,19,"Latte Frío","Bebida",2,34.00
+422,"2026-11-02 14:00:00-06",2,"Áurea Naranjo",15,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+422,"2026-11-02 14:00:00-06",2,"Áurea Naranjo",15,21,"Té Frío","Bebida",1,27.00
+421,"2026-11-02 18:30:00-06",2,"Áurea Naranjo",13,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+421,"2026-11-02 18:30:00-06",2,"Áurea Naranjo",13,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+421,"2026-11-02 18:30:00-06",2,"Áurea Naranjo",13,12,"Cappuccino","Bebida",1,30.00
+421,"2026-11-02 18:30:00-06",2,"Áurea Naranjo",13,16,"Té o Infusión","Bebida",1,25.00
+421,"2026-11-02 18:30:00-06",2,"Áurea Naranjo",13,17,"Americano Frío","Bebida",2,27.00
+476,"2026-11-02 19:08:00-06",3,"Áurea Roosevelt",NULL,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+476,"2026-11-02 19:08:00-06",3,"Áurea Roosevelt",NULL,19,"Latte Frío","Bebida",2,34.00
+426,"2026-11-02 19:30:00-06",3,"Áurea Roosevelt",17,10,"Espresso","Bebida",2,20.00
+426,"2026-11-02 19:30:00-06",3,"Áurea Roosevelt",17,17,"Americano Frío","Bebida",2,27.00
+426,"2026-11-02 19:30:00-06",3,"Áurea Roosevelt",17,21,"Té Frío","Bebida",2,27.00
+429,"2026-11-03 09:00:00-06",1,"Áurea Cayalá",20,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+429,"2026-11-03 09:00:00-06",1,"Áurea Cayalá",20,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+429,"2026-11-03 09:00:00-06",1,"Áurea Cayalá",20,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+429,"2026-11-03 09:00:00-06",1,"Áurea Cayalá",20,10,"Espresso","Bebida",1,20.00
+429,"2026-11-03 09:00:00-06",1,"Áurea Cayalá",20,12,"Cappuccino","Bebida",2,30.00
+428,"2026-11-03 12:00:00-06",1,"Áurea Cayalá",17,1,"Pollo a la Parrilla","Plato Fuerte",2,75.00
+428,"2026-11-03 12:00:00-06",1,"Áurea Cayalá",17,4,"Lomo en salsa de Pimienta","Plato Fuerte",1,115.00
+428,"2026-11-03 12:00:00-06",1,"Áurea Cayalá",17,14,"Mocha","Bebida",2,35.00
+428,"2026-11-03 12:00:00-06",1,"Áurea Cayalá",17,15,"Chocolate Caliente","Bebida",1,30.00
+430,"2026-11-03 12:30:00-06",1,"Áurea Cayalá",18,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+430,"2026-11-03 12:30:00-06",1,"Áurea Cayalá",18,7,"Cheesecake de Frutos Rojos","Postre",1,42.00
+430,"2026-11-03 12:30:00-06",1,"Áurea Cayalá",18,17,"Americano Frío","Bebida",2,27.00
+434,"2026-11-03 14:00:00-06",3,"Áurea Roosevelt",24,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+434,"2026-11-03 14:00:00-06",3,"Áurea Roosevelt",24,4,"Lomo en salsa de Pimienta","Plato Fuerte",2,115.00
+434,"2026-11-03 14:00:00-06",3,"Áurea Roosevelt",24,10,"Espresso","Bebida",1,20.00
+432,"2026-11-03 15:00:00-06",2,"Áurea Naranjo",8,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+432,"2026-11-03 15:00:00-06",2,"Áurea Naranjo",8,12,"Cappuccino","Bebida",1,30.00
+433,"2026-11-03 17:30:00-06",2,"Áurea Naranjo",9,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+433,"2026-11-03 17:30:00-06",2,"Áurea Naranjo",9,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+433,"2026-11-03 17:30:00-06",2,"Áurea Naranjo",9,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+433,"2026-11-03 17:30:00-06",2,"Áurea Naranjo",9,11,"Americano","Bebida",1,25.00
+433,"2026-11-03 17:30:00-06",2,"Áurea Naranjo",9,14,"Mocha","Bebida",2,35.00
+431,"2026-11-03 18:30:00-06",2,"Áurea Naranjo",23,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+431,"2026-11-03 18:30:00-06",2,"Áurea Naranjo",23,2,"Pasta Alfredo con Pollo","Plato Fuerte",2,80.00
+431,"2026-11-03 18:30:00-06",2,"Áurea Naranjo",23,8,"Pastel de Chocolate","Postre",2,40.00
+431,"2026-11-03 18:30:00-06",2,"Áurea Naranjo",23,19,"Latte Frío","Bebida",2,34.00
+435,"2026-11-03 21:00:00-06",3,"Áurea Roosevelt",11,5,"Pollo en salsa de champiñones","Plato Fuerte",2,105.00
+435,"2026-11-03 21:00:00-06",3,"Áurea Roosevelt",11,16,"Té o Infusión","Bebida",1,25.00
+435,"2026-11-03 21:00:00-06",3,"Áurea Roosevelt",11,18,"Cappuccino Frío","Bebida",2,32.00
+435,"2026-11-03 21:00:00-06",3,"Áurea Roosevelt",11,19,"Latte Frío","Bebida",1,34.00
+437,"2026-11-04 10:00:00-06",1,"Áurea Cayalá",21,3,"Risotto de Hongos","Plato Fuerte",1,88.00
+437,"2026-11-04 10:00:00-06",1,"Áurea Cayalá",21,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+437,"2026-11-04 10:00:00-06",1,"Áurea Cayalá",21,17,"Americano Frío","Bebida",2,27.00
+437,"2026-11-04 10:00:00-06",1,"Áurea Cayalá",21,18,"Cappuccino Frío","Bebida",2,32.00
+436,"2026-11-04 12:00:00-06",1,"Áurea Cayalá",7,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+436,"2026-11-04 12:00:00-06",1,"Áurea Cayalá",7,9,"Croissant de Mantequilla","Postre",1,28.00
+442,"2026-11-04 12:00:00-06",3,"Áurea Roosevelt",11,2,"Pasta Alfredo con Pollo","Plato Fuerte",1,80.00
+442,"2026-11-04 12:00:00-06",3,"Áurea Roosevelt",11,7,"Cheesecake de Frutos Rojos","Postre",2,42.00
+442,"2026-11-04 12:00:00-06",3,"Áurea Roosevelt",11,9,"Croissant de Mantequilla","Postre",1,28.00
+442,"2026-11-04 12:00:00-06",3,"Áurea Roosevelt",11,15,"Chocolate Caliente","Bebida",2,30.00
+442,"2026-11-04 12:00:00-06",3,"Áurea Roosevelt",11,19,"Latte Frío","Bebida",1,34.00
+439,"2026-11-04 12:30:00-06",2,"Áurea Naranjo",1,3,"Risotto de Hongos","Plato Fuerte",2,88.00
+439,"2026-11-04 12:30:00-06",2,"Áurea Naranjo",1,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+439,"2026-11-04 12:30:00-06",2,"Áurea Naranjo",1,10,"Espresso","Bebida",1,20.00
+439,"2026-11-04 12:30:00-06",2,"Áurea Naranjo",1,14,"Mocha","Bebida",1,35.00
+439,"2026-11-04 12:30:00-06",2,"Áurea Naranjo",1,17,"Americano Frío","Bebida",2,27.00
+443,"2026-11-04 12:30:00-06",3,"Áurea Roosevelt",21,9,"Croissant de Mantequilla","Postre",2,28.00
+443,"2026-11-04 12:30:00-06",3,"Áurea Roosevelt",21,16,"Té o Infusión","Bebida",1,25.00
+440,"2026-11-04 14:00:00-06",2,"Áurea Naranjo",7,11,"Americano","Bebida",2,25.00
+440,"2026-11-04 14:00:00-06",2,"Áurea Naranjo",7,21,"Té Frío","Bebida",2,27.00
+438,"2026-11-04 15:30:00-06",1,"Áurea Cayalá",24,6,"Ravioles de Ricotta","Plato Fuerte",2,105.00
+438,"2026-11-04 15:30:00-06",1,"Áurea Cayalá",24,9,"Croissant de Mantequilla","Postre",2,28.00
+438,"2026-11-04 15:30:00-06",1,"Áurea Cayalá",24,10,"Espresso","Bebida",2,20.00
+438,"2026-11-04 15:30:00-06",1,"Áurea Cayalá",24,15,"Chocolate Caliente","Bebida",1,30.00
+477,"2026-11-04 17:36:00-06",2,"Áurea Naranjo",NULL,18,"Cappuccino Frío","Bebida",2,32.00
+477,"2026-11-04 17:36:00-06",2,"Áurea Naranjo",NULL,21,"Té Frío","Bebida",2,27.00
+441,"2026-11-04 19:00:00-06",3,"Áurea Roosevelt",23,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
+441,"2026-11-04 19:00:00-06",3,"Áurea Roosevelt",23,5,"Pollo en salsa de champiñones","Plato Fuerte",1,105.00
+441,"2026-11-04 19:00:00-06",3,"Áurea Roosevelt",23,6,"Ravioles de Ricotta","Plato Fuerte",1,105.00
+441,"2026-11-04 19:00:00-06",3,"Áurea Roosevelt",23,10,"Espresso","Bebida",1,20.00
+478,"2026-11-05 22:16:23.212964-06",1,"Áurea Cayalá",2,1,"Pollo a la Parrilla","Plato Fuerte",1,75.00
